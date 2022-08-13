@@ -10,12 +10,14 @@
      <br><br>
 
 2. Scan Converting Circle and Ellipse:
-   - [Mid Point Circle Algorithm]() 
-   - [Ellipse Algorithm]()
+   - [Mid Point Circle Algorithm](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Computer_Graphics/Scan_Conversion_Algorithm/circle.cpp) 
+   - [Ellipse Algorithm](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Computer_Graphics/Scan_Conversion_Algorithm/ellipse.cpp)
 <br><br>
 
-3. Area Filling:
-   - [Scan Line Polygon fill Algorithm]()
-   - [InsideOutside Test]()
-   - [Scan line fill of Curved Boundary area]()
-   - [Boundary-fill and Flood-fill algorithm]()
+## Simulation of 2D transformation
+  - [Rotation]()
+  - [Scaling]()
+  - [Shearing]()
+  - [Translation]()
+  - [Cohen Sutherland line clipping algorithm]()
+ 
