@@ -1,8 +1,3 @@
 # 1st Semester
 
-## IIT
-
-- [Custom Form]()
-- [Mail Merge]()
-- [Xampp]()
-- [Table.html]()
+## [IIT](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/IIT)
