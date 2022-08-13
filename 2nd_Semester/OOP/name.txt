@@ -1,0 +1,2 @@
+cd "c:\Users\suyas\Suyash\Cpp\Lab\" ; if ($?) { g++ a.cpp -o a } ; if ($?) { .\a }
+4201611
