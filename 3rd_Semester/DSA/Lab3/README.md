@@ -92,5 +92,7 @@ The circular queue work as follows:
 - However, the check for full queue has a new additional case:
 
 Case 1: FRONT = 0 && REAR == SIZE - 1
+
 Case 2: FRONT = REAR + 1
+
 The second case happens when REAR starts from 0 due to circular increment and when its value is just 1 less than FRONT, the queue is full.
