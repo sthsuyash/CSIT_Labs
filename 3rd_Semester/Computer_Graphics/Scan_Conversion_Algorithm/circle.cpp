@@ -1,53 +1,65 @@
-#include <iostream>
 #include <graphics.h>
+#include <math.h>
+#include <iostream>
+#include <conio.h>
 using namespace std;
 
-void drawcircle(int x0, int y0, int radius)
+void midPointCircleDraw(int x_centre, int y_centre, int r)
 {
-	// graphics initialization
-	int gdriver = DETECT, gmode, error;
-	initgraph(&gdriver, &gmode, "");
+	int gd = DETECT, gm;
+	initgraph(&gd, &gm, "C:\\TC\\BGI");
+	int x = 0, y = r;
 
-	int x = radius;
-	int y = 0;
-	int err = 0;
+	putpixel(x + x_centre, y + y_centre, WHITE);
 
-	while (x >= y)
+	if (r > 0)
 	{
-		putpixel(x0 + x, y0 + y, 7);
-		putpixel(x0 + y, y0 + x, 7);
-		putpixel(x0 - y, y0 + x, 7);
-		putpixel(x0 - x, y0 + y, 7);
-		putpixel(x0 - x, y0 - y, 7);
-		putpixel(x0 - y, y0 - x, 7);
-		putpixel(x0 + y, y0 - x, 7);
-		putpixel(x0 + x, y0 - y, 7);
+		putpixel(x + x_centre, -y + y_centre, WHITE);
+		putpixel(y + x_centre, x + y_centre, WHITE);
+		putpixel(-y + x_centre, x + y_centre, WHITE);
+	}
 
-		if (err <= 0)
+	int P = 1 - r;
+	while (x <= y)
+	{
+		x++;
+		if (P <= 0)
 		{
-			y += 1;
-			err += 2 * y + 1;
+			P = P + 2 * x + 1;
 		}
-		if (err > 0)
+		else
 		{
-			x -= 1;
-			err -= 2 * x + 1;
+			y--;
+			P = P + 2 * x - 2 * y + 1;
+		}
+		if (x > y)
+			break;
+
+		putpixel(x + x_centre, y + y_centre, WHITE);
+		putpixel(-x + x_centre, y + y_centre, WHITE);
+		putpixel(x + x_centre, -y + y_centre, WHITE);
+		putpixel(-x + x_centre, -y + y_centre, WHITE);
+
+		if (x != y)
+		{
+			putpixel(y + x_centre, x + y_centre, WHITE);
+			putpixel(-y + x_centre, x + y_centre, WHITE);
+			putpixel(y + x_centre, -x + y_centre, WHITE);
+			putpixel(-y + x_centre, -x + y_centre, WHITE);
 		}
 	}
 	getch();
+	closegraph();
 }
 
 int main()
 {
 	int x, y, r;
-
-	cout << "Enter radius of circle: ";
-	cin >> r;
-
-	cout << "Enter co-ordinates of center(x and y): ";
+	cout << "Enter centre coordinates(x,y): ";
 	cin >> x >> y;
-
-	drawcircle(x, y, r);
+	cout << "Enter radius: ";
+	cin >> r;
+	midPointCircleDraw(x, y, r); //(h,k,radius)
 
 	return 0;
 }
