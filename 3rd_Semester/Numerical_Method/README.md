@@ -22,6 +22,6 @@
 
   - [First and Second Derivatives using Central Difference Formula](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-3/derivatives_centralDifference.c)
   - [Integrating a Function using Composite Trapezoidal Rule](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-3/compositeTrapezoidalRule.c)
-  - [Integrating a Function using Composite Simpson's 3/8 Rule]()
+  - [Integrating a Function using Composite Simpson's 3/8 Rule](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-3/compositeSimpsons_3By8_Rule.c)
   - [Integrating a Function using Composite Simpson's 1/3 Rule]()
   - [Derivatives using Newton's Divided Differences Table]()
