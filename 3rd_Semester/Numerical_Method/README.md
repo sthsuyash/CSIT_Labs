@@ -17,3 +17,11 @@
   - [Fitting a linear equation](https://github.com/sthsuyash/C-projects/blob/main/Numerical_Method/Lab-2/Fitting_LinearEqn.c)
   - [Fitting a exponential equation](https://github.com/sthsuyash/C-projects/blob/main/Numerical_Method/Lab-2/Exponential_Fitting.c)
   - [Fitting a polynomial equation](https://github.com/sthsuyash/C-projects/blob/main/Numerical_Method/Lab-2/Fitting_PolynomialEqn.c)
+
+- ## [Lab 3](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Numerical_Method/Lab-3)
+
+  - [First and Second Derivatives using Central Difference Formula](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-3/derivatives_centralDifference.c)
+  - [Integrating a Function using Composite Trapezoidal Rule](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-3/compositeTrapezoidalRule.c)
+  - [Integrating a Function using Composite Simpson's 3/8 Rule]()
+  - [Integrating a Function using Composite Simpson's 1/3 Rule]()
+  - [Derivatives using Newton's Divided Differences Table]()
