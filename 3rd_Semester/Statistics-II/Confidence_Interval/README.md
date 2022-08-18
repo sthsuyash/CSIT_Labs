@@ -10,15 +10,20 @@ __height :__<br/>
 66, 48, 73, 71, 70, 62, 74, 76, 50, 69, 75, 65, 48
 
 - In the variable view, add the required variable name with specific details.
+
   ![Variable view](variableView.jpg)
 
 - Goto data view and add the given data.
 
+
 - Click on __Analyze__ tab, __Descriptive Statistics__ and __Explore__.
+
   ![Step](step.jpg)
 
 - Add the required variable in __Dependent List__ and click __Paste__ or __OK__.
+
   ![Dependent List](dependentList.jpg)
 
 - Required Output(Confidence Interval of Mean):
+
   ![Output](output.jpg)
