@@ -36,6 +36,16 @@ public:
         }
         return false;
     }
+    
+    void makeEmpty(){
+    	if(isEmpty()){
+    		cout<<"Queue already empty."<<endl; 
+		}
+		else{
+			front = -1;
+        	rear = -1;
+		}
+	}
 
     // Adding an element
     void enQueue(int element)
@@ -96,50 +106,63 @@ public:
         }
         else
         {
-            cout << "Front -> " << front;
-            cout << endl
-                 << "Items -> ";
-            for (i = front; i != rear; i = (i + 1) % size)
-                cout << items[i];
-            cout << items[i];
-            cout << endl
-                 << "Rear -> " << rear;
+        	cout << "Queue Traversal:\n";
+      		for(i = front; i != rear; i = (i + 1) % size)
+			{
+        		cout << items[i]<<" ";
+    		}
+      		cout << items[i]<< " ";
         }
     }
+    
 };
 
 int main()
 {
-    Queue q;
+    Queue q(2);
 
-    // Fails because front = -1
-    q.deQueue();
-
-    q.enQueue(1);
-    q.enQueue(2);
-    q.enQueue(3);
-    q.enQueue(4);
-    q.enQueue(5);
-
-    // Fails to enqueue because front == 0 && rear == size - 1
-    q.enQueue(6);
-
-    q.display();
-
-    int elem = q.deQueue();
-
-    if (elem != -1)
-        cout << endl
-             << "Deleted Element is " << elem;
-
-    q.display();
-
-    q.enQueue(7);
-
-    q.display();
-
-    // Fails to enqueue because front == rear + 1
-    q.enQueue(8);
+	int choice, item;
+	char ch;
+	
+	do{
+		cout<<"Press:"<<endl<<
+		"1. to make empty."<<endl<<
+		"2. for enqueue"<<endl<<
+		"3. for dequeue"<<endl<<
+		"4. for traversal"<<endl;
+		
+		cin >> choice;
+		
+		switch(choice){
+			case 1:
+				q.makeEmpty();
+				cout<<"Queue Emptied."<<endl;
+				break;
+				
+			case 2:
+				cout<<"Enter item: ";
+				cin>>item;
+				q.enQueue(item);
+				break;
+				
+			case 3:
+				cout<< q.deQueue() << " deleted."<<endl;
+				break;
+				
+			case 4:
+				q.display();
+				cout<<endl;
+				break;
+				
+			default:
+				break;
+		}
+		
+		cout<<"Do you want to continue again?(y/n): ";
+		cin>>ch;
+	}while(ch=='y');
+	
+	cout<<"End of program."<<endl;
 
     return 0;
 }
