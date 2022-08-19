@@ -1,4 +1,4 @@
-# Steps to find confidence interval of mean assuming normal distribution
+# Confidence interval of mean assuming normal distribution
 
 ## Steps
 
