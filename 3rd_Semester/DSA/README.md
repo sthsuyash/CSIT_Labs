@@ -16,3 +16,10 @@
   - [Linear Queue](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab3/linearQueue.cpp)
   - [Circular Queue](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab3/circularQueue.cpp)
   - [Priority Queue](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab3/priorityQueue.cpp)
+
+- [Lab 4](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/Lab4)
+  - [Factorial using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/factorial.cpp)
+  - [Fibonacci using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/fibonacci.cpp)
+  - [G.C.D using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/gcd.cpp)
+  - [Tower of Hanoi using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/towerOfHanoi.cpp)
+  
