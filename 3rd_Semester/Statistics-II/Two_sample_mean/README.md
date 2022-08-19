@@ -12,7 +12,6 @@ Two kinds of manure were applied to sixteen one-hectare plots, other condition r
 
 Is there any significant __difference between the mean__ yields? Use 5% level of significance.
 
-
 - In the variable view, add the required variable name with specific details.
 
   ![Variable view](variableView.jpg)
