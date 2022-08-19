@@ -35,7 +35,7 @@ public:
         int x = arr[front];
         cout << "Removing " << x << endl;
 
-        front = (front + 1) % capacity;
+        front = front++;
         count--;
 
         return x;
@@ -47,26 +47,16 @@ public:
         // check for queue overflow
         if (isFull())
         {
-            cout << "Overflow\nProgram Terminated\n";
+            cout << "Overflow" << endl
+                 << "Program Terminated"<<endl;
             exit(EXIT_FAILURE);
         }
 
         cout << "Inserting " << item << endl;
 
-        rear = (rear + 1) % capacity;
+        rear++;
         arr[rear] = item;
         count++;
-    }
-
-    // Utility function to return the front element of the queue
-    int peek()
-    {
-        if (isEmpty())
-        {
-            cout << "Underflow\nProgram Terminated\n";
-            exit(EXIT_FAILURE);
-        }
-        return arr[front];
     }
 
     // Utility function to return the size of the queue
@@ -86,36 +76,72 @@ public:
     {
         return (size() == capacity);
     }
+
+    void makeEmpty()
+    {
+        front = 0;
+        rear = -1;
+        count = 0;
+    }
+
+    void display()
+    {
+        for (int i = front; i <= rear; i++)
+        {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
 };
 
 int main()
 {
-    // create a queue of capacity 5
-    Queue q(5);
+    Queue q;
 
-    q.enqueue(1);
-    q.enqueue(2);
-    q.enqueue(3);
+    int choice, item;
+    char ch;
 
-    cout << "The front element is " << q.peek() << endl;
-    q.dequeue();
-
-    q.enqueue(4);
-
-    cout << "The queue size is " << q.size() << endl;
-
-    q.dequeue();
-    q.dequeue();
-    q.dequeue();
-
-    if (q.isEmpty())
+    do
     {
-        cout << "The queue is empty\n";
-    }
-    else
-    {
-        cout << "The queue is not empty\n";
-    }
+        cout << "Press:" << endl
+             << "1. to make empty." << endl
+             << "2. for enqueue" << endl
+             << "3. for dequeue" << endl
+             << "4. for traversal" << endl;
+
+        cin >> choice;
+
+        switch (choice)
+        {
+        case 1:
+            q.makeEmpty();
+            cout << "Queue Emptied." << endl;
+            break;
+
+        case 2:
+            cout << "Enter item: ";
+            cin >> item;
+            q.enqueue(item);
+            break;
+
+        case 3:
+            cout << q.dequeue() << " deleted." << endl;
+            break;
+
+        case 4:
+            q.display();
+            cout << endl;
+            break;
+
+        default:
+            break;
+        }
+
+        cout << "Do you want to continue again?(y/n): ";
+        cin >> ch;
+    } while (ch == 'y');
+
+    cout << "End of program." << endl;
 
     return 0;
 }
