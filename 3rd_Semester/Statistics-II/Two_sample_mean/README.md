@@ -12,13 +12,12 @@ _for example of data set:_
 
   ![Variable view](variableView.jpg)
 
+  - in the label section:
+
+      ![label](label.jpg)
 - Goto data view and add the given data.
 
   ![Data view](data.jpg)
-
-  - in the label section:
-
-  ![label](label.jpg)
 
 - Click on **Analyze** tab, **Compare Means** and **Independent-Samples T test**.
 
@@ -28,6 +27,6 @@ _for example of data set:_
 
   ![Dependent List](dependentList.jpg)
 
-- Required Output(Confidence Interval of Mean):
+- Required Output:
 
   ![Output](output.jpg)
