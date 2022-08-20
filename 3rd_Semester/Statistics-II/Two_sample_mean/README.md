@@ -10,27 +10,28 @@ Two kinds of manure were applied to sixteen one-hectare plots, other condition r
 | --------- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Manure II | 29  | 28  | 26  | 35  | 30  | 44  | 46  |
 
-Is there any significant __difference between the mean__ yields? Use 5% level of significance.
+Is there any significant **difference between the mean** yields? Use 5% level of significance.
 
 - In the variable view, add the required variable name with specific details.
 
-  ![Variable view](variableView.jpg)
+  ![Variable view](assets/variableView.jpg)
 
   - in the label section:
 
-      ![label](label.jpg)
+    ![label](assets/label.jpg)
+
 - Goto data view and add the given data.
 
-  ![Data view](data.jpg)
+  ![Data view](assets/data.jpg)
 
 - Click on **Analyze** tab, **Compare Means** and **Independent-Samples T test**.
 
-  ![Step](step.jpg)
+  ![Step](assets/step.jpg)
 
 - Add the required variable in **Dependent List** and click **Paste** or **OK**.
 
-  ![Dependent List](dependentList.jpg)
+  ![Dependent List](assets/dependentList.jpg)
 
 - Required Output:
 
-  ![Output](output.jpg)
+  ![Output](assets/output.jpg)

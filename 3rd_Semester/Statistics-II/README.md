@@ -1,5 +1,7 @@
 # Statistics-II Labs
 
+**Practical done using SPSS software.**
+
 ## Chapter 1
 
 - [Find Confidence Interval of mean assuming Normal Distribution](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Statistics-II/Confidence_Interval)

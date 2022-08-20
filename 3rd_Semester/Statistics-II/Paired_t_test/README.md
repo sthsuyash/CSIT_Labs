@@ -15,23 +15,23 @@ Memory capacity of 10 students was tested before and after training, state wheth
 
 - Goto variable view and add the variables
 
-![Variable view](variableView.jpg)
+![Variable view](assets/variableView.jpg)
 
 - Goto data view and add the given data.
 
-  ![Data view](dataView.jpg)
+  ![Data view](assets/dataView.jpg)
 
 - Click on **Analyze** tab, **Compare Means** and **Paired-Samples T test**.
 
-  ![Step](step.jpg)
+  ![Step](assets/step.jpg)
 
 - Add the required variable in **Dependent List** and click **Paste** or **OK**.
 
-  ![Dependent List](dependentList.jpg)
+  ![Dependent List](assets/dependentList.jpg)
 
   - Add before to variable1
   - Add after to variable2
 
 - Required Output:
 
-  ![Output](output.jpg)
+  ![Output](assets/output.jpg)

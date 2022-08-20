@@ -11,19 +11,18 @@ __height :__<br/>
 
 - In the variable view, add the required variable name with specific details.
 
-  ![Variable view](variableView.jpg)
+  ![Variable view](assets/variableView.jpg)
 
 - Goto data view and add the given data.
 
-
 - Click on __Analyze__ tab, __Descriptive Statistics__ and __Explore__.
 
-  ![Step](step.jpg)
+  ![Step](assets/step.jpg)
 
 - Add the required variable in __Dependent List__ and click __Paste__ or __OK__.
 
-  ![Dependent List](dependentList.jpg)
+  ![Dependent List](assets/dependentList.jpg)
 
 - Required Output(Confidence Interval of Mean):
 
-  ![Output](output.jpg)
+  ![Output](assets/output.jpg)

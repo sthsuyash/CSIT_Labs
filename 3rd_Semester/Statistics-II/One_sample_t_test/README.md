@@ -10,18 +10,18 @@ _for example of data set:_<br/>
 
 - In the variable view, add the required variable name with specific details.
 
-  ![Variable view](variableView.jpg)
+  ![Variable view](assets/variableView.jpg)
 
 - Goto data view and add the given data.
 
 - Click on **Analyze** tab, **Compare Means** and **One-Sample T test**.
 
-  ![Step](step.jpg)
+  ![Step](assets/step.jpg)
 
 - Add the required variable in **Dependent List** and click **Paste** or **OK**.
 
-  ![Dependent List](dependentList.jpg)
+  ![Dependent List](assets/dependentList.jpg)
 
 - Required Output(Confidence Interval of Mean):
 
-  ![Output](output.jpg)
+  ![Output](assets/output.jpg)
