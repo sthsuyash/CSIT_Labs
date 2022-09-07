@@ -23,3 +23,12 @@
   - [G.C.D using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/gcd.cpp)
   - [Tower of Hanoi using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/towerOfHanoi.cpp)
   
+  - [Lab 5](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/Lab4)
+    - [Singular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/singlyLinkedList.cpp)
+    - [Circular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/circularLinkedList.cpp)
+    - [Doubly Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/doublyLinkedList.cpp)
+    - [Doubly Circular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/doublyCircularLinkedList.cpp)
+    - Implementation of Stack and Queue using Linked List
+      - [Stack implementation using Linked List]()
+      - [Queue implementation using Linked List]()
+  
