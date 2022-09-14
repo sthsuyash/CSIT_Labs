@@ -13,7 +13,7 @@
   };
 ```
 
-![Linked List](images/linkedlist.png)
+![Linked List](images/linkedList.png)
 
 ## Programs:
 
