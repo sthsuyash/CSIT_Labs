@@ -26,12 +26,12 @@
   - [G.C.D using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/gcd.cpp)
   - [Tower of Hanoi using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/towerOfHanoi.cpp)
 
-  - [Lab 5](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/Lab4)
+- [Lab 5](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/Lab4)
 
-    - [Singular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/singlyLinkedList.cpp)
-    - [Circular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/circularLinkedList.cpp)
-    - [Doubly Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/doublyLinkedList.cpp)
-    - [Doubly Circular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/doublyCircularLinkedList.cpp)
-    - Implementation of Stack and Queue using Linked List
-      - [Stack implementation using Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/stackUsingLinkedList.cpp)
-      - [Queue implementation using Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/queueUsingLinkedList.cpp)
+  - [Singular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/singlyLinkedList.cpp)
+  - [Circular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/circularLinkedList.cpp)
+  - [Doubly Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/doublyLinkedList.cpp)
+  - [Doubly Circular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/doublyCircularLinkedList.cpp)
+  - Implementation of Stack and Queue using Linked List
+    - [Stack implementation using Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/stackUsingLinkedList.cpp)
+    - [Queue implementation using Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/queueUsingLinkedList.cpp)
