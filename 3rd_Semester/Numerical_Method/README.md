@@ -25,3 +25,14 @@
   - [Integrating a Function using Composite Simpson's 3/8 Rule](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-3/compositeSimpsons_3By8_Rule.c)
   - [Integrating a Function using Composite Simpson's 1/3 Rule](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-3/compositeSimpsons_1By3_Rule.c)
   - [Derivatives using Newton's Divided Differences Table](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-3/derivates_newtons_divided_difference_table.c)
+
+- [Lab 4](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Numerical_Method/Lab-4)
+
+  - Solving linear system using :-
+
+    - [Gaussian Elimination with Partial Pivoting](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-4/gaussian_elimination.c)
+    - [Gauss-Jordan Method with Partial Pivoting](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-4/gauss_jordan.c)
+    - [Jacobi Iterative Method](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-4/jacobi_iterative_method.c)
+    - [Gauss-Seidel Iterative Method](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-4/gauss_seidel.c)
+
+  - [Finding Eigen Values and Eigen Vectors using Power Method](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-4/eigenValue_and_eigenVector.c)
