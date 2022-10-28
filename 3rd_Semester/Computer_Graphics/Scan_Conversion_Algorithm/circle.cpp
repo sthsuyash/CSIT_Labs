@@ -7,7 +7,7 @@ using namespace std;
 void midPointCircleDraw(int x_centre, int y_centre, int r)
 {
 	int gd = DETECT, gm;
-	initgraph(&gd, &gm, "C:\\TC\\BGI");
+	initgraph(&gd, &gm, "");
 	int x = 0, y = r;
 
 	putpixel(x + x_centre, y + y_centre, WHITE);

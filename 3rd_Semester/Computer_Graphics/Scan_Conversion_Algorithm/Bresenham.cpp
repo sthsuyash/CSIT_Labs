@@ -6,7 +6,7 @@ void drawline(int x0, int y0, int x1, int y1)
 {
     int dx, dy, p, x, y;
     int gdriver = DETECT, gmode, error;
-    initgraph(&gdriver, &gmode, "c:\\turboc3\\bgi");
+    initgraph(&gdriver, &gmode, "");
 
     dx = x1 - x0;
     dy = y1 - y0;
