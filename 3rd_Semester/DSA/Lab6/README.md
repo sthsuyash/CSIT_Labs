@@ -8,15 +8,32 @@ Internal sorting: If the input data is such that it can be adjusted in the main 
 External sorting: If the input data is such that it cannot be adjusted in the memory entirely at once, it needs to be stored in a hard disk, floppy disk, or any other storage device.
 ```
 
-## Comparison Sorting
+## Programs
 
-Algorithms: Bubble, Selection, Insertion Sort and Shell Sort
+1. ## Comparison Sorting
 
-## Divide and Conquer
+   - [Bubble Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/bubble_sort.cpp)
+   - [Selection Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/selection_sort.cpp)
+   - [Insertion Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/insertion_sort.cpp)
+   - [Shell Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/shell_sort.cpp)
 
-Merge, Quick and Heap Sort
+2. ## Divide and Conquer
+
+   - [Merge Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/merge_sort.cpp)
+   - [Quick Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/quick_sort.cpp)
+   - [Heap Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/heap_sort.cpp)
 
 In insertion sort, we move elements only one position ahead. When an element has to be moved far ahead, many movements are involved.
+
+## Selection Sort
+
+The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from the unsorted part and putting it at the beginning.
+
+The algorithm maintains two subarrays in a given array.
+
+The subarray which already sorted.
+The remaining subarray was unsorted.
+In every iteration of the selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.
 
 ## Shell Sort
 

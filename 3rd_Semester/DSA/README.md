@@ -37,5 +37,8 @@
     - [Queue implementation using Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/queueUsingLinkedList.cpp)
 
 - [Lab 6](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/Lab6)
-  
-    - [Shell Sort]()
+
+  - [Bubble Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/bubble_sort.cpp)
+  - [Selection Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/selection_sort.cpp)
+  - [Insertion Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/insertion_sort.cpp)
+  - [Shell Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/shell_sort.cpp)
