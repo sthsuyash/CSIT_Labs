@@ -1,44 +1,44 @@
 # Data Structures and Algorithms
 
-- [Lab 1](https://github.com/sthsuyash/Cpp-projects/tree/main/DSA/Lab1)
+1. ## [Array Methods (introduction)](https://github.com/sthsuyash/Cpp-projects/tree/main/DSA/1_Array_methods)
 
-  - [Menu Driven Program](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/Lab1/menuDrive.cpp)
-  - [Reverse number](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/Lab1/reverse.cpp)
+   - [Menu Driven Program](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/1_Array_methods/menuDrive.cpp)
+   - [Reverse number](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/1_Array_methods/reverse.cpp)
 
-- [Lab 2](https://github.com/sthsuyash/Cpp-projects/tree/main/DSA/Lab2)
+2. ## [Stack](https://github.com/sthsuyash/Cpp-projects/tree/main/DSA/2_Stack)
 
-  - [Program to implement Stack operation](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/Lab2/stack.cpp)
-  - [Infix to Prefix Expression](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/Lab2/infix_to_prefix_expression.cpp)
-  - [Infix to Postfix Expression](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/Lab2/infix_to_postfix_expression.cpp)
-  - [Prefix evaluation](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/Lab2/prefix_evaluation.cpp)
-  - [Postfix evaluation](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/Lab2/postfix_evaluation.cpp)
+   - [Program to implement Stack operation](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/2_Stack/stack.cpp)
+   - [Infix to Prefix Expression](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/2_Stack/infix_to_prefix_expression.cpp)
+   - [Infix to Postfix Expression](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/2_Stack/infix_to_postfix_expression.cpp)
+   - [Prefix evaluation](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/2_Stack/prefix_evaluation.cpp)
+   - [Postfix evaluation](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/2_Stack/postfix_evaluation.cpp)
 
-- [Lab 3](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/Lab3)
+3. ## [Queue](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/3_Queue)
 
-  - [Linear Queue](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab3/linearQueue.cpp)
-  - [Circular Queue](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab3/circularQueue.cpp)
-  - [Priority Queue](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab3/priorityQueue.cpp)
+   - [Linear Queue](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/3_Queue/linearQueue.cpp)
+   - [Circular Queue](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/3_Queue/circularQueue.cpp)
+   - [Priority Queue](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/3_Queue/priorityQueue.cpp)
 
-- [Lab 4](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/Lab4)
+4. ## [Recursion](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/4_Recursion)
 
-  - [Factorial using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/factorial.cpp)
-  - [Fibonacci using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/fibonacci.cpp)
-  - [G.C.D using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/gcd.cpp)
-  - [Tower of Hanoi using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/towerOfHanoi.cpp)
+   - [Factorial using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/4_Recursion/factorial.cpp)
+   - [Fibonacci using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/4_Recursion/fibonacci.cpp)
+   - [G.C.D using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/4_Recursion/gcd.cpp)
+   - [Tower of Hanoi using Recursion](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/4_Recursion/towerOfHanoi.cpp)
 
-- [Lab 5](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/Lab5)
+5. ## [Linked List](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/5_Linked_list)
 
-  - [Singular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/singlyLinkedList.cpp)
-  - [Circular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/circularLinkedList.cpp)
-  - [Doubly Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/doublyLinkedList.cpp)
-  - [Doubly Circular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/doublyCircularLinkedList.cpp)
-  - Implementation of Stack and Queue using Linked List
-    - [Stack implementation using Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/stackUsingLinkedList.cpp)
-    - [Queue implementation using Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab5/queueUsingLinkedList.cpp)
+   - [Singular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/5_Linked_list/singlyLinkedList.cpp)
+   - [Circular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/5_Linked_list/circularLinkedList.cpp)
+   - [Doubly Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/5_Linked_list/doublyLinkedList.cpp)
+   - [Doubly Circular Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/5_Linked_list/doublyCircularLinkedList.cpp)
+   - Implementation of Stack and Queue using Linked List
+     - [Stack implementation using Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/5_Linked_list/stackUsingLinkedList.cpp)
+     - [Queue implementation using Linked List](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/5_Linked_list/queueUsingLinkedList.cpp)
 
-- [Lab 6](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/Lab6)
+6. ## [Sorting](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/6_Sorting)
 
-  - [Bubble Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/bubble_sort.cpp)
-  - [Selection Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/selection_sort.cpp)
-  - [Insertion Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/insertion_sort.cpp)
-  - [Shell Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab6/shell_sort.cpp)
+   - [Bubble Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/bubble_sort.cpp)
+   - [Selection Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/selection_sort.cpp)
+   - [Insertion Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/insertion_sort.cpp)
+   - [Shell Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/shell_sort.cpp)
