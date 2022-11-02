@@ -1,4 +1,5 @@
-# [Lab 1](https://github.com/sthsuyash/Cpp-projects/tree/main/DSA/Lab1)
+# Array methods (Introduction)
 
-- [Menu Driven Program](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/Lab1/menuDrive.cpp)
-- [Reverse number](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/Lab1/reverse.cpp)
+- [Menu Driven Program](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/1_Array_methods/menuDrive.cpp)
+- [Reverse number](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/1_Array_methods/reverse.cpp)
+- [Delete Specific Data](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/1_Array_methods/deleteSpecificData.cpp)

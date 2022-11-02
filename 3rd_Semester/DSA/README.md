@@ -1,17 +1,18 @@
 # Data Structures and Algorithms
 
-1. ## [Array Methods (introduction)](https://github.com/sthsuyash/Cpp-projects/tree/main/DSA/1_Array_methods)
+1. ## [Array methods (Introduction)](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/1_Array_methods)
 
-   - [Menu Driven Program](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/1_Array_methods/menuDrive.cpp)
-   - [Reverse number](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/1_Array_methods/reverse.cpp)
+   - [Menu Driven Program](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/1_Array_methods/menuDrive.cpp)
+   - [Reverse number](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/1_Array_methods/reverse.cpp)
+   - [Delete Specific Data](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/1_Array_methods/deleteSpecificData.cpp)
 
-2. ## [Stack](https://github.com/sthsuyash/Cpp-projects/tree/main/DSA/2_Stack)
+2. ## [Stack](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/2_Stack/stack.cpp)
 
-   - [Program to implement Stack operation](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/2_Stack/stack.cpp)
-   - [Infix to Prefix Expression](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/2_Stack/infix_to_prefix_expression.cpp)
-   - [Infix to Postfix Expression](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/2_Stack/infix_to_postfix_expression.cpp)
-   - [Prefix evaluation](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/2_Stack/prefix_evaluation.cpp)
-   - [Postfix evaluation](https://github.com/sthsuyash/Cpp-projects/blob/main/DSA/2_Stack/postfix_evaluation.cpp)
+   - [Stack implementation](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/2_Stack/stack.cpp)
+   - [Infix to Prefix Expression](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/2_Stack/infix_to_prefix_expression.cpp)
+   - [Infix to Postfix Expression](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/2_Stack/infix_to_postfix_expression.cpp)
+   - [Prefix evaluation](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/2_Stack/prefix_evaluation.cpp)
+   - [Postfix evaluation](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/2_Stack/postfix_evaluation.cpp)
 
 3. ## [Queue](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/3_Queue)
 
@@ -42,3 +43,10 @@
    - [Selection Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/selection_sort.cpp)
    - [Insertion Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/insertion_sort.cpp)
    - [Shell Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/shell_sort.cpp)
+   - [Quick Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/quick_sort.cpp)
+   - [Merge Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/merge_sort.cpp)
+   - [Heap Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/heap_sort.cpp)
+
+7. ## [Searching and Hashing](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/7_Searching_and_Hashing)
+
+8. ## [Trees and Graphs](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA/8_Trees_and_Graphs)
