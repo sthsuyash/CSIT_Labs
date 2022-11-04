@@ -75,3 +75,36 @@ Shell sort is mainly a variation of Insertion Sort.The idea of ShellSort is to a
   5. Repeat this step 2 until the list is sorted.
   6. Print a sorted list.
   7. Stop.
+
+## Merge Sort
+
+Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.
+
+- Algorithm:
+
+  1. Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted).
+  2. Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.
+
+## Quick Sort
+
+QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.
+
+- Always pick first element as pivot.
+- Always pick last element as pivot (implemented below)
+- Pick a random element as pivot.
+- Pick median as pivot.
+
+## Heap Sort
+
+Heap Sort is a comparison based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the maximum element and place the maximum element at the end. We repeat the same process for remaining element.
+
+- Algorithm:
+
+  1. Build a max heap from the input data.
+  2. At this point, the largest item is stored at the root of the heap. Replace it with the last item of the heap followed by reducing the size of heap by 1. Finally, heapify the root of tree.
+  3. Repeat above steps while size of heap is greater than 1.
+
+## References
+
+- [GeeksforGeeks](https://www.geeksforgeeks.org/sorting-algorithms/)
+- [Tutorials Point](https://www.tutorialspoint.com/data_structures_algorithms/sorting_algorithms.htm)
