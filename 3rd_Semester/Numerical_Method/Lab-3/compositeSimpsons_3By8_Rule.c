@@ -28,13 +28,12 @@ int main()
 		x = a + (3 * i - 2) * h;
 		sum += 3 * (f(x) + f(x + h));
 		if (i != m)
-		{
+
 			sum += 2 * f(x + 2 * h);
-		}
-		sum += f(a) + f(b);
-		ics = sum * 3 * h / 8.0;
-		printf("\nIntegration between %f and %f when h=%f is %f.", a, b, h, ics);
 	}
+	sum += f(a) + f(b);
+	ics = sum * 3 * h / 8.0;
+	printf("\nIntegration between %f and %f when h=%f is %f.", a, b, h, ics);
 
 	return 0;
 }
