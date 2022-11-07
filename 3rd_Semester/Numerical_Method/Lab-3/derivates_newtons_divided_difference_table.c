@@ -28,37 +28,38 @@ int main()
         {
             d[i][j] = (d[i + 1][j - 1] - d[i][j - 1]) / (x[i + j - 1] - x[i]);
         }
-        for (int j = 1; j <= n; j++)
-        {
-            a[j] = d[1][j];
-        }
-        do
-        {
-            printf("\nInput xp where derivative is required: ");
-            scanf("%f", &xp);
-            dif = a[2];
-
-            for (int k = 3; k <= n; k++)
-            {
-                sum = 0.0;
-                for (int i = 1; i <= k - 1; i++)
-                {
-                    p = 1.0;
-                    for (j = 1; j <= k - 1; j++)
-                    {
-                        if (i != j)
-                            p = p * (xp - x[j]);
-                    }
-                    sum = sum + p;
-                }
-                dif = dif + a[k] * sum;
-            }
-
-            printf("\nDerivative at x = %f is %f.", xp, dif);
-            printf("\nDo you want to input another value? (y/n): ");
-            fflush(stdin);
-            scanf("%c", &q);
-        } while (q == 'y');
     }
+    for (int j = 1; j <= n; j++)
+    {
+        a[j] = d[1][j];
+    }
+    do
+    {
+        printf("\nInput xp where derivative is required: ");
+        scanf("%f", &xp);
+        dif = a[2];
+
+        for (int k = 3; k <= n; k++)
+        {
+            sum = 0.0;
+            for (int i = 1; i <= k - 1; i++)
+            {
+                p = 1.0;
+                for (int j = 1; j <= k - 1; j++)
+                {
+                    if (i != j)
+                        p = p * (xp - x[j]);
+                }
+                sum = sum + p;
+            }
+            dif = dif + a[k] * sum;
+        }
+
+        printf("\nDerivative at x = %f is %f.", xp, dif);
+        printf("\nDo you want to input another value? (y/n): ");
+        fflush(stdin);
+        scanf("%c", &q);
+    } while (q == 'y');
+
     return 0;
 }
