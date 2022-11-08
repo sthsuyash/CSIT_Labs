@@ -1,25 +1,25 @@
 # CSIT Labs
 
-Contains all the lab codes necessary for CSIT students, currently in 3rd semester and will be updated.
+_Contains all the lab codes necessary for CSIT students, currently in 3rd semester and will be updated._
 
-## [1st Semester](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester)
+## [1st Semester](/1st_Semester)
 
-- [IIT (Introduction to Information Technology)](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/IIT)
-- [Digital Logics](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/Digital_logics)
-- [C programming](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/C)
-<!-- ## [Physics](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/Physics) -->
+- [IIT (Introduction to Information Technology)](/1st_Semester/IIT)
+- [Digital Logics](/1st_Semester/Digital_logics)
+- [C programming](/1st_Semester/C)
+- [Physics](/1st_Semester/Physics)
 
-## [2nd Semester](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester)
+## [2nd Semester](/2nd_Semester)
 
-- [Assembly Programming](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester/Assembly_programming)
-- [Discrete Structures](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester/DS_lab)
-- [OOP using C++](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester/OOP)
-- [Statistics-I](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester/Statistics-I)
+- [Assembly Programming](/2nd_Semester/Assembly_programming)
+- [Discrete Structures](/2nd_Semester/DS_lab)
+- [OOP using C++](/2nd_Semester/OOP)
+- [Statistics-I](/2nd_Semester/Statistics-I)
 
-## [3rd Semester](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester)
+## [3rd Semester](/3rd_Semester)
 
-- [Statistics-II](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Statistics-II)
-- [Data Structures and Algorithms](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA)
-- [Numerical Method](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Numerical_Method)
-- [Computer Architecture](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Computer_Architecture)
-- [Computer Graphics](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Computer_Graphics)
+- [Statistics-II](/3rd_Semester/Statistics-II)
+- [Data Structures and Algorithms](/3rd_Semester/DSA)
+- [Numerical Method](/3rd_Semester/Numerical_Method)
+- [Computer Architecture](/3rd_Semester/Computer_Architecture)
+- [Computer Graphics](/3rd_Semester/Computer_Graphics)
