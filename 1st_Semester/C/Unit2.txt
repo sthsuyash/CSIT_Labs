@@ -1,0 +1,70 @@
+Tokens:
+	printf("Hello world");
+	-> printf, ( ,"Hello world",), ;
+	
+Semicolons:
+	printf("Hello world");
+	return 0;
+
+Comments:
+	//single line comment
+	/*sadf
+	sdafasdf
+	asdfa*/ multiline comment
+
+Identifiers:
+	start with a-z both uppercase and lowercase or underscore
+	followed by zero or more letters, digits (0-9), underscores
+    Valid indentifiers: 	_num, num1, num_2, largest_number, _1
+    Invalid identifiers: 1num, 34test;
+    
+Keywords:
+	else, long, int, for, continue, break, switch, struct, double, do, char, void,
+	return, main
+	
+Whitespace:
+	space, tab
+	
+
+Datatypes:
+Primitive data types/Basic data types:
+	1. int (Integer -> non decimal values)
+	short (-32768 to 32767),int (-2147483648 to 2147483647), long
+	2. float (Floating point -> decimal values)
+	3. double (decimal value)
+	4. long double (decimal value)
+	5. char 'M', 'F'
+User defined data types:
+Structure, Union
+
+
+Variables:
+Declaration:
+Syntax:
+datatype variable_name;
+
+int _num;
+short num3;
+ long num4;
+float num2;
+double num5;
+long double num6;
+char gender;
+
+Initialization:
+_num = 10;
+num2 = 9.6;  num2 = 100;
+gender = 'M';
+gender = '+';
+
+Variable declaration and variable initialization:
+int num;   ============> int num = 5;
+num = 5;
+
+Constant:
+1. Using #define preprocessor
+   #define PI 3.1415
+2. Using const keyword
+   const float PI = 3.1415
+	
+  
