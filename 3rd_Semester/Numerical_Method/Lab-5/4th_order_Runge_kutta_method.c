@@ -1,11 +1,15 @@
-#include<stdio.h>
-#include<math.h>
+/*** 4th order Runge kutta method ***/
 
-float f(float x, float y){
-    return y-x*x+1;
+#include <stdio.h>
+#include <math.h>
+
+float f(float x, float y)
+{
+    return y - x * x + 1;
 }
 
-int main(){
+int main()
+{
     int n, i;
     float x, y, xp, h, m1, m2, m3, m4;
 
@@ -21,18 +25,18 @@ int main(){
     printf("Input step-size h: ");
     scanf("%f", &h);
 
-    n=(int)((xp-x)/h+0.5);
-    for(i=1; i<=n;i++){
-        m1=f(x,y);
-        m2=f(x+0.5*h, y+0.5*m1*h);
-        m3=f(x+h,y+m3*h);
-        m4=f(x+h,y+m3*h);
-        x+=h;
-        y=y+(m1+2.0*m2+2.0*m3+m4)*h/6.0;
-        printf("Value of y at x = %f is %f.\n",x,y);
-    }
+    n = (int)((xp - x) / h + 0.5);
 
-    return 0;
+    for (i = 1; i <= n; i++)
+    {
+        m1 = f(x, y);
+        m2 = f(x + 0.5 * h, y + 0.5 * m1 * h);
+        m3 = f(x + h, y + m3 * h);
+        m4 = f(x + h, y + m3 * h);
+        x += h;
+        y = y + (m1 + 2.0 * m2 + 2.0 * m3 + m4) * h / 6.0;
+        printf("Value of y at x = %f is %f.\n", x, y);
+    }
 
     return 0;
 }

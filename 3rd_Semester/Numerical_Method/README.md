@@ -26,7 +26,7 @@
   - [Integrating a Function using Composite Simpson's 1/3 Rule](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-3/compositeSimpsons_1By3_Rule.c)
   - [Derivatives using Newton's Divided Differences Table](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-3/derivates_newtons_divided_difference_table.c)
 
-- [Lab 4](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Numerical_Method/Lab-4)
+- ## [Lab 4](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Numerical_Method/Lab-4)
 
   - Solving linear system using :-
 
@@ -36,3 +36,9 @@
     - [Gauss-Seidel Iterative Method](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-4/gauss_seidel.c)
 
   - [Finding Eigen Values and Eigen Vectors using Power Method](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Numerical_Method/Lab-4/eigenValue_and_eigenVector.c)
+
+- ## [Lab 5](/3rd_Semester/Numerical_Method/Lab-5)
+
+  - [Heun's method](/3rd_Semester/Numerical_Method/Lab-5/heuns_method.c)
+  - [Euler's method](/3rd_Semester/Numerical_Method/Lab-5/eulers_method.c)
+  - [4th order Runge Kutta method](/3rd_Semester/Numerical_Method/Lab-5/4th_order_Runge_kutta_method.c)
