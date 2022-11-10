@@ -16,9 +16,9 @@ A queue is an object (an abstract data structure - ADT) that allows the followin
 
 ## Programs:
 
-- [Linear Queue](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab3/linearQueue.cpp)
-- [Circular Queue](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab3/circularQueue.cpp)
-- [Priority Queue](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab3/priorityQueue.cpp)
+- [Linear Queue](/3rd_Semester/DSA/Lab3/linearQueue.cpp)
+- [Circular Queue](/3rd_Semester/DSA/Lab3/circularQueue.cpp)
+- [Priority Queue](/3rd_Semester/DSA/Lab3/priorityQueue.cpp)
 
 ## Working of Linear Queue
 

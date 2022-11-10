@@ -18,8 +18,8 @@ It has one ended operation defined on it and follows LIFO structure (Last In Fir
 
 ## Programs:
 
-- [Stack implementation](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/2_Stack/stack.cpp)
-- [Infix to Prefix Expression](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/2_Stack/infix_to_prefix_expression.cpp)
-- [Infix to Postfix Expression](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/2_Stack/infix_to_postfix_expression.cpp)
-- [Prefix evaluation](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/2_Stack/prefix_evaluation.cpp)
-- [Postfix evaluation](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/2_Stack/postfix_evaluation.cpp)
+- [Stack implementation](/3rd_Semester/DSA/2_Stack/stack.cpp)
+- [Infix to Prefix Expression](/3rd_Semester/DSA/2_Stack/infix_to_prefix_expression.cpp)
+- [Infix to Postfix Expression](/3rd_Semester/DSA/2_Stack/infix_to_postfix_expression.cpp)
+- [Prefix evaluation](/3rd_Semester/DSA/2_Stack/prefix_evaluation.cpp)
+- [Postfix evaluation](/3rd_Semester/DSA/2_Stack/postfix_evaluation.cpp)

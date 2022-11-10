@@ -3,6 +3,8 @@
 #include "../array_functions.h"
 using namespace std;
 
+void insertionSort(int[], int);
+
 // Driver code
 int main()
 {

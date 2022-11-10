@@ -8,10 +8,10 @@ Recursion is a very important concept in computer science.
 
 ## Programs:
 
-- [Factorial](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/factorial.cpp)
-- [Fibonacci](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/fibonacci.cpp)
-- [G.C.D](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/gcd.cpp)
-- [Tower of Hanoi](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/Lab4/towerOfHanoi.cpp)
+- [Factorial](/3rd_Semester/DSA/Lab4/factorial.cpp)
+- [Fibonacci](/3rd_Semester/DSA/Lab4/fibonacci.cpp)
+- [G.C.D](/3rd_Semester/DSA/Lab4/gcd.cpp)
+- [Tower of Hanoi](/3rd_Semester/DSA/Lab4/towerOfHanoi.cpp)
 
 ## Factorial
 

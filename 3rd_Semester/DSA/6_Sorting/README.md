@@ -12,16 +12,16 @@ External sorting: If the input data is such that it cannot be adjusted in the me
 
 1. ## Comparison Sorting
 
-   - [Bubble Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/bubble_sort.cpp)
-   - [Insertion Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/insertion_sort.cpp)
-   - [Selection Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/selection_sort.cpp)
-   - [Shell Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/shell_sort.cpp)
+   - [Bubble Sort](/3rd_Semester/DSA/6_Sorting/bubble_sort.cpp)
+   - [Insertion Sort](/3rd_Semester/DSA/6_Sorting/insertion_sort.cpp)
+   - [Selection Sort](/3rd_Semester/DSA/6_Sorting/selection_sort.cpp)
+   - [Shell Sort](/3rd_Semester/DSA/6_Sorting/shell_sort.cpp)
 
 2. ## Divide and Conquer
 
-   - [Merge Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/merge_sort.cpp)
-   - [Quick Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/quick_sort.cpp)
-   - [Heap Sort](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/DSA/6_Sorting/heap_sort.cpp)
+   - [Merge Sort](/3rd_Semester/DSA/6_Sorting/merge_sort.cpp)
+   - [Quick Sort](/3rd_Semester/DSA/6_Sorting/quick_sort.cpp)
+   - [Heap Sort](/3rd_Semester/DSA/6_Sorting/heap_sort.cpp)
 
 ## Bubble Sort
 
