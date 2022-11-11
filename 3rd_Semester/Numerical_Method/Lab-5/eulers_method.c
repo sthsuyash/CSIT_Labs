@@ -34,7 +34,7 @@ int main()
 		y += dy;
 		printf("\n%d\t%f\t%f\n", i, x, y);
 	}
-	printf("Value of y at x = %f is %f.\n", x, y);
+	printf("Value of y at x = %f is %f.\n", xp, y);
 
 	return 0;
 }

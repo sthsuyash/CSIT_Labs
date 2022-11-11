@@ -35,7 +35,7 @@ int main()
         m4 = f(x + h, y + m3 * h);
         x += h;
         y = y + (m1 + 2.0 * m2 + 2.0 * m3 + m4) * h / 6.0;
-        printf("Value of y at x = %f is %f.\n", x, y);
+        printf("Value of y at x = %f is %f.\n", xp, y);
     }
 
     return 0;
