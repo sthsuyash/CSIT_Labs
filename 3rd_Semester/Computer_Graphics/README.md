@@ -1,4 +1,4 @@
-# All the algorithms and programs for Computer Graphics using C++
+# All the algorithm programs for Computer Graphics using C++
 
 ## How to add graphics.h in dev C++
 
@@ -32,46 +32,56 @@
 
      [Reference](https://gamespec.tech/how-to-add-graphics-in-dev-c/)
 
-## [Moving Car](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/moving_car.cpp)
+## Programs
 
-## [Scan Conversion Algorithm](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Computer_Graphics/Scan_Conversion_Algorithm)
+1. ## [Scan Conversion Algorithm](Scan_Conversion_Algorithm/)
 
 ```README
 The process of representing continuous graphics object as a collection of discrete pixels is known as scan conversion.
 ```
 
-1. Scan Converting a Point and a straight Line:
+- Scan Converting a Point and a straight Line:
 
-   - [Digital Analyzer Algorithm](https://github.com/sthsuyash/C-projects/blob/main/Computer_Graphics/Scan_Conversion_Algorithm/DDA.cpp)
-   - [Bresenham's Line Drawing Algorithm](https://github.com/sthsuyash/C-projects/blob/main/Computer_Graphics/Scan_Conversion_Algorithm/Bresenham.cpp)
-     <br><br>
+  - [Digital Analyzer Algorithm](Scan_Conversion_Algorithm/DDA.cpp)
+  - [Bresenham's Line Drawing Algorithm](Scan_Conversion_Algorithm/Bresenham.cpp)
 
-2. Scan Converting Circle and Ellipse:
-   - [Mid Point Circle Algorithm](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Computer_Graphics/Scan_Conversion_Algorithm/circle.cpp)
-   - [Ellipse Algorithm](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Computer_Graphics/Scan_Conversion_Algorithm/ellipse.cpp)
-     <br><br>
+- Scan Converting Circle and Ellipse:
 
-## [Simulation of 2D transformation](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Computer_Graphics/Simulation_of_2D_transformation)
+  - [Mid Point Circle Algorithm](Scan_Conversion_Algorithm/midpoint-circle.cpp)
+  - [Bresenham Circle Algorithm](Scan_Conversion_Algorithm/bresenham-circle.cpp)
+  - [Ellipse Algorithm](Scan_Conversion_Algorithm/ellipse.cpp)
 
-- [All Menu Driven Program](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Computer_Graphics/Simulation_of_2D_transformation/menuDrivenAll.cpp)
-- [Cohen Sutherland line clipping algorithm](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Computer_Graphics/Simulation_of_2D_transformation/Cohen_Sutherland_Line_Clipping_Algorithm.cpp)
-- [Rotation](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Computer_Graphics/Simulation_of_2D_transformation/rotation.cpp)
-- [Scaling](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Computer_Graphics/Simulation_of_2D_transformation/scaling.cpp)
-- [Shearing](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Computer_Graphics/Simulation_of_2D_transformation/shearing.cpp)
-- [Translation](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Computer_Graphics/Simulation_of_2D_transformation/translation.cpp)
-- [Reflection](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Computer_Graphics/Simulation_of_2D_transformation/reflection.cpp)
+2. ## [2D Geometric Transformations](2D_Geometric_transformations/)
 
-<br><br>
+   - [All Menu Driven Program](2D_Geometric_transformations/menuDrivenAll.cpp)
+   - [Rotation](2D_Geometric_transformations/rotation.cpp)
+   - [Scaling](2D_Geometric_transformations/scaling.cpp)
+   - [Shearing](2D_Geometric_transformations/shearing.cpp)
+   - [Translation](2D_Geometric_transformations/translation.cpp)
+   - [Reflection](2D_Geometric_transformations/reflection.cpp)
+   - [Cohen Sutherland line clipping algorithm](2D_Geometric_transformations/Cohen_Sutherland_Line_Clipping_Algorithm.cpp)
+   - [Window Viewport Mapping](2D_Geometric_transformations/window_viewport_mapping.cpp)
+   - [Composite Transformation](2D_Geometric_transformations/composite_transformation.cpp)
 
-## [Simulation of 3D transformation](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Computer_Graphics/3D_transformation)
+3. ## [3D Geometric transformation](3D_Geometric_transformation/)
 
-- [3D transformation menu driven program](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Computer_Graphics/3D_transformation/3Dmenu_driven.cpp)
+   - [Menu driven program](3D_Geometric_transformation/3Dmenu_driven.cpp)
 
-<br><br>
+4. ## [3D Object Representation](3D_object_representation/)
 
-## [3D Object Representation](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Computer_Graphics/3D_object_representation)
+   - [Beizer Curve](3D_object_representation/beizer_curve.cpp)
+   - [Sphere](3D_object_representation/sphere.cpp)
 
-- [Beizer Curve](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Computer_Graphics/3D_object_representation/beizer_curve.cpp)
-- [Sphere](https://github.com/sthsuyash/CSIT_Labs/blob/main/3rd_Semester/Computer_Graphics/3D_object_representation/sphere.cpp)
+5. ## [Visible Surface Detection](Visible_Surface_Detections/)
 
-<br><br>
+   - [Implementaion of rotation of 3D cube](Visible_Surface_Detections/rotation.cpp)
+
+6. ## [Introduction to OpenGL](OpenGL/)
+
+   - [Event Driven Programming](OpenGL/Event_Driven_Programming.cpp)
+   - [Point](Computer_Graphics/OpenGL/point.cpp)
+   - [Line](Computer_Graphics/OpenGL/line/line.cpp)
+   - [Polygon](Computer_Graphics/OpenGL/polygon.cpp)
+   - [Drawing 3D objects](Computer_Graphics/OpenGL/drawing_3D_objects.cpp)
+
+   - [Color Cube](OpenGL/colorCube/colorCube.cpp)
