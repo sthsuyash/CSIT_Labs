@@ -74,7 +74,7 @@ The process of representing continuous graphics object as a collection of discre
 
 5. ## [Visible Surface Detection](Visible_Surface_Detections/)
 
-   - [Implementaion of rotation of 3D cube](Visible_Surface_Detections/rotation.cpp)
+   - [Implementaion of rotation of 3D cube](Visible_Surface_Detections/rotation_3D_cube.cpp)
 
 6. ## [Introduction to OpenGL](OpenGL/)
 
