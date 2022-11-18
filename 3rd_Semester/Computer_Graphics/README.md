@@ -8,7 +8,9 @@ _for Windows_
 
    - First, download the header files from this [Google drive link](https://drive.google.com/file/d/1ULN_XcrbDkls2U2DlYkNM_yiua5h-_NI/view?usp=sharing) and extract the files.
    - It contains three files:
-     - graphics.h - winbgim.h - libbgi.a.
+     - graphics.h 
+     - winbgim.h 
+     - libbgi.a.
    - You need to copy “graphics.h” and “winbgim.h” into include the directory of Dev-Cpp program resource files. The exact directory address is –
      - C:\Program Files (x86)\Dev-Cpp\MinGW64\include
    - Next, copy “libbgi.a” to lib folder, which should be inside MinGW64. The directory address is –
