@@ -1,41 +1,49 @@
-#include <iostream>
+#include <stdio.h>
 #include <graphics.h>
 #include <math.h>
 
-void p3e(float x, float y, float z)
+void drawEllipse(float x, float y, float z)
 {
     float end = 1000;
     float p = end / (end + z);
     x = 300 - x * p;
     y = 250 + y * p;
-    ellipse(x, y, 0, 360, 3, 1);
+    ellipse(x, y, 270, 360, 2, 1);
 }
 
 int main()
 {
-    int gd = 0, gm, z, x, y, i, r = 150, j, lo, la;
-    initgraph(&gd, &gm, NULL);
-    float rd = 3.1428 / 180, an = 40;
-    for (lo = 0; lo < 100; lo++)
+    int gd = 0, gm;
+    int x, y, z, r = 150, count = 0;
+    initgraph(&gd, &gm, "C:\\TurboC3\\BGI");
+    float radToDeg = M_PI / 180, proj_angle = 315;
+    float i, j;
+    while (true)
     {
-        for (i = 0; i < 180; i += 15)
+        count++;
+        char ch = 248;
+        printf("Figure:%d\nAngle of Projection: %.1f%c\n\n", count, proj_angle, ch);
+        for (i = 0; i < 180; i += 2.5)
         {
-            for (j = 0; j < 360; j += 15)
+            // one complete circle using ellipse
+            for (j = 0; j < 360; j += 0.5)
             {
-                x = r * cos(rd * j) * sin(rd * i);
-                y = r * sin(rd * j) * sin(rd * i);
-                z = r * cos(rd * i);
-                // x rotation
-                y = y * cos(rd * an) - z * sin(rd * an);
-                z = y * sin(rd * an) + z * cos(rd * an);
-                // x=x*cos(rd*an)-y*sin(rd*an);
-                // y=x*sin(rd*an)+y*cos(rd*an);
-                p3e(x, y, z);
+                x = r * cos(radToDeg * j) * sin(radToDeg * i);
+                y = r * sin(radToDeg * j) * sin(radToDeg * i);
+                z = r * cos(radToDeg * i);
+                // rotation
+                y = y * cos(radToDeg * proj_angle) - z * sin(radToDeg * proj_angle);
+                z = y * sin(radToDeg * proj_angle) + z * cos(radToDeg * proj_angle);
+                drawEllipse(x, y, z);
             }
         }
-        delay(200);
+        delay(5);
         cleardevice();
-        an += 1;
+        proj_angle += 90;
+        if (proj_angle > 360)
+        {
+            proj_angle -= 360;
+        }
     }
     getch();
     closegraph();
