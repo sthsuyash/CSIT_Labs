@@ -1,6 +1,8 @@
-# All the algorithm programs for Computer Graphics using C++
+# Computer Graphics
 
 ## How to add graphics.h in dev C++
+
+_for Windows_
 
 1. Add header source files into the Dev C++ directory
 
@@ -36,24 +38,24 @@
 
 1. ## [Scan Conversion Algorithm](Scan_Conversion_Algorithm/)
 
-```README
-The process of representing continuous graphics object as a collection of discrete pixels is known as scan conversion.
-```
+   ```README
+   The process of representing continuous graphics object as a collection of discrete pixels is known as scan conversion.
+   ```
 
-- Scan Converting a Point and a straight Line:
+   - Scan Converting a Point and a straight Line:
 
-  - [Digital Analyzer Algorithm](Scan_Conversion_Algorithm/DDA.cpp)
-  - [Bresenham's Line Drawing Algorithm](Scan_Conversion_Algorithm/Bresenham.cpp)
+     - [Digital Analyzer Algorithm](Scan_Conversion_Algorithm/DDA.cpp)
+     - [Bresenham's Line Drawing Algorithm](Scan_Conversion_Algorithm/Bresenham.cpp)
 
-- Scan Converting Circle and Ellipse:
+   - Scan Converting Circle and Ellipse:
 
-  - [Mid Point Circle Algorithm](Scan_Conversion_Algorithm/midpoint-circle.cpp)
-  - [Bresenham Circle Algorithm](Scan_Conversion_Algorithm/bresenham-circle.cpp)
-  - [Ellipse Algorithm](Scan_Conversion_Algorithm/ellipse.cpp)
+     - [Mid Point Circle Algorithm](Scan_Conversion_Algorithm/midpoint-circle.cpp)
+     - [Bresenham Circle Algorithm](Scan_Conversion_Algorithm/bresenham-circle.cpp)
+     - [Ellipse Algorithm](Scan_Conversion_Algorithm/ellipse.cpp)
 
 2. ## [2D Geometric Transformations](2D_Geometric_transformations/)
 
-   - [All Menu Driven Program](2D_Geometric_transformations/menuDrivenAll.cpp)
+   - [Simulation of 2D Transformation](2D_Geometric_transformations/menuDrivenAll.cpp)
    - [Rotation](2D_Geometric_transformations/rotation.cpp)
    - [Scaling](2D_Geometric_transformations/scaling.cpp)
    - [Shearing](2D_Geometric_transformations/shearing.cpp)
@@ -66,22 +68,26 @@ The process of representing continuous graphics object as a collection of discre
 3. ## [3D Geometric transformation](3D_Geometric_transformation/)
 
    - [Menu driven program](3D_Geometric_transformation/3Dmenu_driven.cpp)
+   - [Moving Car](3D_Geometric_transformation/moving_car.cpp)
 
-4. ## [3D Object Representation](3D_object_representation/)
+4. ## [3D Objects Representation](3D_object_representation/)
 
    - [Beizer Curve](3D_object_representation/beizer_curve.cpp)
    - [Sphere](3D_object_representation/sphere.cpp)
+   - [Polygon Table](3D_object_representation/polygon_table.cpp)
 
 5. ## [Visible Surface Detection](Visible_Surface_Detections/)
 
-   - [Implementaion of rotation of 3D cube ](Visible_Surface_Detections/rotation_3D_cube.cpp)
+   - [Implementaion of rotation of 3D cube](Visible_Surface_Detections/rotation_3D_cube.cpp)
 
 6. ## [Introduction to OpenGL](OpenGL/)
 
-   - [Event Driven Programming](OpenGL/Event_Driven_Programming.cpp)
-   - [Point](Computer_Graphics/OpenGL/point.cpp)
-   - [Line](Computer_Graphics/OpenGL/line/line.cpp)
-   - [Polygon](Computer_Graphics/OpenGL/polygon.cpp)
-   - [Drawing 3D objects](Computer_Graphics/OpenGL/drawing_3D_objects.cpp)
+   _copy the files and make new project for dev for openGL programming_
 
-   - [Color Cube](OpenGL/colorCube/colorCube.cpp)
+   - [Event Driven Programming](OpenGL/event_driven.cpp)
+   - [Point](OpenGL/point.cpp)
+   - [Line](OpenGL/line.cpp)
+   - [Drawing 3D objects](OpenGL/colorCube.cpp)
+   - [Polygon](OpenGL/polygon.cpp)
+     - [Triangle](OpenGL/triangle.cpp)
+     - [Rectangle](OpenGL/rectangle.cpp)
