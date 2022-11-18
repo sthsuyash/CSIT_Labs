@@ -1,11 +1,44 @@
-# Binaries for programs and plugins
-**/**/**/*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-.vscode
+# Ignore all
+*
 
-3rd_Semester/Computer_Graphics/noUse/
+# Unignore all with extensions
+!*.*
 
-3rd_Semester/Statistics-II/ignore/
+# Unignore all dirs
+!*/
+
+### Above combination will ignore all files without extension ###
+
+# Ignore files with extension `.class` & `.sm`
+*.class
+*.sm
+
+# Ignore `bin` dir
+bin/
+# or
+*/bin/*
+
+# Unignore all `.jar` in `bin` dir
+!*/bin/*.jar
+
+# Ignore all `library.jar` in `bin` dir
+*/bin/library.jar
+
+# Ignore a file with extension
+relative/path/to/dir/filename.extension
+
+# Ignore a file without extension
+relative/path/to/dir/anotherfile
+
+
+# # Binaries for programs and plugins
+# **/**/**/*.exe
+# *.exe~
+# *.dll
+# *.so
+# *.dylib
+# .vscode
+
+# 3rd_Semester/Computer_Graphics/noUse/
+
+# 3rd_Semester/Statistics-II/ignore/
