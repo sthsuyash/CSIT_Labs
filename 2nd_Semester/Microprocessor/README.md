@@ -2,6 +2,13 @@
 
 _Assembly Level Language Programming_
 
+Needed files for assembly programming:
+
+- Either use online emulators like [sim8085](https://www.sim8085.com/), or
+- Software links:
+  - [8085 microprocessor emulator download link](https://sourceforge.net/projects/simulator8085/)
+  - [8086 microprocessor emulator download link](https://emu8086-microprocessor-emulator.en.softonic.com/download)
+
 ## [8085 Microprocessor](8085_mp/)
 
 1. [Data Transfer and Instruction Set](8085_mp/Data_transfer_and_Instruction_set/)
