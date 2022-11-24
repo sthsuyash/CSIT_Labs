@@ -11,7 +11,7 @@ _Contains all the lab codes necessary for CSIT students, currently in 3rd semest
 
 ## [2nd Semester](/2nd_Semester)
 
-- [Assembly Programming](/2nd_Semester/Assembly_programming)
+- [Microprocessor](/2nd_Semester/Microprocessor)
 - [Discrete Structures](/2nd_Semester/DS_lab)
 - [OOP using C++](/2nd_Semester/OOP)
 - [Statistics-I](/2nd_Semester/Statistics-I)
