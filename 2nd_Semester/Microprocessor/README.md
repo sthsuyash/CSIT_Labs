@@ -2,7 +2,7 @@
 
 _Assembly Level Language Programming_
 
-## [8085 Microprocessor](/8085_mp/Practice/)
+## [8085 Microprocessor](8085_mp/Practice/)
 
 1. [Data Transfer and Instruction Set](/8085_mp/Data_transfer_and_Instruction_set/)
 2. [Arithmetic and Logical Instruction Set](/8085_mp/Arithmetic_and_Logical_Instruction_set/)
