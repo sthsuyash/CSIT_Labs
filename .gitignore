@@ -30,14 +30,12 @@ relative/path/to/dir/filename.extension
 # Ignore a file without extension
 relative/path/to/dir/anotherfile
 
-
 # # Binaries for programs and plugins
-# **/**/**/*.exe
-# *.exe~
-# *.dll
-# *.so
-# *.dylib
-# .vscode
+*.exe
+*.dll
+*.so
+*.dylib
+.vscode
 
 # 3rd_Semester/Computer_Graphics/noUse/
 
