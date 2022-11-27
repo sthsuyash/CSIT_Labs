@@ -1,8 +1,31 @@
-// C++ implementation of Shell Sort
+/* C++ implementation of Shell Sort */
 
 #include <iostream>
 #include "../array_functions.h"
 using namespace std;
+
+int shellSort(int[], int);
+
+int main()
+{
+    int n;
+
+    cout << "Enter the size of the array: ";
+    cin >> n;
+
+    int arr[n];
+    input_array_elements(arr, n);
+
+    cout << "Array before sorting: " << endl;
+    printArray(arr, n);
+
+    shellSort(arr, n);
+
+    cout << "Array after sorting: " << endl;
+    printArray(arr, n);
+
+    return 0;
+}
 
 /* function to sort arr using shellSort */
 int shellSort(int arr[], int n)
@@ -28,26 +51,5 @@ int shellSort(int arr[], int n)
             arr[j] = temp;
         }
     }
-    return 0;
-}
-
-int main()
-{
-    int n;
-
-    cout << "Enter the size of the array: ";
-    cin >> n;
-
-    int arr[n];
-    input_array_elements(arr, n);
-
-    cout << "Array before sorting: " << endl;
-    printArray(arr, n);
-
-    shellSort(arr, n);
-
-    cout << "Array after sorting: " << endl;
-    printArray(arr, n);
-
     return 0;
 }
