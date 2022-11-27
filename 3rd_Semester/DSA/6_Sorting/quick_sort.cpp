@@ -1,4 +1,5 @@
 /* C++ implementation of QuickSort */
+
 #include <iostream>
 #include "../array_functions.h"
 using namespace std;
@@ -12,14 +13,21 @@ int main()
     int n;
     cout << "Enter the size of the array: ";
     cin >> n;
+
     int arr[n];
 
     input_array_elements(arr, n);
 
+    // before sorting
+    cout << "Unsorted array: " << endl;
+    printArray(arr, n);
+
     quickSort(arr, 0, n - 1);
+
+    // after sort
     cout << "Sorted array: \n";
     printArray(arr, n);
-    
+
     return 0;
 }
 
