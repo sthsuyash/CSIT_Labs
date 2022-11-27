@@ -1,4 +1,5 @@
-// C++ program for implementation of Bubble sort
+/* C++ implementation of Bubble sort */
+
 #include <iostream>
 #include "../array_functions.h"
 using namespace std;
@@ -17,7 +18,7 @@ int main()
     input_array_elements(arr, n);
 
     // before sorting
-    cout << "Unsorted array: ";
+    cout << "Unsorted array: " << endl;
     printArray(arr, n);
 
     // call function to sort array
