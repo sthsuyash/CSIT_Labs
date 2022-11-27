@@ -1,4 +1,5 @@
-// C++ program for implementation of selection sort
+/* C++ implementation of Selection sort*/
+
 #include <iostream>
 #include "../array_functions.h"
 using namespace std;
@@ -16,7 +17,7 @@ int main()
     input_array_elements(arr, n); // call function to input array elements
 
     // before sorting
-    cout << "Unsorted array: ";
+    cout << "Unsorted array: " << endl;
     printArray(arr, n);
 
     // call function to sort array
