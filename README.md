@@ -1,6 +1,8 @@
 # CSIT Labs
 
-_Contains all the lab codes necessary for CSIT students, currently in 3rd semester and will be updated._
+This repository contains all the lab codes necessary for CSIT students, currently in 3rd semester and will be updated.
+
+- Updated course: 2074-New Course
 
 ## [1st Semester](/1st_Semester)
 
@@ -23,3 +25,21 @@ _Contains all the lab codes necessary for CSIT students, currently in 3rd semest
 - [Numerical Method](/3rd_Semester/Numerical_Method)
 - [Computer Architecture](/3rd_Semester/Computer_Architecture)
 - [Computer Graphics](/3rd_Semester/Computer_Graphics)
+
+## Contributing
+
+- Fork it `git clone https://github.com/sthsuyash/CSIT_Labs/`
+
+- Create your feature branch: `git checkout -b <branch-name>`
+
+- Add changes
+
+- Create Pull Request
+
+## License
+
+[The Unlicense](/License)
+
+## Author
+
+Suyash Shrestha
