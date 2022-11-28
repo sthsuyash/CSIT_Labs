@@ -28,12 +28,9 @@ This repository contains all the lab codes necessary for CSIT students, currentl
 
 ## Contributing
 
-- Fork it `git clone https://github.com/sthsuyash/CSIT_Labs/`
-
+- Fork it.
 - Create your feature branch: `git checkout -b <branch-name>`
-
 - Add changes
-
 - Create Pull Request
 
 ## License
