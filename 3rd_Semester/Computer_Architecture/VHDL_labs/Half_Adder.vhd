@@ -1,27 +1,26 @@
--- VHDL code for AND gate
+-- VHDL code for Half Adder
 
 -- Header file declaration
 
-Half adder
-library ieee;
-use ieee.std_logic_1164.all;
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
 
 -- Entity declaration
 
-entity half_adder is
-  port (
-    input_1    : in  std_logic;
-    input_2    : in  std_logic;
-    sum        : out std_logic;
-    carry      : out std_logic
+ENTITY half_adder IS
+    PORT (
+        input_1 : IN STD_LOGIC;
+        input_2 : IN STD_LOGIC;
+        sum : OUT STD_LOGIC;
+        carry : OUT STD_LOGIC
     );
-end half_adder;
+END half_adder;
 
 -- Dataflow Modelling Style
 -- Architecture declaration
 
-architecture rtl of half_adder is
-begin
-  carry  <= input_1 and input_2;
-  sum  <= input_1 xor input_2;
-end rtl;
+ARCHITECTURE rtl OF half_adder IS
+BEGIN
+    carry <= input_1 AND input_2;
+    sum <= input_1 XOR input_2;
+END rtl;
