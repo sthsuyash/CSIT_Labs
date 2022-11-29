@@ -36,12 +36,13 @@
   - [Gray Code to Binary](VHDL_labs/Gray_code_to_Binary.vhd)
   - [Binary to Excess 3 code](VHDL_labs/Binary_to_XS_3_code.vhd)
   - [D-flip flop](VHDL_labs/D_flip_flop.vhd)
-  
+
     ![D flip flop](VHDL_labs/images/D-flip-flop.png)
   - [Program to implement Multiplier using VHDL](VHDL_labs/Multiplier_using_VHDL.vhd)
   - [32 x 8 RAM](VHDL_labs/32x8_RAM.vhd)
 
     ![32 x 8 RAM](VHDL_labs/images/32x8_RAM.png)
+    
     Output:
 
     ![32 x 8 RAM output](VHDL_labs/images/32x8_RAM_output.png)
