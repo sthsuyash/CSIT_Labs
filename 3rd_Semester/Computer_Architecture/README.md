@@ -24,6 +24,7 @@
   - [Parity Generator](VHDL_labs/Parity_Generator.vhd)
   - [Parity Checker](VHDL_labs/Parity_Checker.vhd)
   - [4-bit adder-subtractor](VHDL_labs/4_bit_adder_subtractor.vhd)
+
     ![4-bit adder-subtractor](VHDL_labs/images/4_bit_adder_subtractor.png)
   - [Signed Numbers](VHDL_labs/Signed_numbers.vhd)
   - [Parallel IN Parallel OUT](VHDL_labs/Parallel_IN_Parallel_OUT.vhd)
@@ -35,13 +36,17 @@
   - [Gray Code to Binary](VHDL_labs/Gray_code_to_Binary.vhd)
   - [Binary to Excess 3 code](VHDL_labs/Binary_to_XS_3_code.vhd)
   - [D-flip flop](VHDL_labs/D_flip_flop.vhd)
+  
     ![D flip flop](VHDL_labs/images/D-flip-flop.png)
   - [Program to implement Multiplier using VHDL](VHDL_labs/Multiplier_using_VHDL.vhd)
   - [32 x 8 RAM](VHDL_labs/32x8_RAM.vhd)
+
     ![32 x 8 RAM](VHDL_labs/images/32x8_RAM.png)
     Output:
+
     ![32 x 8 RAM output](VHDL_labs/images/32x8_RAM_output.png)
   - [Implementation of ROM](VHDL_labs/ROM.vhd)
+
     ![ROM](VHDL_labs/images/ROM.png)
 
 ## References
