@@ -57,10 +57,9 @@
 
    - [AVL Tree](8_Trees_and_Graphs/AVL_tree.cpp)
    - [Binary Search Tree](8_Trees_and_Graphs/binary_search_tree.cpp)
-   - [Kruskal's Algorithm](8_Trees_and_Graphs/Kruskal's_algorithm.cpp)
-   - [Prim's Algorithm](8_Trees_and_Graphs/Prim's_algorithm.cpp)
-   - [Dijkstra's Algorithm](8_Trees_and_Graphs/Dijkstra's_algorithm.cpp)
+   - [Kruskal's Algorithm](8_Trees_and_Graphs/Kruskal_algorithm.cpp)
+   - [Prim's Algorithm](8_Trees_and_Graphs/Prim_algorithm.cpp)
+   - [Dijkstra's Algorithm](8_Trees_and_Graphs/Dijkstra_algorithm.cpp)
    - [Binary Tree](8_Trees_and_Graphs/binary_tree.cpp)
-   - [Graph](8_Trees_and_Graphs/graph.cpp)
    - [Breadth First Search](8_Trees_and_Graphs/breadthFirstSearch.cpp)
    - [Depth First Search](8_Trees_and_Graphs/depthFirstSearch.cpp)
