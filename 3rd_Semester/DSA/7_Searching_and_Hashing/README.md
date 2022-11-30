@@ -11,8 +11,6 @@
 
    - [Hashing](hashing.cpp)
 
-3. [Binary Search Tree](binary_search_tree.cpp)
-
 ## Searching
 
 Searching is the process of finding a particular item in a collection of items. Every item is called a key and the process of finding a key is called searching.
