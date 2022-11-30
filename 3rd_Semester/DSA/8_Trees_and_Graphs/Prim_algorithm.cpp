@@ -44,8 +44,7 @@ int main()
     int y; //  col number
 
     // print for edge and weight
-    cout << "Edge   : "
-         << "Weight";
+    cout << "Edge   : Weight";
     cout << endl;
 
     while (no_edge < V - 1)

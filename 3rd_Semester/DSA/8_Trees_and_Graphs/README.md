@@ -82,7 +82,7 @@ There are two basic operations that you can perform on a binary search tree:
 
    2. **Case II**:
 
-   In the second case, the node to be deleted lies has a single child node. In such a case follow the steps below:
+   In the second case, the node to be deleted has a single child node. In such a case follow the steps below:
 
    - Replace that node with its child node.
    - Remove the child node from its original position.
@@ -204,6 +204,32 @@ Dijkstra's Algorithm works on the basis that any subpath B -> D of the shortest 
 Djikstra used this property in the opposite direction i.e we overestimate the distance of each vertex from the starting vertex. Then we visit each node and its neighbors to find the shortest subpath to those neighbors.
 
 The algorithm uses a greedy approach in the sense that we find the next best solution hoping that the end result is the best solution for the whole problem.
+
+- Algorithm
+
+1. Initialize the distance of all vertices from the starting vertex to infinity.
+2. Set the distance of the starting vertex to 0.
+3. Find the vertex with the minimum distance from the starting vertex.
+4. Update the distance of all the neighbors of the vertex found in step 3.
+5. Repeat steps 3 and 4 until all the vertices are visited.
+
+```c
+    function dijkstra(G, S)
+    for each vertex V in G
+        distance[V] <- infinite
+        previous[V] <- NULL
+        If V != S, add V to Priority Queue Q
+    distance[S] <- 0
+
+    while Q IS NOT EMPTY
+        U <- Extract MIN from Q
+        for each unvisited neighbour V of U
+            tempDistance <- distance[U] + edge_weight(U, V)
+            if tempDistance < distance[V]
+                distance[V] <- tempDistance
+                previous[V] <- U
+    return distance[], previous[]
+```
 
 ## Reference
 

@@ -3,6 +3,7 @@
 ```README
 Sorting is the process of arranging data into meaningful order so that you can analyze it more effectively.
 ```
+
 Internal sorting: If the input data is such that it can be adjusted in the main memory at once, it is called internal sorting.
 
 External sorting: If the input data is such that it cannot be adjusted in the memory entirely at once, it needs to be stored in a hard disk, floppy disk, or any other storage device.
@@ -121,7 +122,7 @@ Shell sort is mainly a variation of Insertion Sort.The idea of ShellSort is to a
       End ShellSort      
   ```
   
-- Time Complexity: O(N^2) 
+- Time Complexity: O(N^2)
 - Auxiliary Space: O(1)
 
 ## Merge Sort
@@ -150,7 +151,7 @@ Step 3: perform merge function.
 Step 4: Stop
 ```
 
-- Time Complexity: O(N*log(N)) 
+- Time Complexity: O(N*log(N))
 - Auxiliary Space: O(N)
 
 ## Quick Sort
@@ -172,7 +173,7 @@ QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and pa
    }  
 ```
 
-- Time Complexity: O(N^2) 
+- Time Complexity: O(N^2)
 - Auxiliary Space: O(n*logn)
 
 ## Heap Sort
@@ -195,7 +196,7 @@ Heap Sort is a comparison based sorting technique based on Binary Heap data stru
    End  
   ```
   
-- Time Complexity: O(n log(n)) 
+- Time Complexity: O(n log(n))
 - Auxiliary Space: O(1)
 
 ## References

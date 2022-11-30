@@ -27,7 +27,7 @@ public:
 int main()
 {
     Graph g(6);
-    
+
     g.AddWeightedEdge(0, 1, 4);
     g.AddWeightedEdge(0, 2, 4);
     g.AddWeightedEdge(1, 2, 2);
@@ -103,8 +103,7 @@ void Graph::kruskal()
 
 void Graph::print()
 {
-    cout << "Edge   : "
-         << "Weight" << endl;
+    cout << "Edge   : Weight" << endl;
     for (int i = 0; i < T.size(); i++)
     {
         cout << T[i].second.first << " -> " << T[i].second.second << " : "
