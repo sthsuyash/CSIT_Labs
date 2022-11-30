@@ -63,3 +63,4 @@
    - [Binary Tree](8_Trees_and_Graphs/binary_tree.cpp)
    - [Breadth First Search](8_Trees_and_Graphs/breadthFirstSearch.cpp)
    - [Depth First Search](8_Trees_and_Graphs/depthFirstSearch.cpp)
+   - [Huffman Coding](8_Trees_and_Graphs/Huffman_Coding.cpp)
