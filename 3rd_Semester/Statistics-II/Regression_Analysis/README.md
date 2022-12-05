@@ -54,6 +54,6 @@ Qn) A developer of food for pig wish to determine what relationship exists among
 
 - Required Output:
 
-  [Output site](https://sthsuyash.github.io/regression-analysis-output/)
+  [Output site](https://regression-analysis-output.netlify.app/)
 
   [Output](assets/Output1.spv) to open in SPSS.
