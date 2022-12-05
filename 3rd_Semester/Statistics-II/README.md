@@ -12,6 +12,10 @@
 - [Two Sample mean](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Statistics-II/Two_sample_mean)
 - [Paired t test](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Statistics-II/Paired_t_test)
 
+## Chapter 4
+
+- [Regression Analysis](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Statistics-II/Regression_Analysis)
+
 ## Chapter 5
 
 - [CRD](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Statistics-II/CRD)
