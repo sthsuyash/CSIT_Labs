@@ -4,8 +4,10 @@
 
 ## Steps
 
-_for example of data set:_<br/>
-**height :**<br/>
+_for example of data set:_
+
+**height :**
+
 78, 55, 68, 48, 65, 76, 57, 55, 65, 75, 51, 61, 68, 67, 76
 
 - In the variable view, add the required variable name with specific details.
@@ -14,11 +16,11 @@ _for example of data set:_<br/>
 
 - Goto data view and add the given data.
 
-- Click on **Analyze** tab, **Compare Means** and **One-Sample T test**.
+- Click on **Analyze** tab > **Compare Means** > **One-Sample T test**.
 
   ![Step](assets/step.jpg)
 
-- Add the required variable in **Dependent List** and click **Paste** or **OK**.
+- Add the required variable in **Test Variable(s)** and click **Paste** or **OK**.
 
   ![Dependent List](assets/dependentList.jpg)
 
