@@ -24,11 +24,11 @@ Is there any significant **difference between the mean** yields? Use 5% level of
 
   ![Data view](assets/data.jpg)
 
-- Click on **Analyze** tab, **Compare Means** and **Independent-Samples T test**.
+- Click on **Analyze** tab > **Compare Means** > **Independent-Samples T test**.
 
   ![Step](assets/step.jpg)
 
-- Add the required variable in **Dependent List** and click **Paste** or **OK**.
+- Add the required variable in **Test Variable(s)** and click **Paste** or **OK**.
 
   ![Dependent List](assets/dependentList.jpg)
 
