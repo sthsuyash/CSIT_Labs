@@ -2,8 +2,10 @@
 
 ## Steps
 
-_for example of data set:_<br/>
-__height :__<br/>
+_for example of data set:_
+
+**height :**
+
 78, 55, 68, 48, 65, 76, 57, 55, 65, 75, 51, 61, 68, 67, 76,
 78, 71, 56, 57, 67, 58, 51, 50, 58, 50, 77, 55, 48, 70, 55, 58,
 70, 56, 52, 74, 61, 69, 76, 61, 68, 78, 56, 78, 57, 66, 66, 74,
@@ -15,11 +17,11 @@ __height :__<br/>
 
 - Goto data view and add the given data.
 
-- Click on __Analyze__ tab, __Descriptive Statistics__ and __Explore__.
+- Click on **Analyze** tab > **Descriptive Statistics** > **Explore**.
 
   ![Step](assets/step.jpg)
 
-- Add the required variable in __Dependent List__ and click __Paste__ or __OK__.
+- Add the required variable in **Dependent List** and click **Paste** or **OK**.
 
   ![Dependent List](assets/dependentList.jpg)
 
