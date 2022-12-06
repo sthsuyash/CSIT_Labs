@@ -37,7 +37,7 @@
 
 ## Chapter 4
 
-- [Regression Analysis](/Regression_Analysis)
+- [Regression Analysis](Regression_Analysis/README.md)
 
 ## Chapter 5
 
