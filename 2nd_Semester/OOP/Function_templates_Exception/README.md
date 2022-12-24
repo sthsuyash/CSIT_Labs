@@ -1,7 +1,7 @@
 # Standard Exceptions in C++
 
 - There are some standard exceptions in C++ under <"exception"> which we can use in our programs.
-  -hey are arranged in a parent-child class hierarchy which is depicted below:
+- They are arranged in a parent-child class hierarchy which is depicted below:
 - std::exception - Parent class of all the standard C++ exceptions.
 - logic_error - Exception happens in the internal logical of a program.
 - domain_error - Exception due to use of invalid domain.
