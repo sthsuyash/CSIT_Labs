@@ -8,7 +8,6 @@
   - domain_error - Exception due to use of invalid domain.
   - invalid argument - Exception due to invalid argument.
   - out_of_range - Exception due to out of range i.e. size requirement exceeds allocation.
-
 - length_error - Exception due to length error.
 - runtime_error - Exception happens during runtime.
 - range_error - Exception due to range errors in internal computations.
