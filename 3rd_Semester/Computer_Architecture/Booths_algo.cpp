@@ -135,7 +135,7 @@ void arshift()
     }
 }
 
-void main()
+int main()
 {
     int i, q = 0;
     printf("\t\tBOOTH'S MULTIPLICATION ALGORITHM");
