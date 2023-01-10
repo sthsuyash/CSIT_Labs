@@ -12,7 +12,6 @@ int main()
     cout << "Enter a valid binary number: ";
     cin >> bin;
     len = bin.length();
-    temp = bin;
 
     int count = 0;
     while (count != len)
@@ -38,6 +37,7 @@ int main()
         }
     }
     ones = bin;
+    temp = ones;
 
     bin = temp;
     // 2's complement
