@@ -57,7 +57,7 @@ int main()
     twos = bin;
 
     cout << "The 1s complement of the entered number is: " << ones << endl;
-    cout << "The 1s complement of the entered number is: " << twos << endl;
+    cout << "The 2s complement of the entered number is: " << twos << endl;
 
     return 0;
 }
