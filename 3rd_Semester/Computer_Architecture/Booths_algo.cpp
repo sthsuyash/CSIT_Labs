@@ -12,66 +12,65 @@ void binary()
     a1 = fabs(a);
     b1 = fabs(b);
     int r, r2, i, temp;
+
     for (i = 0; i < 5; i++)
     {
         r = a1 % 2;
         a1 = a1 / 2;
         r2 = b1 % 2;
         b1 = b1 / 2;
+
         anum[i] = r;
         anumcp[i] = r;
         bnum[i] = r2;
+
         if (r2 == 0)
-        {
             bcomp[i] = 1;
-        }
         if (r == 0)
-        {
             acomp[i] = 1;
-        }
     }
+
     // part for two's complementing
     c = 0;
     for (i = 0; i < 5; i++)
     {
         res[i] = com[i] + bcomp[i] + c;
         if (res[i] >= 2)
-        {
             c = 1;
-        }
         else
             c = 0;
+
         res[i] = res[i] % 2;
     }
+
     for (i = 4; i >= 0; i--)
-    {
         bcomp[i] = res[i];
-    }
+
     // in case of negative inputs
     if (a < 0)
     {
         c = 0;
         for (i = 4; i >= 0; i--)
-        {
             res[i] = 0;
-        }
+
         for (i = 0; i < 5; i++)
         {
             res[i] = com[i] + acomp[i] + c;
             if (res[i] >= 2)
-            {
                 c = 1;
-            }
             else
                 c = 0;
+
             res[i] = res[i] % 2;
         }
+
         for (i = 4; i >= 0; i--)
         {
             anum[i] = res[i];
             anumcp[i] = res[i];
         }
     }
+
     if (b < 0)
     {
         for (i = 0; i < 5; i++)
@@ -82,53 +81,53 @@ void binary()
         }
     }
 }
+
 void add(int num[])
 {
     int i;
     c = 0;
+
     for (i = 0; i < 5; i++)
     {
         res[i] = pro[i] + num[i] + c;
         if (res[i] >= 2)
-        {
             c = 1;
-        }
         else
-        {
             c = 0;
-        }
+
         res[i] = res[i] % 2;
     }
+
     for (i = 4; i >= 0; i--)
     {
         pro[i] = res[i];
         printf("%d", pro[i]);
     }
-    printf(":");
+    printf(" : ");
     for (i = 4; i >= 0; i--)
-    {
         printf("%d", anumcp[i]);
-    }
 }
+
+// for arithmetic shift right
 void arshift()
-{ // for arithmetic shift right
+{
     int temp = pro[4], temp2 = pro[0], i;
+
+    // shift the MSB of product
     for (i = 1; i < 5; i++)
-    { // shift the MSB of product
         pro[i - 1] = pro[i];
-    }
+
     pro[4] = temp;
     for (i = 1; i < 5; i++)
-    { // shift the LSB of product
+        // shift the LSB of product
         anumcp[i - 1] = anumcp[i];
-    }
+
     anumcp[4] = temp2;
     printf("\nAR-SHIFT: "); // display together
     for (i = 4; i >= 0; i--)
-    {
         printf("%d", pro[i]);
-    }
-    printf(":");
+
+    printf(" : ");
     for (i = 4; i >= 0; i--)
     {
         printf("%d", anumcp[i]);
@@ -195,7 +194,7 @@ int main()
         }
     }
 
-    printf("\nProduct is = ");
+    printf("\nProduct: ");
     for (i = 4; i >= 0; i--)
     {
         printf("%d", pro[i]);
