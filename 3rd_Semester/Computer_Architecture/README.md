@@ -28,8 +28,9 @@
     ![4-bit adder-subtractor](VHDL_labs/images/4_bit_adder_subtractor.png)
   - [Signed Numbers](VHDL_labs/Signed_numbers.vhd)
   - [Parallel IN Parallel OUT](VHDL_labs/Parallel_IN_Parallel_OUT.vhd)
-  - [Shifter Design in VHDL](VHDL_labs/Shifter.vhd)
-    ![Shifter](VHDL_labs/images/Shifter.png)
+  - [Shifter Design in VHDL](VHDL_labs/Shifter_Design_in_VHDL.vhd)
+
+    ![Shifter](VHDL_labs/images/Shifter_Design_in_VHDL.png))
   - [Comparator](VHDL_labs/Comparator.vhd)
   - [ROM 32x8](VHDL_labs/ROM_32x8.vhd)
   - [Binary to Gray Code Converter](VHDL_labs/Binary_to_Gray_Code.vhd)
@@ -46,7 +47,7 @@
     Output:
 
     ![32 x 8 RAM output](VHDL_labs/images/32x8_RAM_output.png)
-  - [Implementation of ROM](VHDL_labs/ROM.vhd)
+  - [Implementation of ROM](VHDL_labs/Implementation_of_ROM.vhd)
 
     ![ROM](VHDL_labs/images/ROM.png)
 
