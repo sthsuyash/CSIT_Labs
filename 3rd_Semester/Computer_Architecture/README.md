@@ -47,7 +47,7 @@
     Output:
 
     ![32 x 8 RAM output](VHDL_labs/images/32x8_RAM_output.png)
-  - [Implementation of ROM](VHDL_labs/ROM.vhd)
+  - [Implementation of ROM](VHDL_labs/Implementation_of_ROM.vhd)
 
     ![ROM](VHDL_labs/images/ROM.png)
 
