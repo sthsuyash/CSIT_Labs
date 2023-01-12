@@ -12,6 +12,16 @@ Needed files for assembly programming:
 ## [8085 Microprocessor](8085_mp/)
 
 1. [Data Transfer and Instruction Set](8085_mp/Data_transfer_and_Instruction_set/)
+
+   - [Load register with data](8085_mp/Data_transfer_and_Instruction_set/load_reg_with_data.asm)
+   - [Load register with data and copy content of this memory location to register C](8085_mp/Data_transfer_and_Instruction_set/load_regD_copy_to_regC.asm)
+   - [Load content of memory location to register](8085_mp/Data_transfer_and_Instruction_set/load_content_of_mem0000H_to_regB.asm)
+   - [Store content of register to memory location](8085_mp/Data_transfer_and_Instruction_set/store_content%2Bof_regC_to_mem0000H.asm)
+   - [Input data from port address and out through port address](8085_mp/Data_transfer_and_Instruction_set/input_data_from_port_address_01H_and_out_through_port_address_02H.asm)
+   - [Display content of memory location into port address](8085_mp/Data_transfer_and_Instruction_set/display_content_of_mem4000H_into_port_01H.asm)
+   - [Swap contents of register B and C](8085_mp/Data_transfer_and_Instruction_set/swap_contents_of_regB_C.asm)
+   - [Swap contents of memory location](8085_mp/Data_transfer_and_Instruction_set/swap_contents_of_memory_location.asm)
+
 2. [Arithmetic and Logical Instruction Set](8085_mp/Arithmetic_and_Logical_Instruction_set/)
 3. [Branching Instruction Set](8085_mp/Branching_Instruction_set/)
 4. [Rotate Instruction Set](8085_mp/Rotate_Instruction_set/)
