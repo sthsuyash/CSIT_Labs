@@ -96,9 +96,9 @@ int main()
 {
     int i;
     cout << "RESTORING DIVISION" << endl
-         << endl;
-    cout << "Enter two nubmers to divide" << endl;
-    cout << "Both numbers should be less than 16" << endl
+         << endl
+         << "Enter two numbers to divide" << endl
+         << "Both numbers should be less than 16" << endl
          << endl;
 
     do
