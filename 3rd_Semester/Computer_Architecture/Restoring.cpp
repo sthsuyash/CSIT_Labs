@@ -1,347 +1,182 @@
-/* C Program for the implentation of Restoring Division
- */
+/* C++ Program for the implentation of Restoring Division */
+
 #include <iostream>
 #include <math.h>
 using namespace std;
 
-int getsize(int x)
+int a = 0, b = 0, c = 0, com[5] = {1, 0, 0, 0, 0}, s = 0;
+int anum[5] = {0}, bnum[5] = {0}, anumcp[5] = {0};
+int acomp[5] = {0}, bcomp[5] = {0}, rem[5] = {0}, quo[5] = {0}, res[5] = {0};
+
+void binary()
 {
-    int c;
-    if (x <= 1)
-        c = 2;
-    else if (x < 4)
-        c = 2;
-    else if (x < 8)
-        c = 3;
-    else if (x < 16)
-        c = 4;
-    else if (x < 32)
-        c = 5;
-    else if (x < 64)
-        c = 6;
-    else if (x < 128)
-        c = 7;
-    else if (x < 256)
-        c = 8;
-    else if (x < 512)
-        c = 9;
-    return c;
+    a = fabs(a);
+    b = fabs(b);
+    int r, r2, i, temp;
+
+    for (i = 0; i < 5; i++)
+    {
+        r = a % 2;
+        a = a / 2;
+        r2 = b % 2;
+        b = b / 2;
+        anum[i] = r;
+        anumcp[i] = r;
+        bnum[i] = r2;
+
+        if (r2 == 0)
+            bcomp[i] = 1;
+        if (r == 0)
+            acomp[i] = 1;
+    }
+    c = 0;
+
+    for (i = 0; i < 5; i++)
+    {
+        res[i] = com[i] + bcomp[i] + c;
+        if (res[i] >= 2)
+            c = 1;
+        else
+            c = 0;
+        res[i] = res[i] % 2;
+    }
+
+    for (i = 4; i >= 0; i--)
+        bcomp[i] = res[i];
+}
+
+void add(int num[])
+{
+    int i, c = 0;
+
+    for (i = 0; i < 5; i++)
+    {
+        res[i] = rem[i] + num[i] + c;
+        if (res[i] >= 2)
+            c = 1;
+        else
+            c = 0;
+        res[i] = res[i] % 2;
+    }
+
+    for (i = 4; i >= 0; i--)
+    {
+        rem[i] = res[i];
+        cout << rem[i];
+    }
+    cout << " : ";
+
+    for (i = 4; i >= 0; i--)
+    {
+        cout << anumcp[i];
+    }
+}
+
+void shl()
+{
+    int i;
+    for (i = 4; i > 0; i--)
+        rem[i] = rem[i - 1];
+    rem[0] = anumcp[4];
+
+    for (i = 4; i > 0; i--)
+        anumcp[i] = anumcp[i - 1];
+    anumcp[0] = 0;
+    cout << "\nSHIFT LEFT: ";
+
+    for (i = 4; i >= 0; i--)
+        cout << rem[i];
+    cout << " : ";
+
+    for (i = 4; i >= 0; i--)
+        cout << anumcp[i];
 }
 
 int main()
 {
-    int B, Q, Z, M, c, c1, e, f, g, h, i, j, x, y, ch, in, S, G, P;
-    int a[24], b[12], b1[12], q[12], carry = 0, count = 0;
-    char option;
-    long num;
+    int i;
+    cout << "RESTORING DIVISION" << endl
+         << endl;
+    cout << "Enter two nubmers to divide" << endl;
+    cout << "Both numbers should be less than 16" << endl
+         << endl;
 
     do
     {
-        cout << " \n\n -------------------------------------------------------\n";
-        cout << "¦\t\tRESTORING PROGRAM FOR DIVISION\t\t¦\n";
-        cout << " -------------------------------------------------------\n\n";
+        cout << "Enter the dividend: ";
+        cin >> a;
+        cout << "Enter the divisor: ";
+        cin >> b;
+    } while (a >= 16 || b >= 16);
 
-        cout << "Enter Divident\t: ";
-        cin >> Q;
-        y = getsize(Q);
+    cout << endl
+         << "Expected Quotient: " << a / b << endl;
+    cout << "Expected Remainder: " << a % b << endl;
 
-        cout << "Enter Divisor\t: ";
-        cin >> M;
-        x = getsize(M);
+    if (pow(a, b) < 0)
+        s = 1;
+    binary();
 
-        Z = max(x, y);
+    cout << endl
+         << endl
+         << "Unsigned Binary Equivalents are: " << endl;
 
-        cout << "\nTOTAL BITS CONSIDERED FOR RESULT =>  " << 2 * Z + 1;
+    cout << "A: ";
+    for (i = 4; i >= 0; i--)
+        cout << anum[i];
 
-        cout << "\nINITIALLY A IS RESET TO ZERO: ";
-        for (i = 0; i < Z; i++)
+    cout << endl
+         << "B: ";
+    for (i = 4; i >= 0; i--)
+        cout << bnum[i];
+
+    cout << endl
+         << "B'+1: ";
+    for (i = 4; i >= 0; i--)
+        cout << bcomp[i];
+
+    cout << endl
+         << endl
+         << "-->";
+    shl();
+
+    for (i = 0; i < 5; i++)
+    {
+        cout << endl
+             << "-->";
+        cout << endl
+             << "SUB B: ";
+        add(bcomp);
+
+        if (rem[4] == 1)
         {
-            a[i] = 0;
-            cout << a[i];
+            cout << endl
+                 << "--> RESTORE" << endl
+                 << "ADD B: ";
+            anumcp[0] = 0;
+            add(bnum);
         }
-
-        for (i = Z; i >= 0; i--)
+        else
         {
-            b1[i] = b[i] = M % 2;
-            M = M / 2;
-            b1[i] = 1 - b1[i];
+            anumcp[0] = 1;
         }
-        carry = 1;
-        for (i = Z; i >= 0; i--)
+        if (i < 4)
         {
-            c1 = b1[i] ^ carry;
-            carry = b1[i] && carry;
-            b1[i] = c1;
+            shl();
         }
-        for (i = 2 * Z; i > Z; i--)
-        {
-            a[i] = Q % 2;
-            Q = Q / 2;
-        }
-
-        cout << "\n\n\tDivisor\t\t(M)\t: ";
-        for (i = 0; i <= Z; i++)
-            cout << b[i] << " ";
-
-        cout << "\n\t2'C Divisor\t(M)\t: ";
-        for (i = 0; i <= Z; i++)
-            cout << b1[i] << " ";
-
-        cout << "\n\tDividend\t(Q)\t: ";
-        for (i = Z + 1; i <= 2 * Z; i++)
-            cout << a[i] << " ";
-
-        cout << "\n\n\tBITS CONSIDERED:[ A ] [ M ]";
-        cout << "\n\t\t\t";
-        for (i = 0; i <= Z; i++)
-            cout << a[i] << " ";
-
-        cout << " ";
-        for (i = Z + 1; i <= 2 * Z; i++)
-            cout << a[i] << " ";
-        count = Z;
-
-        do
-        {
-            for (i = 0; i < 2 * Z; i++)
-                a[i] = a[i + 1];
-
-            cout << "\n\nLeft Shift\t\t";
-            for (i = 0; i <= Z; i++)
-                cout << a[i];
-            cout << " ";
-
-            for (i = Z + 1; i < 2 * Z; i++)
-                cout << a[i];
-
-            carry = 0;
-            for (i = Z; i >= 0; i--)
-            {
-                S = a[i] ^ (b1[i] ^ carry);
-                G = a[i] && b1[i];
-                P = a[i] ^ b1[i];
-                carry = G || (P && carry);
-                a[i] = S;
-            }
-
-            cout << "\nA< -A-M \t\t";
-            for (i = 0; i <= Z; i++)
-                cout << a[i];
-            cout << " ";
-            for (i = Z + 1; i < 2 * Z; i++)
-                cout << a[i];
-            ch = a[0];
-
-            cout << "\nBIT Q: " << ch;
-
-            switch (ch)
-            {
-            case 0:
-                a[2 * Z] = 1;
-                cout << " Q0< -1\t\t";
-                for (i = 0; i <= Z; i++)
-                    cout << a[i];
-                cout << " ";
-                for (i = Z + 1; i <= 2 * Z; i++)
-                    cout << a[i] << " ";
-                break;
-
-            case 1:
-                a[2 * Z] = 0;
-                cout << " Q0< -0\t\t";
-                for (i = 0; i <= Z; i++)
-                    cout << a[i];
-                cout << " ";
-                for (i = Z + 1; i < 2 * Z; i++)
-                    cout << a[i];
-                carry = 0;
-                for (i = Z; i >= 0; i--)
-                {
-                    S = a[i] ^ (b[i] ^ carry);
-                    G = a[i] && b[i];
-                    P = a[i] ^ b[i];
-                    carry = G || (P && carry);
-                    a[i] = S;
-                }
-
-                cout << "\nA< -A+M";
-                cout << "\t\t\t";
-                for (i = 0; i <= Z; i++)
-                    cout << a[i];
-                cout << " ";
-                for (i = Z + 1; i <= 2 * Z; i++)
-                    cout << a[i];
-                break;
-            }
-            count--;
-        } while (count != 0);
-        num = 0;
-
-        cout << "\n\t\t<< QUOTIENT IN BITS >> : ";
-        for (i = Z + 1; i <= 2 * Z; i++)
-        {
-            cout << a[i] << " ";
-            num = num + pow(2, 2 * Z - i) * a[i];
-        }
-
-        cout << "\n\t\tOUOTIENT IN DECIMAL: " << num;
-        num = 0;
-
-        cout << "\n\t\tREMAINDER IN BITS: ";
-        for (i = 0; i <= Z; i++)
-        {
-            cout << a[i];
-            num = num + pow(2, Z - i) * a[i];
-        }
-
-        cout << "\n\t\tREMAINDER IN DECIMAL: " << num;
-
-        cout << "\n\tDO YOU WANT TO CONTINUE? (y/n): ";
-        cin >> option;
-        tolower(option);
-
-    } while (option == 'y');
+    }
+    cout << endl
+         << "----------------------------";
+    cout << endl
+         << "Sign of result: " << s;
+    cout << endl
+         << "Remainder: ";
+    for (i = 4; i >= 0; i--)
+        cout << rem[i];
+    cout << endl
+         << "Quotient: ";
+    for (i = 4; i >= 0; i--)
+        cout << anumcp[i];
 
     return 0;
 }
-
-/***************** OUTPUT ***********************
-
-¦-----------------------------------------------¦
-¦ PROGRAM FOR DIVISION ¦
-¦-----------------------------------------------¦
-
-ENTER DIVIDEND : 16
-ENTER DIVISOR : 3
-
-TOTAL BITS CONSIDERED FOR RESULT => 11
-INITiALLY A IS RESET TO ZERO:0 0 0 0 0 0
-
-Divisor (M) : 0 0 0 0 1 1
-2'C Divisor (M) : 1 1 1 1 0 1
-Dividend (Q) : 1 0 0 0 0
-
-BITS CONSIDERED: [ A ] [ M ]
-0 0 0 0 0 0 1 0 0 0 0
-
-Left Shift 0 0 0 0 0 1 0 0 0 0
-A< -A-M 1 1 1 1 1 0 0 0 0 0
-BIT Q:1 Q0< -0 1 1 1 1 1 0 0 0 0 0
-A< -A+M 0 0 0 0 0 1 0 0 0 0 0
-
-Left Shift 0 0 0 0 1 0 0 0 0 0
-A< -A-M 1 1 1 1 1 1 0 0 0 0
-BIT Q:1 Q0< -0 1 1 1 1 1 1 0 0 0 0
-A< -A+M 0 0 0 0 1 0 0 0 0 0 0
-
-Left Shift 0 0 0 1 0 0 0 0 0 0
-A< -A-M 0 0 0 0 0 1 0 0 0 0
-BIT Q:0 Q0< -1 0 0 0 0 0 1 0 0 0 0 1
-
-Left Shift 0 0 0 0 1 0 0 0 0 1
-A< -A-M 1 1 1 1 1 1 0 0 0 1
-BIT Q:1 Q0< -0 1 1 1 1 1 1 0 0 0 1
-A< -A+M 0 0 0 0 1 0 0 0 0 1 0
-
-Left Shift 0 0 0 1 0 0 0 0 1 0
-A< -A-M 0 0 0 0 0 1 0 0 1 0
-BIT Q:0 Q0< -1 0 0 0 0 0 1 0 0 1 0 1
-< < QUOTIENT IN BITS>> :0 0 1 0 1
-OUOTIENT IN DECIMAL :5
-< < REMAINDER IN BITS>>:0 0 0 0 0 1
-REMAINDER IN DECIMAL :1 0 0 0 0 1
-DO YOU WANT TO CONTINUE PRESS 0-ESC 1-CONT.:0
-
-
-¦-----------------------------------------------¦
-¦ PROGRAM FOR DIVISION ¦
-¦-----------------------------------------------¦
-
-ENTER DIVIDEND : 25
-ENTER DIVISOR : 6
-
-TOTAL BITS CONSIDERED FOR RESULT = > 11
-INITiALLY A IS RESET TO ZERO:0 0 0 0 0 0
-
-Divisor (M) : 0 0 0 1 1 0
-2'C Divisor (M) : 1 1 1 0 1 0
-Dividend (Q) : 1 1 0 0 1
-
-BITS CONSIDERED:[ A ] [ M ]
-0 0 0 0 0 0 1 1 0 0 1
-
-Left Shift 0 0 0 0 0 1 1 0 0 1
-A< -A-M 1 1 1 0 1 1 1 0 0 1
-BIT Q:1 Q0< -0 1 1 1 0 1 1 1 0 0 1
-A< -A+M 0 0 0 0 0 1 1 0 0 1 0
-
-Left Shift 0 0 0 0 1 1 0 0 1 0
-A< -A-M 1 1 1 1 0 1 0 0 1 0
-BIT Q:1 Q0< -0 1 1 1 1 0 1 0 0 1 0
-A< -A+M 0 0 0 0 1 1 0 0 1 0 0
-
-Left Shift 0 0 0 1 1 0 0 1 0 0
-A< -A-M 0 0 0 0 0 0 0 1 0 0
-BIT Q:0 Q0< -1 0 0 0 0 0 0 0 1 0 0 1
-
-Left Shift 0 0 0 0 0 0 1 0 0 1
-A< -A-M 1 1 1 0 1 0 1 0 0 1
-BIT Q:1 Q0< -0 1 1 1 0 1 0 1 0 0 1
-A< -A+M 0 0 0 0 0 0 1 0 0 1 0
-
-Left Shift 0 0 0 0 0 1 0 0 1 0
-A< -A-M 1 1 1 0 1 1 0 0 1 0
-BIT Q:1 Q0< -0 1 1 1 0 1 1 0 0 1 0
-A< -A+M 0 0 0 0 0 1 0 0 1 0 0
-< < QUOTIENT IN BITS>> :0 0 1 0 0
-OUOTIENT IN DECIMAL :4
-< < REMAINDER IN BITS>>:0 0 0 0 0 1
-REMAINDER IN DECIMAL :1 0 0 0 0 1
-DO YOU WANT TO CONTINUE PRESS 0-ESC 1-CONT.:0
-
-¦-----------------------------------------------¦
-¦ PROGRAM FOR DIVISION ¦
-¦-----------------------------------------------¦
-
-ENTER DIVIDEND : 19
-ENTER DIVISOR : 7
-
-TOTAL BITS CONSIDERED FOR RESULT = > 11
-INITiALLY A IS RESET TO ZERO:0 0 0 0 0 0
-
-Divisor (M) : 0 0 0 1 1 1
-2'C Divisor (M) : 1 1 1 0 0 1
-Dividend (Q) : 1 0 0 1 1
-
-BITS CONSIDERED:[ A ] [ M ]
-0 0 0 0 0 0 1 0 0 1 1
-
-Left Shift 0 0 0 0 0 1 0 0 1 1
-A< -A-M 1 1 1 0 1 0 0 0 1 1
-BIT Q:1 Q0< -0 1 1 1 0 1 0 0 0 1 1
-A < -A+M 0 0 0 0 0 1 0 0 1 1 0
-
-Left Shift 0 0 0 0 1 0 0 1 1 0
-A< -A-M 1 1 1 0 1 1 0 1 1 0
-BIT Q:1 Q0< -0 1 1 1 0 1 1 0 1 1 0
-A< -A+M 0 0 0 0 1 0 0 1 1 0 0
-
-Left Shift 0 0 0 1 0 0 1 1 0 0
-A< -A-M 1 1 1 1 0 1 1 1 0 0
-BIT Q:1 Q0< -0 1 1 1 1 0 1 1 1 0 0
-A< -A+M 0 0 0 1 0 0 1 1 0 0 0
-
-Left Shift 0 0 1 0 0 1 1 0 0 0
-A< -A-M 0 0 0 0 1 0 1 0 0 0
-BIT Q:0 Q0< -1 0 0 0 0 1 0 1 0 0 0 1
-
-Left Shift 0 0 0 1 0 1 0 0 0 1
-A< -A-M 1 1 1 1 1 0 0 0 0 1
-BIT Q:1 Q0< -0 1 1 1 1 1 0 0 0 0 1
-A< -A+M 0 0 0 1 0 1 0 0 0 1 0
-< < QUOTIENT IN BITS>> :0 0 0 1 0
-OUOTIENT IN DECIMAL :2
-< < REMAINDER IN BITS>>:0 0 0 1 0 1
-REMAINDER IN DECIMAL :5 0 0 1 0 1
-DO YOU WANT TO CONTINUE PRESS 0-ESC 1-CONT.:0
-****/
