@@ -28,22 +28,23 @@
     ![4-bit adder-subtractor](VHDL_labs/images/4_bit_adder_subtractor.png)
   - [Signed Numbers](VHDL_labs/Signed_numbers.vhd)
   - [Parallel IN Parallel OUT](VHDL_labs/Parallel_IN_Parallel_OUT.vhd)
+  - [D-flip flop](VHDL_labs/D_flip_flop.vhd)
+  
+    ![D flip flop](VHDL_labs/images/D-flip-flop.png)
   - [Shifter Design in VHDL](VHDL_labs/Shifter_Design_in_VHDL.vhd)
 
     ![Shifter](VHDL_labs/images/Shifter_Design_in_VHDL.png))
   - [Comparator](VHDL_labs/Comparator.vhd)
   - [ROM 32x8](VHDL_labs/ROM_32x8.vhd)
   - [Binary to Gray Code Converter](VHDL_labs/Binary_to_Gray_Code.vhd)
-  - [Gray Code to Binary](VHDL_labs/Gray_code_to_Binary.vhd)
-  - [Binary to Excess 3 code](VHDL_labs/Binary_to_XS_3_code.vhd)
-  - [D-flip flop](VHDL_labs/D_flip_flop.vhd)
+  - [Gray Code to Binary Converter](VHDL_labs/Gray_code_to_Binary.vhd)
+  - [Binary to Excess 3 code Converter](VHDL_labs/Binary_to_XS_3_code.vhd)
 
-    ![D flip flop](VHDL_labs/images/D-flip-flop.png)
   - [Program to implement Multiplier using VHDL](VHDL_labs/Multiplier_using_VHDL.vhd)
   - [32 x 8 RAM](VHDL_labs/32x8_RAM.vhd)
 
     ![32 x 8 RAM](VHDL_labs/images/32x8_RAM.png)
-    
+
     Output:
 
     ![32 x 8 RAM output](VHDL_labs/images/32x8_RAM_output.png)
