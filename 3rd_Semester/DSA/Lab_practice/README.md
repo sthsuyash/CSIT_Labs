@@ -1,14 +1,14 @@
 # Lab practice
 
-- Menu driven program to show list as ADT
-- Factorial using recursive function
-- Menu driven stack operation
-- Linear search
-- Menu driven queue as ADT
-- Selection short
-- Bubble short
-- Menu driven linklist as ADT
-- Menu driven binary search tree
-- Quick sort algorithm
-- Tower of Hanoi
-- [x] Merge sort algorithm
+- [x] [Menu driven program to show list as ADT]()
+- [x] [Factorial using recursive function]()
+- [x] [Menu driven stack operation]()
+- [x] [Linear search]()
+- [][Menu driven queue as adt]()
+- [][Selection sort]()
+- [][Bubble sort]()
+- [][Menu driven linklist as adt]()
+- [][Menu driven binary search tree]()
+- [][Quick sort algorithm]()
+- [x] [Tower of Hanoi]()
+- [x] [Merge sort algorithm](merge_sort.cpp)
