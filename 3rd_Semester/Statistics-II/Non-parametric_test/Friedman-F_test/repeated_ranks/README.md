@@ -1,6 +1,6 @@
 # Friedman F test
 
-## Non-repeated ranks
+## Repeated ranks
 
 ## Steps
 
