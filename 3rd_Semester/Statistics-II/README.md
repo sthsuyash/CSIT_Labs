@@ -23,7 +23,6 @@
 - Mann Whitney U Test
   - [Small sample](Non-parametric_test/Mann-Whitney-U_test/small-sample/README.md)
   - [Large sample](Non-parametric_test/Mann-Whitney-U_test/large-sample/README.md)
-- [Chi Square Test](Non-parametric_test/Chi-square_test/README.md)
 - Wilcoxon-Matched Pair Signed Rank Test
   - [Small sample](Non-parametric_test/Wilcoxon-Matched-pair_signed_rank_test/small-sample/README.md)
   - [Large sample](Non-parametric_test/Wilcoxon-Matched-pair_signed_rank_test/large-sample/README.md)
