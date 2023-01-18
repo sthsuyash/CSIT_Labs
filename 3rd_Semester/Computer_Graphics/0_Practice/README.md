@@ -6,7 +6,7 @@
   - [Mid point circle](mid_point_circle.cpp)
   - [2D transformation](2D_transformation.cpp)
 - OpenGL
-  - [Green line](opengl/green_line.cpp)
-  - [Triangle](opengl/triangle.cpp)
-  - [Quadrilateral](opengl/quadrilateral.cpp)
-  - [Pentagon](opengl/pentagon.cpp)
+  - [Green line](green_line.cpp)
+  - [Triangle](triangle.cpp)
+  - [Quadrilateral](quadrilateral.cpp)
+  - [Pentagon](pentagon.cpp)
