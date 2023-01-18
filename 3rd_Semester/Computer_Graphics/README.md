@@ -1,17 +1,17 @@
 # Computer Graphics
 
-## How to add graphics.h in dev C++
+- ## Windows
 
-_for Windows_
+## How to add graphics.h in dev C++
 
 1. Add header source files into the Dev C++ directory
 
    - First, download the header files from this [Google drive link](https://drive.google.com/file/d/1ULN_XcrbDkls2U2DlYkNM_yiua5h-_NI/view?usp=sharing) and extract the files.
    - It contains three files:
-     - graphics.h 
-     - winbgim.h 
+     - graphics.h
+     - winbgim.h
      - libbgi.a.
-   - You need to copy “graphics.h” and “winbgim.h” into include the directory of Dev-Cpp program resource files. The exact directory address is –
+   - You need to copy "graphics.h" and "winbgim.h" into include the directory of Dev-Cpp program resource files. The exact directory address is –
      - C:\Program Files (x86)\Dev-Cpp\MinGW64\include
    - Next, copy “libbgi.a” to lib folder, which should be inside MinGW64. The directory address is –
      - C:\Program Files (x86)\Dev-Cpp\MinGW64\lib
@@ -30,11 +30,39 @@ _for Windows_
    - Ensure the “Add the following commands when calling the linker” check box is selected.
    - Then add these linkers in the input box – (just copy and paste this line)
 
-     -libgcc -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32
+     `-libgcc -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32`
 
    - Then click on OK to save.
 
      [Reference](https://gamespec.tech/how-to-add-graphics-in-dev-c/)
+
+- Linux
+
+- Installation/verification
+
+  OpenGL comes with the X11 installation, to verify, look for the following files:
+
+  - header file:
+    /usr/include/GL/glut.h
+
+  - If OpenGL and/or GLUT is not installed on your system, you can install both with:
+    Ubuntu: `sudo apt-get install freeglut3-dev`
+
+    or
+
+    Fedora/RedHat: `sudo yum install freeglut-devel`
+
+    which should install all the dependent packages, including OpenGL itself. You must have sudo/administrator privileges.
+
+  - In your OpenGL source files, include the following line:
+
+    `#include <GL/glut.h>`
+
+  You don't need to include gl.h and glu.h, as they are already included in glut.h.
+
+  - To make a GLUT application on the command line, use the following linker options:
+
+    `-lGL -lGLU -lglut`
 
 ## Programs
 
