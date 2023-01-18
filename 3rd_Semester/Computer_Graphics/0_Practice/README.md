@@ -2,8 +2,8 @@
 
 - Graphics.h
   - [DDA line drawing algorithm](dda.cpp)
-  - [Breshenham line drawing algorithm](breshenham.cpp)
-  - [Mid point circle](mid_point_circle.cpp)
+  - [Breshenham line drawing algorithm](bresenham.cpp)
+  - [Mid point circle](circle.cpp)
   - [2D transformation](2D_transformation.cpp)
 - OpenGL
   - [Green line](green_line.cpp)
