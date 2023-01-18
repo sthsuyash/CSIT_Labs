@@ -38,31 +38,31 @@
 
 - ## Linux
 
-- Installation/verification for openGL
+Installation/verification for openGL
 
-  OpenGL comes with the X11 installation, to verify, look for the following files:
+OpenGL comes with the X11 installation, to verify, look for the following files:
 
-  - header file:
-    /usr/include/GL/glut.h
+- header file:
+  /usr/include/GL/glut.h
 
-  - If OpenGL and/or GLUT is not installed on your system, you can install both with:
-    Ubuntu: `sudo apt-get install freeglut3-dev`
+- If OpenGL and/or GLUT is not installed on your system, you can install both with:
+  Ubuntu: `sudo apt-get install freeglut3-dev`
 
-    or
+  or
 
-    Fedora/RedHat: `sudo yum install freeglut-devel`
+  Fedora/RedHat: `sudo yum install freeglut-devel`
 
-    which should install all the dependent packages, including OpenGL itself. You must have sudo/administrator privileges.
+  which should install all the dependent packages, including OpenGL itself. You must have sudo/administrator privileges.
 
-  - In your OpenGL source files, include the following line:
+- In your OpenGL source files, include the following line:
 
-    `#include <GL/glut.h>`
+  `#include <GL/glut.h>`
 
-  You don't need to include gl.h and glu.h, as they are already included in glut.h.
+You don't need to include gl.h and glu.h, as they are already included in glut.h.
 
-  - To make a GLUT application on the command line, use the following linker options:
+- To make a GLUT application on the command line, use the following linker options:
 
-    `-lGL -lGLU -lglut`
+  `-lGL -lGLU -lglut`
 
 ## Programs
 
