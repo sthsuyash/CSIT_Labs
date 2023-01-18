@@ -5,7 +5,7 @@
   - [Breshenham line drawing algorithm](breshenham.cpp)
   - [Mid point circle](mid_point_circle.cpp)
   - [2D transformation](2D_transformation.cpp)
-- OpneGL
+- OpenGL
   - [Green line](opengl/green_line.cpp)
   - [Triangle](opengl/triangle.cpp)
   - [Quadrilateral](opengl/quadrilateral.cpp)
