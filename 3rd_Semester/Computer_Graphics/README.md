@@ -36,7 +36,7 @@
 
      [Reference](https://gamespec.tech/how-to-add-graphics-in-dev-c/)
 
-- Linux
+- ## Linux
 
 - Installation/verification for openGL
 
