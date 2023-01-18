@@ -38,7 +38,7 @@
 
 - Linux
 
-- Installation/verification
+- Installation/verification for openGL
 
   OpenGL comes with the X11 installation, to verify, look for the following files:
 
