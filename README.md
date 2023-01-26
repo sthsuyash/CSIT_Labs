@@ -6,6 +6,8 @@
 
 This is a code repository for all the major lab codes necessary for CSIT students according to semester in subject-wise format, currently in 4<sup>th</sup> semester and will be updated.
 
+*Please feel free to update the codes as per needs and contribute to the repository.*
+
 ## [1<sup>st</sup> Semester](/1st_Semester)
 
 - [IIT (Introduction to Information Technology)](/1st_Semester/IIT)
