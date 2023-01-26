@@ -6,21 +6,21 @@
 
 This is a code repository for all the major lab codes necessary for CSIT students according to semester in subject-wise format, currently in 4<sup>th</sup> semester and will be updated.
 
-## [1st Semester](/1st_Semester)
+## [1<sup>st</sup> Semester](/1st_Semester)
 
 - [IIT (Introduction to Information Technology)](/1st_Semester/IIT)
 - [Digital Logics](/1st_Semester/Digital_logics)
 - [C programming](/1st_Semester/C)
 - [Physics](/1st_Semester/Physics)
 
-## [2nd Semester](/2nd_Semester)
+## [2<sup>nd</sup> Semester](/2nd_Semester)
 
 - [Microprocessor](/2nd_Semester/Microprocessor)
 - [Discrete Structures](/2nd_Semester/DS_lab)
 - [OOP using C++](/2nd_Semester/OOP)
 - [Statistics-I](/2nd_Semester/Statistics-I)
 
-## [3rd Semester](/3rd_Semester)
+## [3<sup>rd</sup> Semester](/3rd_Semester)
 
 - [Statistics-II](/3rd_Semester/Statistics-II)
 - [Data Structures and Algorithms](/3rd_Semester/DSA)
