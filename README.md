@@ -1,8 +1,10 @@
 # CSIT Labs
 
-This repository contains all the lab codes necessary for CSIT students, currently in 3rd semester and will be updated.
+<h2 style="font-size:3rem; font-weight:600;">Course: 2074-New Course</h2>
 
-- Updated course: 2074-New Course
+## Description
+
+This is a code repository for all the major lab codes necessary for CSIT students according to semester in subject-wise format, currently in 4<sup>th</sup> semester and will be updated.
 
 ## [1st Semester](/1st_Semester)
 
@@ -34,8 +36,6 @@ This repository contains all the lab codes necessary for CSIT students, currentl
 - Create Pull Request
 
 ## License
-
-[The Unlicense](/License)
 
 ## Author
 
