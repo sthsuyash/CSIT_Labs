@@ -37,6 +37,8 @@ This is a code repository for all the major lab codes necessary for CSIT student
 
 ## License
 
+[MIT](/LICENSE)
+
 ## Author
 
 Suyash Shrestha
