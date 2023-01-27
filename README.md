@@ -1,4 +1,4 @@
-# <h1 style="color:bisque; font-weight:700; font-size:4rem">CSIT Labs</h1>
+# CSIT Labs
 
 ![logo](static/logo.png)
 
