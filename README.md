@@ -24,13 +24,13 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 - [OOP using C++](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester/OOP)
 - [Statistics-I](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester/Statistics-I)
 
-## [3<sup>rd</sup> Semester](/3rd_Semester)
+## [3<sup>rd</sup> Semester](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester)
 
-- [Statistics-II](/3rd_Semester/Statistics-II)
-- [Data Structures and Algorithms](/3rd_Semester/DSA)
-- [Numerical Method](/3rd_Semester/Numerical_Method)
-- [Computer Architecture](/3rd_Semester/Computer_Architecture)
-- [Computer Graphics](/3rd_Semester/Computer_Graphics)
+- [Data Structures and Algorithms](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA)
+- [Numerical Method](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Numerical_Method)
+- [Computer Architecture](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Computer_Architecture)
+- [Computer Graphics](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Computer_Graphics)
+- [Statistics-II](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Statistics-II)
 
 ## Contributing
 
