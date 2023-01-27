@@ -2,13 +2,13 @@
 
 ![logo](static/logo.png)
 
-<h2 style="font-size:3rem; font-weight:600;">Course: 2074-New Course</h2>
+## _Course: 2074(New)_
 
 ## Description
 
 This is a code repository for all the major lab codes necessary for CSIT students according to semester in subject-wise format, currently in 4<sup>th</sup> semester and will be updated.
 
-*Please feel free to update the codes as per needs and contribute to the repository.*
+_Please feel free to update the codes as per needs and contribute to the repository._
 
 ## [1<sup>st</sup> Semester](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester)
 
@@ -17,12 +17,12 @@ This is a code repository for all the major lab codes necessary for CSIT student
 - [C programming](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/C)
 - [Physics](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/Physics)
 
-## [2<sup>nd</sup> Semester](/2nd_Semester)
+## [2<sup>nd</sup> Semester](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester)
 
-- [Microprocessor](/2nd_Semester/Microprocessor)
-- [Discrete Structures](/2nd_Semester/DS_lab)
-- [OOP using C++](/2nd_Semester/OOP)
-- [Statistics-I](/2nd_Semester/Statistics-I)
+- [Microprocessor](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester/Microprocessor)
+- [Discrete Structures](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester/DS_lab)
+- [OOP using C++](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester/OOP)
+- [Statistics-I](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester/Statistics-I)
 
 ## [3<sup>rd</sup> Semester](/3rd_Semester)
 
