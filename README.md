@@ -1,6 +1,6 @@
 # CSIT Labs
 
-![logo](https://github.com/sthsuyash/CSIT_Labs/tree/main/static/logo.png)
+![logo](static/logo.png)
 
 <h2 style="font-size:3rem; font-weight:600;">Course: 2074-New Course</h2>
 
