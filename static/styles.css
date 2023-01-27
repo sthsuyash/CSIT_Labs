@@ -1,0 +1,48 @@
+/* import Jetbrains mono font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    padding: 0 1rem;
+}
+
+/* Add styles for the error message */
+.text-danger {
+    font-size: 5rem;
+    font-weight: 700;
+    display: block;
+}
+
+.pg-nf {
+    color: #035b31;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.exist {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+}
+
+.custom-btn {
+    background-color: #f2c61b;
+    color: #053e1d;
+    border: #f2c61b;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 600px) {
+    .text-danger {
+        font-size: 3rem;
+    }
+
+    .pg-nf {
+        font-size: 2rem;
+    }
+
+}
