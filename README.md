@@ -8,12 +8,12 @@ This is a code repository for all the major lab codes necessary for CSIT student
 
 *Please feel free to update the codes as per needs and contribute to the repository.*
 
-## [1<sup>st</sup> Semester]()
+## [1<sup>st</sup> Semester](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester)
 
-- [IIT (Introduction to Information Technology)](/1st_Semester/IIT)
-- [Digital Logics](/1st_Semester/Digital_logics)
-- [C programming](/1st_Semester/C)
-- [Physics](/1st_Semester/Physics)
+- [IIT (Introduction to Information Technology)](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/IIT)
+- [Digital Logics](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/Digital_logics)
+- [C programming](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/C)
+- [Physics](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/Physics)
 
 ## [2<sup>nd</sup> Semester](/2nd_Semester)
 

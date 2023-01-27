@@ -1,6 +1,6 @@
-# 1st Semester
+# 1<sup>st</sup> Semester
 
-- [IIT (Introduction to Information Technology)](/1st_Semester/IIT/)
-- [Digital Logics](/1st_Semester/Digital_logics/)
-- [C programming](/1st_Semester/C/)
-- [Physics](/1st_Semester/Physics/)
+- [IIT (Introduction to Information Technology)](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/IIT)
+- [Digital Logics](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/Digital_logics)
+- [C programming](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/C)
+- [Physics](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/Physics)
