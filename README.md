@@ -8,7 +8,7 @@ This is a code repository for all the major lab codes necessary for CSIT student
 
 *Please feel free to update the codes as per needs and contribute to the repository.*
 
-## [1<sup>st</sup> Semester](/1st_Semester)
+## [1<sup>st</sup> Semester]()
 
 - [IIT (Introduction to Information Technology)](/1st_Semester/IIT)
 - [Digital Logics](/1st_Semester/Digital_logics)
@@ -32,10 +32,10 @@ This is a code repository for all the major lab codes necessary for CSIT student
 
 ## Contributing
 
-- Fork it.
-- Create your feature branch: `git checkout -b <branch-name>`
-- Add changes
-- Create Pull Request
+1. Fork it.
+2. Create your feature branch: `git checkout -b <branch-name>`
+3. Add changes
+4. Create Pull Request
 
 ## License
 
