@@ -18,7 +18,7 @@ int main()
         // check if the string is over {0,1} or not
         if (str[i] != '0' && str[i] != '1')
         {
-            cout << "String not accepted.\nPlease enter a string over {0,0}" << endl;
+            cout << "String not accepted.\nPlease enter a string over {0, 1}" << endl;
             return 0;
         }
 
