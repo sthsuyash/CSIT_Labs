@@ -32,6 +32,14 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 - [Computer Graphics](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Computer_Graphics)
 - [Statistics-II](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Statistics-II)
 
+## [4<sup>th</sup> Semester](https://github.com/sthsuyash/CSIT_Labs/tree/main/4th_Semester)
+
+- [Artificial Intelligence](https://github.com/sthsuyash/CSIT_Labs/tree/main/4th_Semester/Artificial_Intelligence)
+- [Database Management System](https://github.com/sthsuyash/CSIT_Labs/tree/main/4th_Semester/DBMS)
+  <!-- - [Computer Network](https://github.com/sthsuyash/CSIT_Labs/tree/main/4th_Semester/Computer_Network) -->
+  <!-- - [Operating System](https://github.com/sthsuyash/CSIT_Labs/tree/main/4th_Semester/Operating_System) -->
+- [Theory of Computation](https://github.com/sthsuyash/CSIT_Labs/tree/main/4th_Semester/TOC)
+
 ## Contributing
 
 1. Fork it.
