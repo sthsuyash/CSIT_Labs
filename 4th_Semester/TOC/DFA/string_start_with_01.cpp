@@ -35,6 +35,8 @@ int main()
             state = 2;
         else if (state == 2 && str[i] == '1')
             state = 2;
+        else if ((state == 3 && str[i] == '0') || (state == 3 && str[i] == '1'))
+            state = 3;
     }
 
     // check if the string is accepted or not,
