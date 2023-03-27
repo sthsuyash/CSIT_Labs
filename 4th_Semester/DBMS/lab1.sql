@@ -51,53 +51,70 @@ CREATE TABLE Employee (
 -- 3. Insert the record on all the tables you just created with appropriate values.
 
 -- Insert into Department table
-INSERT INTO Department (dept_name) VALUES ('Finance');
-INSERT INTO Department (dept_name) VALUES ('Human Resources');
-INSERT INTO Department (dept_name) VALUES ('Marketing');
-INSERT INTO Department (dept_name) VALUES ('Operations');
+INSERT INTO Department (dept_name) VALUES 
+('Finance'),
+('Human Resources'),
+('Marketing'),
+('Operations');
 
 -- Insert into Designation table
-INSERT INTO Designation (desig_name) VALUES ('Manager');
-INSERT INTO Designation (desig_name) VALUES ('Project Leader');
-INSERT INTO Designation (desig_name) VALUES ('Intern');
-INSERT INTO Designation (desig_name) VALUES ('Software Developer');
+INSERT INTO Designation(desig_name) VALUES
+('Manager'),
+('Project Leader'),
+('Intern'),
+('Software Developer');
 
 -- Insert into Employee_type table
-INSERT INTO Employee_type (emptype_name) VALUES ('Full-time');
-INSERT INTO Employee_type (emptype_name) VALUES ('Part-time');
-INSERT INTO Employee_type (emptype_name) VALUES ('Intern');
-INSERT INTO Employee_type (emptype_name) VALUES ('Consultant');
+INSERT INTO Employee_type(emptype_name) VALUES
+('Full-time'),
+('Part-time'),
+('Intern'),
+('Consultant');
 
 -- Insert into Project table
-INSERT INTO Project (proj_name, start_date, deadline) VALUES ('Project A', '2023-04-01', '2023-07-31');
-INSERT INTO Project (proj_name, start_date, deadline) VALUES ('Project B', '2023-05-15', '2023-09-30');
-INSERT INTO Project (proj_name, start_date, deadline) VALUES ('Project C', '2023-03-01', '2023-06-30');
-INSERT INTO Project (proj_name, start_date, deadline) VALUES ('Project D', '2023-06-01', '2023-11-30');
+INSERT INTO Project(proj_name, start_date, deadline) VALUES
+('Project A', '2023-02-01', '2023-03-31'),
+('Project B', '2023-05-15', '2023-09-30'),
+('Project C', '2023-03-01', '2023-06-30'),
+('Project D', '2023-06-01', '2023-11-30');
 
 -- Insert into Employee table
 INSERT INTO Employee (emp_name, emp_address, emp_contact, emp_salary, dept_id, desig_id, emptype_id, proj_id) 
-VALUES ('John Doe', 'Kathmandu', '9841234567', 50000.00, 1, 1, 1, 1);
-
-INSERT INTO Employee (emp_name, emp_address, emp_contact, emp_salary, dept_id, desig_id, emptype_id, proj_id) 
-VALUES ('Jane Smith', 'Bhaktapur', '9869876543', 70000.00, 2, 2, 1, 2);
-
-INSERT INTO Employee (emp_name, emp_address, emp_contact, emp_salary, dept_id, desig_id, emptype_id, proj_id) 
-VALUES ('Bob Anderson', 'Lalitpur', '9812345678', 30000.00, 3, 4, 2, 1);
-
-INSERT INTO Employee (emp_name, emp_address, emp_contact, emp_salary, dept_id, desig_id, emptype_id, proj_id) 
-VALUES ('Sarah Lee', 'Pokhara', '9801234567', 60000.00, 4, 3, 1, 3);
-
-INSERT INTO Employee (emp_name, emp_address, emp_contact, emp_salary, dept_id, desig_id, emptype_id, proj_id) 
-VALUES ('Tom Williams', 'Kathmandu', '9865432109', 90000.00, 1, 2, 1, 4);
+VALUES 
+('John Doe', 'Kathmandu', '9841234567', 50000, 1, 1, 1, 1),
+('Jane Smith', 'Bhaktapur', '9869876543', 70000, 2, 2, 1, 2),
+('Bob Anderson', 'Lalitpur', '9812345678', 30000, 3, 4, 2, 1),
+('Sarah Lee', 'Pokhara', '9801234567', 60000, 4, 3, 1, 3),
+('Tom Williams', 'Kathmandu', '9865432109', 90000, 1, 2, 1, 4),
+('Dion Spinige','Kathmandu', '9891248118', 860000, 1, 1, 1, 2),
+('Valeda Marcinkus','Bhaktapur', '9873536218',100000, 2, 2, 2, 1),
+('Philipa Runnett','Pokhara', '9848464792',70000, 3, 3, 3, 4),
+('Rosalie Hinksen','Kathmandu', '9892210247',160000, 4, 4, 4, 1),
+('Celina Thominga','Kathmandu', '9855986212',120000, 3, 2, 1, 4),
+('Godart Cordet','Pokhara', '9815936785', 50000, 4, 1, 2, 3),
+('Baryram Goode','Bhaktapur', '9863945484', 40000, 2, 3, 1, 1),
+('Ilene Krimmer','Lalitpur', '9854831821', 30000, 1, 2, 1, 2),
+('Brook Scholz','Kathmandu', '9852526014', 20000, 3, 3, 3, 3),
+('Blakeley Pearsey','Kathmandu', '9809356529', 100000, 4, 2, 1, 2),
+('Theadora Arsmith','Bhaktapur', '9811847429', 260000, 3, 1, 2, 2),
+('Micky Rawlison','Lalitpur', '9806558122', 160000, 4, 2, 2, 1),
+('Matilda Steers','Kathmandu', '9892940963', 50000, 3, 2, 1, 1),
+('Cybill Swinglehurst','Pokhara', '9899780955', 120000, 2, 2, 4, 1),
+('Susan Habercham','Kathmandu', '9825790310', 340000, 3, 2, 1, 1),
+('Violante Daverin','Kathmandu', '9893947531', 30000,  2, 1, 1, 2),
+('Cordell Bourgour','Pokhara', '9864580688', 80000, 3, 3, 4, 3),
+('Loralyn Orton', 'Bhaktapur','9826316580', 99000,  4, 4, 4, 4),
+('Richy Tweedle','Lalitpur', '9893505619', 450000, 1, 1, 2, 4),
+('Danita Doget','Bhaktapur', '9844729755', 100000, 3, 2, 4, 1);
 
 -- 4. Find the record of employees whose salary is less than 40K
 SELECT * FROM Employee WHERE emp_salary < 40000.00;
 
 -- 5. Find the record of employees whose salary is between 30K to 80K
-SELECT * FROM Employee WHERE emp_salary BETWEEN 30000.00 AND 80000.00;
+SELECT * FROM Employee WHERE emp_salary BETWEEN 30000 AND 80000;
 
 -- 6. Find the record of employees whose salary is greater than 80K
-SELECT * FROM Employee WHERE emp_salary > 80000.00;
+SELECT * FROM Employee WHERE emp_salary > 80000;
 
 -- 7. Find the record of employee whose address is out of Kathmandu Valley
 SELECT * FROM Employee WHERE emp_address NOT IN ('Kathmandu', 'Lalitpur', 'Bhaktapur');
@@ -115,8 +132,7 @@ SELECT emp_name FROM Employee WHERE desig_id = 2 AND emp_salary > 90000.00;
 SELECT emp_name FROM Employee WHERE emp_address IN ('Kathmandu', 'Bhaktapur');
 
 -- 12.List all the project name with corresponding employees name whose deadline is less than 7 days from today
-SELECT p.proj_name, e.emp_name 
-FROM Project p 
-INNER JOIN Employee e 
-ON p.proj_id = e.proj_id 
-WHERE p.deadline < DATEADD(day, 7, GETDATE());
+SELECT proj_name, emp_name
+FROM Project
+JOIN Employee ON Project.proj_id = Employee.proj_id
+WHERE deadline < DATE_ADD(CURDATE(), INTERVAL 7 DAY);
