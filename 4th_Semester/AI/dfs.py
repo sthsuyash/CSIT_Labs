@@ -1,12 +1,14 @@
 # Using a Python dictionary to act as an adjacency list
 graph = {
-    '5': ['3', '7'],
-    '3': ['2', '4'],
-    '7': ['8'],
-    '2': [],
-    '4': ['9'],
-    '8': [],
-    '9': []
+    'A': ['B', 'C'],
+    'B': ['D', 'E'],
+    'C': ['F'],
+    'D': ['G', 'H'],
+    'E': ['I'],
+    'F': [],
+    'G': [],
+    'H': [],
+    'I': []
 }
 
 visited = set()  # Set to keep track of visited nodes of graph.
@@ -15,7 +17,7 @@ visited = set()  # Set to keep track of visited nodes of graph.
 def dfs(visited, graph, node):  # function for dfs
     if node not in visited:
         # print '->' after each node except the last one
-        print(node, end='->' if node != '8' else '')
+        print(node, end='->' if node != 'F' else '')
         visited.add(node)
         for neighbour in graph[node]:
             dfs(visited, graph, neighbour)
@@ -23,4 +25,4 @@ def dfs(visited, graph, node):  # function for dfs
 
 # Driver Code
 print("Following is the Depth-First Search")
-dfs(visited, graph, '5')
+dfs(visited, graph, 'A')

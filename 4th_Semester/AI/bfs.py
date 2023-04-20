@@ -1,11 +1,13 @@
 graph = {
-    '5': ['3', '7'],
-    '3': ['2', '4'],
-    '7': ['8'],
-    '2': [],
-    '4': ['9'],
-    '8': [],
-    '9': []
+    'A': ['B', 'C'],
+    'B': ['D', 'E'],
+    'C': ['F'],
+    'D': ['G', 'H'],
+    'E': ['I'],
+    'F': [],
+    'G': [],
+    'H': [],
+    'I': []
 }
 
 visited = []  # List for visited nodes.
@@ -19,7 +21,7 @@ def bfs(visited, graph, node):  # function for BFS
     while queue:          # Creating loop to visit each node
         m = queue.pop(0)
         # print '->' after each node except the last one
-        print(m, end='->' if m != '9' else '')
+        print(m, end='->' if m != 'I' else '')
 
         for neighbour in graph[m]:
             if neighbour not in visited:
@@ -29,4 +31,4 @@ def bfs(visited, graph, node):  # function for BFS
 
 # Driver Code
 print("Following is the Breadth-First Search")
-bfs(visited, graph, '5')
+bfs(visited, graph, 'A')
