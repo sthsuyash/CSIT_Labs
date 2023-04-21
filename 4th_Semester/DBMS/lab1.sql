@@ -108,31 +108,115 @@ VALUES
 ('Danita Doget','Bhaktapur', '9844729755', 100000, 3, 2, 4, 1);
 
 -- 4. Find the record of employees whose salary is less than 40K
-SELECT * FROM Employee WHERE emp_salary < 40000.00;
+SELECT
+emp_name as Name,
+emp_address as Address,
+emp_contact as Contact,
+emp_salary as Salary,
+dept_name as Department,
+desig_name as Designation,
+emptype_name Job,
+proj_name as Project 
+FROM Employee
+INNER JOIN Department ON Employee.dept_id = Department.dept_id
+INNER JOIN Designation ON Employee.desig_id = Designation.desig_id
+INNER JOIN Employee_type ON Employee.emptype_id = Employee_type.emptype_id
+INNER JOIN Project ON Employee.proj_id = Project.proj_id
+WHERE emp_salary < 40000 
+ORDER BY Name;
 
 -- 5. Find the record of employees whose salary is between 30K to 80K
-SELECT * FROM Employee WHERE emp_salary BETWEEN 30000 AND 80000;
+SELECT
+emp_name as Name,
+emp_address as Address,
+emp_contact as Contact,
+emp_salary as Salary,
+dept_name as Department,
+desig_name as Designation,
+emptype_name Job,
+proj_name as Project 
+FROM Employee
+INNER JOIN Department ON Employee.dept_id = Department.dept_id
+INNER JOIN Designation ON Employee.desig_id = Designation.desig_id
+INNER JOIN Employee_type ON Employee.emptype_id = Employee_type.emptype_id
+INNER JOIN Project ON Employee.proj_id = Project.proj_id
+WHERE emp_salary BETWEEN 30000 AND 80000 
+ORDER BY salary;
 
 -- 6. Find the record of employees whose salary is greater than 80K
-SELECT * FROM Employee WHERE emp_salary > 80000;
+SELECT
+emp_name as Name,
+emp_address as Address,
+emp_contact as Contact,
+emp_salary as Salary,
+dept_name as Department,
+desig_name as Designation,
+emptype_name Job,
+proj_name as Project 
+FROM Employee
+INNER JOIN Department ON Employee.dept_id = Department.dept_id
+INNER JOIN Designation ON Employee.desig_id = Designation.desig_id
+INNER JOIN Employee_type ON Employee.emptype_id = Employee_type.emptype_id
+INNER JOIN Project ON Employee.proj_id = Project.proj_id
+WHERE emp_salary > 80000 ORDER BY Name;
 
 -- 7. Find the record of employee whose address is out of Kathmandu Valley
-SELECT * FROM Employee WHERE emp_address NOT IN ('Kathmandu', 'Lalitpur', 'Bhaktapur');
+SELECT
+emp_name as Name,
+emp_address as Address,
+emp_contact as Contact,
+emp_salary as Salary,
+dept_name as Department,
+desig_name as Designation,
+emptype_name Job,
+proj_name as Project 
+FROM Employee
+INNER JOIN Department ON Employee.dept_id = Department.dept_id
+INNER JOIN Designation ON Employee.desig_id = Designation.desig_id
+INNER JOIN Employee_type ON Employee.emptype_id = Employee_type.emptype_id
+INNER JOIN Project ON Employee.proj_id = Project.proj_id
+WHERE emp_address NOT IN ('Kathmandu', 'Lalitpur', 'Bhaktapur')
+ORDER BY Name;
 
 -- 8. Find the salary of employee whose designation is Manager
-SELECT emp_salary FROM Employee WHERE desig_id = 1;
+SELECT
+emp_name as Name,
+emp_salary as Salary
+FROM Employee
+INNER JOIN Designation ON Employee.desig_id = Designation.desig_id
+WHERE Employee.desig_id = 1
+ORDER BY Salary;
 
 -- 9. Find the record of internship employees
-SELECT * FROM Employee WHERE emptype_id = 3;
+SELECT
+emp_name as Name,
+emp_address as Address,
+emp_contact as Contact,
+emp_salary as Salary,
+dept_name as Department,
+desig_name as Designation,
+emptype_name Job,
+proj_name as Project 
+FROM Employee
+INNER JOIN Department ON Employee.dept_id = Department.dept_id
+INNER JOIN Designation ON Employee.desig_id = Designation.desig_id
+INNER JOIN Employee_type ON Employee.emptype_id = Employee_type.emptype_id
+INNER JOIN Project ON Employee.proj_id = Project.proj_id
+WHERE Employee_type.emptype_id = 3
+ORDER BY Name; 
 
 -- 10.Find the name of employees whose designation is project leader and salary is greater than 90K
-SELECT emp_name FROM Employee WHERE desig_id = 2 AND emp_salary > 90000.00;
+SELECT emp_name as Name 
+FROM Employee 
+WHERE desig_id = 2 AND emp_salary > 90000;
 
 -- 11.Find the name of the employees whose address is Kathmandu or Bhaktapur
-SELECT emp_name FROM Employee WHERE emp_address IN ('Kathmandu', 'Bhaktapur');
+SELECT emp_name as Name FROM Employee WHERE emp_address IN ('Kathmandu', 'Bhaktapur');
 
 -- 12.List all the project name with corresponding employees name whose deadline is less than 7 days from today
-SELECT proj_name, emp_name
+SELECT
+proj_name as Project,
+emp_name as Name
 FROM Project
 JOIN Employee ON Project.proj_id = Employee.proj_id
 WHERE deadline < DATE_ADD(CURDATE(), INTERVAL 7 DAY);
