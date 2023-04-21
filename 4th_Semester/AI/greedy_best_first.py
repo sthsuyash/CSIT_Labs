@@ -1,4 +1,4 @@
-from queue import PriorityQueue
+# Program: Greedy Best First Search
 
 graph = {
     'S': {'A': 3, 'B': 2},
@@ -11,7 +11,6 @@ graph = {
     'G': {},
     'H': {},
     'I': {},
-
 }
 
 heuristic = {
@@ -29,26 +28,31 @@ heuristic = {
 }
 
 
-def greedy_best_first_search(graph, heuristic, start, goal):
-    explored = []
-    queue = PriorityQueue()
-    queue.put((heuristic[start], start))
-
+def gbfs(graph, heuristic, start, goal):
+    visited = set()
+    queue = [(heuristic[start], [start])]
     while queue:
-        node = queue.get()[1]
-        explored.append(node)
+        (h, path) = queue.pop(0)
+        current_node = path[-1]
+        if current_node == goal:
+            return path
+        visited.add(current_node)
+        for neighbor, distance in graph[current_node].items():
+            if neighbor not in visited:
+                new_path = path + [neighbor]
+                queue.append((heuristic[neighbor], new_path))
+        queue.sort()
+    return None
 
-        if node == goal:
-            return explored
 
-        for neighbour in graph[node]:
-            if neighbour not in explored:
-                queue.put((heuristic[neighbour], neighbour))
-
-    return "Goal not found"
-
-
+print("Greedy best first search")
 start = input("Enter the start node: ")
 goal = input("Enter the goal node: ")
 
-print(greedy_best_first_search(graph, heuristic, start, goal))
+traversed_path = gbfs(graph, heuristic, start, goal)
+
+if traversed_path:
+    print(f"Goal node found: \n{traversed_path}\n")
+
+else:
+    print("Goal node not found\n")
