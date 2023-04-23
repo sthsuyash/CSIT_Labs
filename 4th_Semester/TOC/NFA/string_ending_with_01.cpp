@@ -65,7 +65,7 @@ int main()
     }
     else
     {
-        cout << "String not ends with 01." << endl;
+        cout << "String does not end with 01." << endl;
     }
 
     return 0;
