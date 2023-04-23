@@ -61,11 +61,11 @@ int main()
     // Simulate the NFA on the input string and output the result
     if (simulate_nfa(input))
     {
-        cout << "String accepted." << endl;
+        cout << "String ends with 01." << endl;
     }
     else
     {
-        cout << "String not accepted." << endl;
+        cout << "String not ends with 01." << endl;
     }
 
     return 0;
