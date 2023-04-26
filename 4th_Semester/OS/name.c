@@ -1,7 +1,15 @@
 #include <stdio.h>
 #include <string.h>
 
-void name(char *lab_no, char *username, int roll, char sec)
+void name(char *lab_no)
 {
-    printf("\nLab No: %s\nName: %s\nRoll No.: %d\tSection: %c\n", lab_no, username, roll, sec);
+    // Replace with your name, roll and section
+    char username[50] = "Suyash Shrestha";
+    int roll = 22;
+    char sec = 'B';
+
+    // lab number is passed from the main function
+    printf("\nLab No: %s", lab_no);
+    printf("\nName: %s", username);
+    printf("\nRoll No : %d\tSection : %c\n", roll, sec);
 }

@@ -4,8 +4,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-#include "name.c" // imp: create a file named name.c at the root directory and define the function as given in the file
-// it will be used to print the name, roll number and section of the student
+#include "name.c"
 
 int main()
 {
@@ -34,7 +33,7 @@ int main()
         printf("Child process with PID %d has terminated with status %d\n", pid, WEXITSTATUS(status));
     }
 
-    name("2", "Suyash Shrestha", 22, 'B');
+    name("2");
 
     return 0;
 }

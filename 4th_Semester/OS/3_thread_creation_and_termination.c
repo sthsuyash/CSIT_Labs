@@ -35,7 +35,7 @@ int main()
     }
     printf("Child thread has finished executing and has been joined with the main thread\n");
 
-    name("2", "Suyash Shrestha", 22, 'B');
+    name("3");
 
     return 0;
 }
