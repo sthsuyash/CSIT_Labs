@@ -3,7 +3,7 @@
 #include <sys/msg.h>
 #define MAX 10
 
-#include "name.c"
+#include "../name.c"
 
 // structure for message queue
 struct mesg_buffer
@@ -19,7 +19,7 @@ void sendmsg(key_t key)
 {
     // msgget creates a message queue
     // and returns identifier
-    msgid = msgget(key, 0666 | IPC_CREAT);
+    msgid = msgget(key, 0666 | IPC_CREAT); // 0666 is the permission for the message queue
     message.mesg_type = 1;
 
     printf("Write Data : ");
@@ -53,7 +53,7 @@ int main()
     sendmsg(key);
     getmsg();
 
-    name("4(b)", "Suyash Shrestha", 22, 'B');
+    name("4(b)");
 
     return 0;
 }
