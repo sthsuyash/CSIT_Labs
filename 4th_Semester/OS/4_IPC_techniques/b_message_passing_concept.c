@@ -1,3 +1,5 @@
+// note run in linux
+
 #include <stdio.h>
 #include <sys/ipc.h>
 #include <sys/msg.h>

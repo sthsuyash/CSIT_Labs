@@ -1,3 +1,5 @@
+// note run in linux
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
