@@ -10,14 +10,23 @@
 
    - [WAP in C to demonstrate the process creation and termination in Linux.](./2_process_creation_and_termination.c)
 
+     ![Click to show](https://user-images.githubusercontent.com/54809836/234344907-62311957-01cd-4f15-937f-74a635a252dc.png)
+
 3. ### Thread Creation and Termination
 
    - [WAP in C to demonstrate the thread creation and termination in Linux.](./3_thread_creation_and_termination.c)
 
+     ![Click to show](https://user-images.githubusercontent.com/54809836/234344977-fce59f99-67c8-4f92-93da-479316e24e22.png)
+
 4. ### [Simulation of IPC Techniques](./4_IPC_techniques/)
 
    1. [WAP in C to simulate shared memory concept for IPC](./4_IPC_techniques/a_shared_memory_concept.c)
+
+      ![Click to show](https://user-images.githubusercontent.com/54809836/234344698-b205efd9-b343-4744-a958-320608720ba4.png)
+
    2. [WAP in C to simulate message passing concept for IPC](./4_IPC_techniques/b_message_passing_concept.c)
+
+      ![Click to show](https://user-images.githubusercontent.com/54809836/234344782-403b4aca-bf1d-4da2-bcb1-7747230f6da3.png)
 
 5. ### [Simulation of Process Scheduling Algorithms](./5_Process_scheduling_algorithns/)
 
