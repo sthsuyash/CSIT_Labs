@@ -1,32 +1,34 @@
 # program to implement A Star Search Algorithm
 
 # Defining the graph nodes in dict with given costs to traverse
-adj_list={
-    's':[('a',1),('g',10)],
-    'a':[('b',2),('c',1)],
-    'b':[('d',5)],
-    'c':[('d',3),('g',4)],
-    'd':[('g',2)],
-    'g':[]
+adj_list = {
+    's': [('a', 1), ('g', 10)],
+    'a': [('b', 2), ('c', 1)],
+    'b': [('d', 5)],
+    'c': [('d', 3), ('g', 4)],
+    'd': [('g', 2)],
+    'g': []
 
-    }
+}
 
 # Defining heuristic values for each nodes
-heuristic={
-    's':5,
-    'a':3,
-    'b':4,
-    'c':2,
-    'd':6,
-    'g':0
-    }
+heuristic = {
+    's': 5,
+    'a': 3,
+    'b': 4,
+    'c': 2,
+    'd': 6,
+    'g': 0
+}
 
 # A Star Search Algorithm
-def astar_search(adj_list,heuristic, start_node,goal_node):
+
+
+def astar_search(adj_list, heuristic, start_node, goal_node):
     open_list = set([start_node])
-    closed_list = set([])       
+    closed_list = set([])
     g = {}
-    g[start_node] = 0        
+    g[start_node] = 0
     parents = {}
     parents[start_node] = start_node
 
@@ -37,7 +39,7 @@ def astar_search(adj_list,heuristic, start_node,goal_node):
         return heuristic[node]
 
     while len(open_list) > 0:
-        n = None            
+        n = None
         for v in open_list:
             if n == None or g[v] + h(v) < g[n] + h(n):
                 n = v
@@ -74,8 +76,9 @@ def astar_search(adj_list,heuristic, start_node,goal_node):
     print('Path does not exist!')
     return None
 
-print("=====A star search====")
-start_node=input("Enter the start node: ")
-goal_node=input("Enter the goal node: ")
 
-astar_search(adj_list,heuristic,start_node,goal_node)
+print("=====A star search====")
+start_node = input("Enter the start node: ")
+goal_node = input("Enter the goal node: ")
+
+astar_search(adj_list, heuristic, start_node, goal_node)
