@@ -8,7 +8,6 @@ adj_list = {
     'c': [('d', 3), ('g', 4)],
     'd': [('g', 2)],
     'g': []
-
 }
 
 # Defining heuristic values for each nodes
@@ -77,7 +76,7 @@ def astar_search(adj_list, heuristic, start_node, goal_node):
     return None
 
 
-print("=====A star search====")
+print("----- A star search -----")
 start_node = input("Enter the start node: ")
 goal_node = input("Enter the goal node: ")
 
