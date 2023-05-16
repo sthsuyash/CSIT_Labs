@@ -6,12 +6,11 @@ root = 0  # root depth
 pruned = 0  # times pruned
 
 # function to search tree
-
-
 def children(branch, depth, alpha, beta):
     global root  # global root depth to compare with current depth
     global pruned  # global times pruned to count times pruned
     i = 0  # index of child
+
     for child in branch:
         if type(child) is list:  # if child is a list, call children function recursively
             (nalpha, nbeta) = children(child, depth + 1, alpha, beta)
@@ -32,8 +31,6 @@ def children(branch, depth, alpha, beta):
     return (alpha, beta)
 
 # function to call search
-
-
 def alphabeta(branch=tree, depth=root, alpha=-15, beta=15):
     global pruned
 
