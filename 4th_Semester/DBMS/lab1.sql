@@ -127,14 +127,14 @@ ORDER BY Name;
 
 -- 5. Find the record of employees whose salary is between 30K to 80K
 SELECT
-emp_name as Name,
-emp_address as Address,
-emp_contact as Contact,
-emp_salary as Salary,
-dept_name as Department,
-desig_name as Designation,
-emptype_name Job,
-proj_name as Project 
+  emp_name as Name,
+  emp_address as Address,
+  emp_contact as Contact,
+  emp_salary as Salary,
+  dept_name as Department,
+  desig_name as Designation,
+  emptype_name Job,
+  proj_name as Project 
 FROM Employee
 INNER JOIN Department ON Employee.dept_id = Department.dept_id
 INNER JOIN Designation ON Employee.desig_id = Designation.desig_id
@@ -145,14 +145,14 @@ ORDER BY salary;
 
 -- 6. Find the record of employees whose salary is greater than 80K
 SELECT
-emp_name as Name,
-emp_address as Address,
-emp_contact as Contact,
-emp_salary as Salary,
-dept_name as Department,
-desig_name as Designation,
-emptype_name Job,
-proj_name as Project 
+  emp_name as Name,
+  emp_address as Address,
+  emp_contact as Contact,
+  emp_salary as Salary,
+  dept_name as Department,
+  desig_name as Designation,
+  emptype_name Job,
+  proj_name as Project 
 FROM Employee
 INNER JOIN Department ON Employee.dept_id = Department.dept_id
 INNER JOIN Designation ON Employee.desig_id = Designation.desig_id
@@ -162,14 +162,14 @@ WHERE emp_salary > 80000 ORDER BY Name;
 
 -- 7. Find the record of employee whose address is out of Kathmandu Valley
 SELECT
-emp_name as Name,
-emp_address as Address,
-emp_contact as Contact,
-emp_salary as Salary,
-dept_name as Department,
-desig_name as Designation,
-emptype_name Job,
-proj_name as Project 
+  emp_name as Name,
+  emp_address as Address,
+  emp_contact as Contact,
+  emp_salary as Salary,
+  dept_name as Department,
+  desig_name as Designation,
+  emptype_name Job,
+  proj_name as Project 
 FROM Employee
 INNER JOIN Department ON Employee.dept_id = Department.dept_id
 INNER JOIN Designation ON Employee.desig_id = Designation.desig_id
@@ -180,8 +180,8 @@ ORDER BY Name;
 
 -- 8. Find the salary of employee whose designation is Manager
 SELECT
-emp_name as Name,
-emp_salary as Salary
+  emp_name as Name,
+  emp_salary as Salary
 FROM Employee
 INNER JOIN Designation ON Employee.desig_id = Designation.desig_id
 WHERE Employee.desig_id = 1
@@ -189,14 +189,14 @@ ORDER BY Salary;
 
 -- 9. Find the record of internship employees
 SELECT
-emp_name as Name,
-emp_address as Address,
-emp_contact as Contact,
-emp_salary as Salary,
-dept_name as Department,
-desig_name as Designation,
-emptype_name Job,
-proj_name as Project 
+  emp_name as Name,
+  emp_address as Address,
+  emp_contact as Contact,
+  emp_salary as Salary,
+  dept_name as Department,
+  desig_name as Designation,
+  emptype_name Job,
+  proj_name as Project 
 FROM Employee
 INNER JOIN Department ON Employee.dept_id = Department.dept_id
 INNER JOIN Designation ON Employee.desig_id = Designation.desig_id
@@ -211,12 +211,14 @@ FROM Employee
 WHERE desig_id = 2 AND emp_salary > 90000;
 
 -- 11.Find the name of the employees whose address is Kathmandu or Bhaktapur
-SELECT emp_name as Name FROM Employee WHERE emp_address IN ('Kathmandu', 'Bhaktapur');
+SELECT emp_name as Name 
+FROM Employee 
+WHERE emp_address IN ('Kathmandu', 'Bhaktapur');
 
 -- 12.List all the project name with corresponding employees name whose deadline is less than 7 days from today
 SELECT
-proj_name as Project,
-emp_name as Name
+  proj_name as Project,
+  emp_name as Name
 FROM Project
 JOIN Employee ON Project.proj_id = Employee.proj_id
 WHERE deadline < DATE_ADD(CURDATE(), INTERVAL 7 DAY);
