@@ -11,7 +11,7 @@ print("Capacities: (4, 3)")
 print("Goal state: (2, 0 or any number)")
 
 while j1 != 2:
-    r = int(input("Enter the rule:"))
+    r = int(input("Enter the rule: "))
     if (r == 1):
         j1 = x
     elif (r == 2):
