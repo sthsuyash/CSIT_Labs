@@ -1,7 +1,8 @@
-# TODO retry if the position is already taken
+'''
+Program to implement Tic Tac Toe Game
+'''
 
-import time
-import os
+# TODO retry if the position is already taken
 
 board = [' ' for x in range(9)]
 player = 1
@@ -74,15 +75,10 @@ def CheckWin():
         Game = Running
 
 
-print("Tic-Tac-Toe Game\n")
-print("Player 1 [X] --- Player 2 [O]\n")
-print()
-print()
-print("Please Wait...")
-time.sleep(1)
+print("---- Tic-Tac-Toe ----\n\n")
+print("Player 1 [X] --- Player 2 [O]\n\n\n")
 
 while (Game == Running):
-    os.system('cls')
     DrawBoard()
     if (player % 2 != 0):
         print("Player 1's chance")
@@ -92,20 +88,19 @@ while (Game == Running):
         Mark = 'O'
 
     choice = int(
-        input("Enter the position between [1-9] where you want to mark: "))
+        input("Enter the position between [0-8] where you want to mark: "))
     if (CheckPosition(choice)):
         board[choice] = Mark
         player += 1
         CheckWin()
 
-os.system('cls')
 DrawBoard()
 if (Game == Draw):
-    print("Game Draw")
+    print("Game is tied!🏅🏆")
 elif (Game == Win):
     player -= 1
 
 if (player % 2 != 0):
-    print("Player 1 Won")
+    print("Player 1 Wins!❌🏆")
 else:
-    print("Player 2 Won")
+    print("Player 2 Wins!⭕🏆")

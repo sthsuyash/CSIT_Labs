@@ -1,4 +1,6 @@
-# program to implement A Star Search Algorithm
+''' 
+Program to implement A Star Search Algorithm
+'''
 
 # Defining the graph nodes in dict with given costs to traverse
 adj_list = {

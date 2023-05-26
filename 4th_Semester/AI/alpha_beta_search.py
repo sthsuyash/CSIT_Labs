@@ -1,3 +1,7 @@
+''' 
+Program to implement Alpha-Beta Pruning Algorithm
+'''
+
 tree = [
     [[5, 1, 2], [8, -8, -9]],
     [[9, 4, 5], [-3, 4, 3]]
@@ -6,6 +10,8 @@ root = 0  # root depth
 pruned = 0  # times pruned
 
 # function to search tree
+
+
 def children(branch, depth, alpha, beta):
     global root  # global root depth to compare with current depth
     global pruned  # global times pruned to count times pruned
@@ -31,6 +37,8 @@ def children(branch, depth, alpha, beta):
     return (alpha, beta)
 
 # function to call search
+
+
 def alphabeta(branch=tree, depth=root, alpha=-15, beta=15):
     global pruned
 

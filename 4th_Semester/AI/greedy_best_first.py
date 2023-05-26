@@ -1,4 +1,6 @@
-# Program: Greedy Best First Search
+'''
+Program: Greedy Best First Search
+'''
 
 graph = {
     'S': {'A': 3, 'B': 2},

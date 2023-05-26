@@ -1,4 +1,7 @@
-# Python function to solve the tower of hanoi
+'''
+Program to implement the tower of hanoi
+'''
+
 
 def toh(n, source, destination, temp):
     if n == 1:

@@ -1,4 +1,6 @@
-# python code for N-Queen problem
+'''
+Program to implement for N-Queen problem
+'''
 
 '''
 logic where the queen must not be placed:
@@ -9,14 +11,14 @@ logic where the queen must not be placed:
 
 
 def is_safe(board, row, col, n):
-    for c in range(col, -1, -1):
+    for c in range(col, -1, -1):  # check for the same row in left side of the board
         if board[row][c] == 'Q':
             return False
 
     i = row
     j = col
 
-    while i >= 0 and j >= 0:
+    while i >= 0 and j >= 0:  # check for the left diagonal in the upper side of the board
         if board[i][j] == 'Q':
             return False
 
@@ -26,7 +28,7 @@ def is_safe(board, row, col, n):
     i = row
     j = col
 
-    while i < n and j >= 0:
+    while i < n and j >= 0:  # check for the left diagonal in the bottom side of the board
         if board[i][j] == 'Q':
             return False
 

@@ -1,4 +1,6 @@
-# program to implement iterative deepening depth first search
+'''
+Program to implement iterative deepening depth first search
+'''
 
 graph = {
     'A': ['B', 'C'],

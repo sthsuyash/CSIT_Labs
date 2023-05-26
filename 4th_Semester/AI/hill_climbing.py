@@ -47,8 +47,6 @@ if __name__ == "__main__":
     hillClimbing_search(initial_node, initial_value)
 
 
-
-
 '''
     Next method:
     If you want to enter all the nodes and successor nodes manually, use this code:
