@@ -1,3 +1,7 @@
+'''
+Program to solve the water jug problem using state space search
+'''
+
 j1 = 0
 j2 = 0
 x = 4

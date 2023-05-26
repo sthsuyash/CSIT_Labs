@@ -8,6 +8,7 @@
 - [Greedy Best First Search](greedy_best_first.py)
 - [A\* Search](a_star.py)
 - [n Queens Problem](nqueen.py)
+- [Water Jug Problem](waterjug.py)
 - [Tower of Hanoi](tower_of_hanoi.py)
 - [Alpha Beta search](alpha_beta_search.py)
 - [Hill Climbing](hill_climbing.py)
@@ -23,6 +24,7 @@
 - [Greedy Best First Search](#greedy-best-first-search)
 - [A\* Search](#a-search)
 - [n Queens Problem](#n-queens-problem)
+- [Water Jug Problem](#water-jug-problem)
 - [Tower of Hanoi](#tower-of-hanoi)
 - [Alpha Beta pruning](#alpha-beta-pruning)
 - [Hill Climbing](#hill-climbing-algorithm)
@@ -110,6 +112,24 @@ The n-queens puzzle is the problem of placing n queens on an n×n chessboard suc
    2. If placing the queen in [row, column] leads to a solution then return true.
    3. If placing queen doesn't lead to a solution then unmark this [row, column](Backtrack) and go to step (a) to try other rows.
 4. If all rows have been tried and nothing worked, return false to trigger backtracking.
+
+## [Water Jug Problem](water_jug.py)
+
+1. J1 and j2 are two jugs
+2. (x, y) : order pair
+3. x: maximum water storage capacity of jug1 is 4 gallons i.e. x=4
+4. y: maximum water storage capacity of jug2 is 3 gallons i.e. y=3
+5. No mark on jug
+6. Pump to fill the water into the jug
+7. How can you get exactly 2 gallon of water into the 4-gallons jug?
+
+Solution:
+
+![Water Jug Problem](./images/wj-1.png)
+
+![Water Jug Problem](./images/wj-2.png)
+
+![WaterJug](./images/wj-rules.png)
 
 ## [Tower of Hanoi](tower_of_hanoi.py)
 
