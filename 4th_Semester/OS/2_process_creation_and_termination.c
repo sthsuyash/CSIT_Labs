@@ -6,8 +6,6 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-#include "name.c"
-
 int main()
 {
     pid_t pid;
@@ -34,8 +32,6 @@ int main()
         wait(&status); // wait for child process to terminate
         printf("Child process with PID %d has terminated with status %d\n", pid, WEXITSTATUS(status));
     }
-
-    name("2");
 
     return 0;
 }

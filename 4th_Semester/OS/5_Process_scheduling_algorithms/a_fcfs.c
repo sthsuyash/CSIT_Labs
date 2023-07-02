@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "../name.c"
 
 int main()
 {
@@ -44,8 +43,6 @@ int main()
         printf("%d\t%d\t\t%d\t\t%d\t\t%d\n", i + 1, arrival_time[i], burst_time[i], waiting_time[i], turnaround_time[i]);
     printf("\nAverage Waiting Time = %.2f\n", avg_waiting_time);
     printf("Average Turnaround Time = %.2f\n", avg_turnaround_time);
-
-    name("5(a)");
 
     return 0;
 }

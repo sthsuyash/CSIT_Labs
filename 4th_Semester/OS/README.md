@@ -1,62 +1,5 @@
 # Operating System
 
-**Note**:
-
-If you are not using forked repository, then add file named `name.c` in the root directory and copy it's contents with name variable as yours and maintain the folder structure as given below so that there is no error in running the programs.
-
-## Folder Structure
-
-```bash
-./OS
-├── 1_linux_commands.md
-|
-├── 2_process_creation_and_termination.c
-|
-├── 3_thread_creation_and_termination.c
-|
-├── 4_IPC_techniques
-│   ├── a_shared_memory_concept.c
-│   └── b_message_passing_concept.c
-|
-├── 5_Process_scheduling_algorithms
-│   ├── a_fcfs.c
-│   ├── b_sjf.c
-│   ├── c_srtf.c
-│   ├── d_round_robin.c
-│   ├── e_non_preemptive_priority.c
-│   └── f_preemptive_priority.c
-|
-├── 6_Deadlock_avoidance_and_deadlock_detection_algorithms
-│   ├── a_bankers_algorithm.c
-│   └── b_deadlock_detection.c
-|
-├── 7_Page_replacement_algorithms
-│   ├── a_fifo.c
-│   ├── b_optimal.c
-│   ├── c_lru.c
-│   ├── d_second_chance.c
-│   └── e_lfu.c
-|
-├── 8_File_allocation_techniques
-│   ├── a_contiguous.c
-│   ├── b_linked.c
-│   ├── c_fat.c
-│   └── d_inode.c
-|
-├── 9_Free_space_management_techniques
-│   ├── a_bitmap.c
-│   └── b_linked_list.c
-|
-├── 10_Disk_scheduling_algorithms
-│   ├── a_fcfs.c
-│   └── b_sstf.c
-│   └── c_scan.c
-│   └── d_cscan.c
-│   └── e_look.c
-│   └── f_clook.c
-.
-```
-
 ## Programs
 
 1. ### Linux Commands
@@ -129,3 +72,56 @@ If you are not using forked repository, then add file named `name.c` in the root
     4. WAP to simulate C-SCAN Disk Scheduling Algorithm
     5. WAP to simulate LOOK Disk Scheduling Algorithm
     6. WAP to simulate C-LOOK Disk Scheduling Algorith
+
+## Folder Structure
+
+```bash
+./OS
+├── 1_linux_commands.md
+|
+├── 2_process_creation_and_termination.c
+|
+├── 3_thread_creation_and_termination.c
+|
+├── 4_IPC_techniques
+│   ├── a_shared_memory_concept.c
+│   └── b_message_passing_concept.c
+|
+├── 5_Process_scheduling_algorithms
+│   ├── a_fcfs.c
+│   ├── b_sjf.c
+│   ├── c_srtf.c
+│   ├── d_round_robin.c
+│   ├── e_non_preemptive_priority.c
+│   └── f_preemptive_priority.c
+|
+├── 6_Deadlock_avoidance_and_deadlock_detection_algorithms
+│   ├── a_bankers_algorithm.c
+│   └── b_deadlock_detection.c
+|
+├── 7_Page_replacement_algorithms
+│   ├── a_fifo.c
+│   ├── b_optimal.c
+│   ├── c_lru.c
+│   ├── d_second_chance.c
+│   └── e_lfu.c
+|
+├── 8_File_allocation_techniques
+│   ├── a_contiguous.c
+│   ├── b_linked.c
+│   ├── c_fat.c
+│   └── d_inode.c
+|
+├── 9_Free_space_management_techniques
+│   ├── a_bitmap.c
+│   └── b_linked_list.c
+|
+├── 10_Disk_scheduling_algorithms
+│   ├── a_fcfs.c
+│   └── b_sstf.c
+│   └── c_scan.c
+│   └── d_cscan.c
+│   └── e_look.c
+│   └── f_clook.c
+.
+```

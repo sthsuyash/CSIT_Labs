@@ -5,8 +5,6 @@
 #include <sys/ipc.h>
 #include <sys/shm.h>
 
-#include "../name.c"
-
 // create a file named shmfile in the same directory as this file
 
 #define SHM_SIZE 1024 // size of shared memory segment
@@ -63,8 +61,6 @@ int main()
 
     // Delete the shared memory segment
     shmctl(shmid, IPC_RMID, NULL);
-
-    name("4(a)");
 
     return 0;
 }

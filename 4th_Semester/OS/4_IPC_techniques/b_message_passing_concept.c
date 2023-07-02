@@ -5,8 +5,6 @@
 #include <sys/msg.h>
 #define MAX 10
 
-#include "../name.c"
-
 // structure for message queue
 struct mesg_buffer
 {
@@ -54,8 +52,6 @@ int main()
     key = ftok("progfile", 65);
     sendmsg(key);
     getmsg();
-
-    name("4(b)");
 
     return 0;
 }

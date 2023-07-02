@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../name.c"
-
 struct Process
 {
     int pid;
@@ -137,8 +135,6 @@ int main()
 
     printf("\nAverage Waiting Time: %f", avg_waiting_time);
     printf("\nAverage Turnaround Time: %f", avg_turnaround_time);
-
-    name("5(f)");
 
     return 0;
 }

@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "../name.c"
 
 #define MAX_PROCESSES 10
 #define TIME_QUANTUM 2
@@ -82,8 +81,6 @@ int main()
     }
     printf("\nAverage Waiting Time: %.2f", avg_waiting_time);
     printf("\nAverage Turnaround Time: %.2f", avg_turnaround_time);
-
-    name("5(d)");
 
     return 0;
 }

@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../name.c"
-
 struct Process
 {
     int pid;
@@ -102,6 +100,5 @@ int main()
 
     free(process_list);
 
-    name("5(e)");
     return 0;
 }

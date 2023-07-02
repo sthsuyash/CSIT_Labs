@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../name.c"
-
 struct process
 {
     int pid;
@@ -63,8 +61,6 @@ int main()
     average_turnaround_time = (float)total_turnaround_time / n;
     printf("\nAverage Waiting Time: %.2f", average_waiting_time);
     printf("\nAverage Turnaround Time: %.2f", average_turnaround_time);
-
-    name("5(b)");
 
     return 0;
 }

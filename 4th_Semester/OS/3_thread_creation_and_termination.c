@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <pthread.h>
 
-#include "name.c"
-
 void *thread_function(void *arg)
 {
     printf("Child thread executing...\n");
@@ -34,8 +32,6 @@ int main()
         exit(EXIT_FAILURE);
     }
     printf("Child thread has finished executing and has been joined with the main thread\n");
-
-    name("3");
 
     return 0;
 }
