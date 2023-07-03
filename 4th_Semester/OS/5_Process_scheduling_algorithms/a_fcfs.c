@@ -1,48 +1,69 @@
 #include <stdio.h>
+#include "utility.h"
+
+void sort_processes(int *bt, int *at, int *p, int n)
+{
+    int i, j;
+    for (i = 0; i < n - 1; i++)
+    {
+        for (j = 0; j < n - i - 1; j++)
+        {
+            if (at[j] > at[j + 1])
+            {
+                swap(&at[j], &at[j + 1]);
+                swap(&bt[j], &bt[j + 1]);
+                swap(&p[j], &p[j + 1]);
+            }
+        }
+    }
+}
+
+void get_timings(int *bt, int *at, int *ct, int *tat, int *wt, int *p, int n)
+{
+    sort_processes(bt, at, p, n);
+
+    ct[0] = bt[0];
+    tat[0] = ct[0] - at[0];
+    wt[0] = tat[0] - bt[0];
+
+    for (int i = 1; i < n; i++)
+    {
+        // Calculate the completion time of the current process
+        if (at[i] > ct[i - 1])
+        {
+            ct[i] = at[i] + bt[i];
+        }
+        else
+        {
+            ct[i] = ct[i - 1] + bt[i];
+        }
+
+        // Calculate the turnaround time and waiting time of the current process
+        tat[i] = ct[i] - at[i];
+        wt[i] = tat[i] - bt[i];
+    }
+}
 
 int main()
 {
-    int n, i, j, arrival_time[10], burst_time[10], waiting_time[10], turnaround_time[10], total_waiting_time = 0, total_turnaround_time = 0;
-    float avg_waiting_time, avg_turnaround_time;
+    // int i, n = 5;               // Number of processes
+    // int p[] = {1, 2, 3, 4, 5};  // Process IDs
+    // int bt[] = {5, 4, 3, 2, 4}; // Burst times of processes
+    // int at[] = {4, 6, 0, 6, 5}; // Arrival times of processes
 
+    int n, i;
     printf("Enter the number of processes: ");
     scanf("%d", &n);
+    int p[n], bt[n], at[n];
 
-    printf("Enter arrival time and burst time for each process: \n");
-    for (i = 0; i < n; i++)
-    {
-        printf("Process %d:", i + 1);
-        scanf("%d%d", &arrival_time[i], &burst_time[i]);
-    }
+    int ct[n], tat[n], wt[n];
 
-    // Calculating waiting time and turnaround time
-    waiting_time[0] = 0;
-    for (i = 1; i < n; i++)
-    {
-        waiting_time[i] = 0;
-        for (j = 0; j < i; j++)
-            waiting_time[i] += burst_time[j];
-    }
-    for (i = 0; i < n; i++)
-        turnaround_time[i] = burst_time[i] + waiting_time[i];
+    get_inputs(p, at, bt, n);
 
-    // Calculating total waiting time and total turnaround time
-    for (i = 0; i < n; i++)
-    {
-        total_waiting_time += waiting_time[i];
-        total_turnaround_time += turnaround_time[i];
-    }
+    get_timings(bt, at, ct, tat, wt, p, n);
 
-    // Calculating average waiting time and average turnaround time
-    avg_waiting_time = (float)total_waiting_time / n;
-    avg_turnaround_time = (float)total_turnaround_time / n;
-
-    // Displaying results
-    printf("\nProcess\tArrival Time\tBurst Time\tWaiting Time\tTurnaround Time\n");
-    for (i = 0; i < n; i++)
-        printf("%d\t%d\t\t%d\t\t%d\t\t%d\n", i + 1, arrival_time[i], burst_time[i], waiting_time[i], turnaround_time[i]);
-    printf("\nAverage Waiting Time = %.2f\n", avg_waiting_time);
-    printf("Average Turnaround Time = %.2f\n", avg_turnaround_time);
+    print_table(p, at, bt, ct, tat, wt, n);
+    print_gantt_chart(at, ct, p, n);
 
     return 0;
 }
