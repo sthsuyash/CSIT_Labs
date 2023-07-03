@@ -1,66 +1,76 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "utility.h"
 
-struct process
+void sort_processes(int *bt, int *at, int *p, int n)
 {
-    int pid;
-    int arrival_time;
-    int burst_time;
-    int waiting_time;
-    int turnaround_time;
-};
-
-int main()
-{
-    int n, i, j, total_waiting_time = 0, total_turnaround_time = 0;
-    float average_waiting_time, average_turnaround_time;
-    struct process temp;
-    printf("Enter the number of processes: ");
-    scanf("%d", &n);
-
-    struct process processes[n];
-    for (i = 0; i < n; i++)
-    {
-        printf("Enter the arrival time and burst time for process %d: ", i + 1);
-        scanf("%d %d", &processes[i].arrival_time, &processes[i].burst_time);
-        processes[i].pid = i + 1;
-    }
+    int i, j;
 
     for (i = 0; i < n - 1; i++)
     {
         for (j = 0; j < n - i - 1; j++)
         {
-            if (processes[j].burst_time > processes[j + 1].burst_time)
+            if (at[j] > at[j + 1])
             {
-                temp = processes[j];
-                processes[j] = processes[j + 1];
-                processes[j + 1] = temp;
+                swap(&at[j], &at[j + 1]);
+                swap(&bt[j], &bt[j + 1]);
+                swap(&p[j], &p[j + 1]);
             }
         }
     }
 
-    processes[0].waiting_time = 0;
-    processes[0].turnaround_time = processes[0].burst_time;
-    total_turnaround_time += processes[0].turnaround_time;
-
-    for (i = 1; i < n; i++)
+    for (i = 0; i < n - 1; i++)
     {
-        processes[i].waiting_time = processes[i - 1].waiting_time + processes[i - 1].burst_time;
-        processes[i].turnaround_time = processes[i].waiting_time + processes[i].burst_time;
-        total_waiting_time += processes[i].waiting_time;
-        total_turnaround_time += processes[i].turnaround_time;
+        for (j = 1; j < n - i - 1; j++)
+        {
+            if (bt[j] > bt[j + 1])
+            {
+                swap(&at[j], &at[j + 1]);
+                swap(&bt[j], &bt[j + 1]);
+                swap(&p[j], &p[j + 1]);
+            }
+        }
     }
+}
 
-    printf("\nProcess\tArrival Time\tBurst Time\tWaiting Time\tTurnaround Time\n");
-    for (i = 0; i < n; i++)
+void get_timings(int *bt, int *at, int *ct, int *tat, int *wt, int *p, int n)
+{
+    sort_processes(bt, at, p, n);
+
+    ct[0] = at[0] + bt[0];
+    tat[0] = ct[0] - at[0];
+    wt[0] = tat[0] - bt[0];
+
+    for (int i = 1; i < n; i++)
     {
-        printf("%d\t\t%d\t\t%d\t\t%d\t\t%d\n", processes[i].pid, processes[i].arrival_time, processes[i].burst_time, processes[i].waiting_time, processes[i].turnaround_time);
-    }
+        // Calculate the completion time of the current process
+        ct[i] = ct[i - 1] + bt[i];
 
-    average_waiting_time = (float)total_waiting_time / n;
-    average_turnaround_time = (float)total_turnaround_time / n;
-    printf("\nAverage Waiting Time: %.2f", average_waiting_time);
-    printf("\nAverage Turnaround Time: %.2f", average_turnaround_time);
+        // Calculate the turnaround time and waiting time of the current process
+        tat[i] = ct[i] - at[i];
+        wt[i] = tat[i] - bt[i];
+    }
+}
+
+int main()
+{
+    int n;
+    n = 5;
+    int p[] = {1, 2, 3, 4, 5};
+    int at[] = {3, 1, 4, 0, 2};
+    int bt[] = {1, 4, 2, 6, 3};
+    int ct[n], tat[n], wt[n];
+
+    get_timings(bt, at, ct, tat, wt, p, n);
+
+    printf("Before sorting:\n");
+    print_table(p, at, bt, ct, tat, wt, n);
+
+    printf("\n");
+
+    print_gantt_chart(at, ct, p, n);
+
+    printf("\n");
+    print_average_times(tat, wt, n);
 
     return 0;
 }
