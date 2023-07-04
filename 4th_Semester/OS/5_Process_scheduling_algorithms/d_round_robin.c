@@ -1,86 +1,127 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
-#define MAX_PROCESSES 10
-#define TIME_QUANTUM 2
+#define N 100
 
 struct process
 {
-    int pid;
+    int process_id;
     int arrival_time;
     int burst_time;
-    int remaining_time;
     int waiting_time;
-    int turnaround_time;
+    int turn_around_time;
+    int remaining_time;
 };
+
+int queue[N];
+int front = 0, rear = 0;
+struct process proc[N];
+
+void push(int process_id)
+{
+    queue[rear] = process_id;
+    rear = (rear + 1) % N;
+}
+
+int pop()
+{
+    if (front == rear)
+        return -1;
+
+    int return_position = queue[front];
+    front = (front + 1) % N;
+    return return_position;
+}
 
 int main()
 {
-    int i, n, time = 0, total_waiting_time = 0, total_turnaround_time = 0;
-    int completed[MAX_PROCESSES];
-    int front = 0, rear = 0;
-    struct process queue[MAX_PROCESSES];
-
+    float wait_time_total = 0.0, tat = 0.0;
+    int n, time_quantum;
     printf("Enter the number of processes: ");
     scanf("%d", &n);
 
-    struct process processes[n];
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        printf("Enter the arrival time and burst time for process %d: ", i + 1);
-        scanf("%d %d", &processes[i].arrival_time, &processes[i].burst_time);
-        processes[i].pid = i + 1;
-        processes[i].remaining_time = processes[i].burst_time;
-        processes[i].waiting_time = 0;
-        processes[i].turnaround_time = 0;
-        completed[i] = 0;
+        printf("Enter the arrival time for the process%d: ", i + 1);
+        scanf("%d", &proc[i].arrival_time);
+        printf("Enter the burst time for the process%d: ", i + 1);
+        scanf("%d", &proc[i].burst_time);
+        proc[i].process_id = i + 1;
+        proc[i].remaining_time = proc[i].burst_time;
     }
+    printf("Enter time quantum: ");
+    scanf("%d", &time_quantum);
 
-    while (front != rear || time == 0)
+    int time = 0;
+    int processes_left = n;
+    int position = -1;
+    int local_time = 0;
+
+    for (int j = 0; j < n; j++)
+        if (proc[j].arrival_time == time)
+            push(j);
+
+    while (processes_left)
     {
-        for (i = 0; i < n; i++)
+        if (local_time == 0)
         {
-            if (processes[i].arrival_time == time)
+            if (position != -1)
+                push(position);
+
+            position = pop();
+        }
+
+        for (int i = 0; i < n; i++)
+        {
+            if (proc[i].arrival_time > time)
+                continue;
+            if (i == position)
+                continue;
+            if (proc[i].remaining_time == 0)
+                continue;
+
+            proc[i].waiting_time++;
+            proc[i].turn_around_time++;
+        }
+
+        if (position != -1)
+        {
+            proc[position].remaining_time--;
+            proc[position].turn_around_time++;
+
+            if (proc[position].remaining_time == 0)
             {
-                queue[rear] = processes[i];
-                rear = (rear + 1) % MAX_PROCESSES;
+                processes_left--;
+                local_time = -1;
+                position = -1;
             }
         }
-
-        if (queue[front].remaining_time <= TIME_QUANTUM && queue[front].remaining_time > 0)
-        {
-            time += queue[front].remaining_time;
-            queue[front].remaining_time = 0;
-            completed[queue[front].pid - 1] = 1;
-            queue[front].turnaround_time = time - queue[front].arrival_time;
-            queue[front].waiting_time = queue[front].turnaround_time - queue[front].burst_time;
-            total_waiting_time += queue[front].waiting_time;
-            total_turnaround_time += queue[front].turnaround_time;
-            front = (front + 1) % MAX_PROCESSES;
-        }
-        else if (queue[front].remaining_time > 0)
-        {
-            time += TIME_QUANTUM;
-            queue[front].remaining_time -= TIME_QUANTUM;
-            rear = (rear + 1) % MAX_PROCESSES;
-            queue[rear - 1] = queue[front];
-            front = (front + 1) % MAX_PROCESSES;
-        }
         else
-        {
-            front = (front + 1) % MAX_PROCESSES;
-        }
+            local_time = -1;
+
+        time++;
+        local_time = (local_time + 1) % time_quantum;
+        for (int j = 0; j < n; j++)
+            if (proc[j].arrival_time == time)
+                push(j);
     }
 
-    float avg_waiting_time = (float)total_waiting_time / n;
-    float avg_turnaround_time = (float)total_turnaround_time / n;
+    printf("\n");
 
-    printf("\nProcess\tArrival Time\tBurst Time\tWaiting Time\tTurnaround Time\n");
-    for (i = 0; i < n; i++)
+    printf("Process\t\tArrival Time\tBurst Time\tWaiting time\tTurn around time\n");
+    for (int i = 0; i < n; i++)
     {
-        printf("%d\t\t%d\t\t%d\t\t%d\t\t%d\n", processes[i].pid, processes[i].arrival_time, processes[i].burst_time, processes[i].waiting_time, processes[i].turnaround_time);
-    }
-    printf("\nAverage Waiting Time: %.2f", avg_waiting_time);
-    printf("\nAverage Turnaround Time: %.2f", avg_turnaround_time);
+        printf("%d\t\t%d\t\t", proc[i].process_id, proc[i].arrival_time);
+        printf("%d\t\t%d\t\t%d\n", proc[i].burst_time, proc[i].waiting_time, proc[i].turn_around_time);
 
-    return 0;
+        tat += proc[i].turn_around_time;
+        wait_time_total += proc[i].waiting_time;
+    }
+
+    tat = tat / (1.0 * n);
+    wait_time_total = wait_time_total / (1.0 * n);
+
+    printf("\nAverage waiting time     : %f", wait_time_total);
+    printf("\nAverage turn around time : %f\n", tat);
 }
