@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 #include <stdlib.h>
 
 void recursivePart(int pages[])
@@ -55,6 +54,5 @@ int main()
     }
 
     recursivePart(pages);
-    getch();
     return 0;
 }

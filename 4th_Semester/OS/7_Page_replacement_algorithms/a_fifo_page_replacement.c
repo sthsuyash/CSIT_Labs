@@ -98,7 +98,7 @@ int main()
 
     // Input the page requests
     int pages[n];
-    printf("Enter the page requests:\n");
+    printf("Enter the page requests: ");
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &pages[i]);
