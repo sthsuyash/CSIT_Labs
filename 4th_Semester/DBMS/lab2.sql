@@ -60,7 +60,7 @@ SELECT * FROM dept;
 ------------------------------------------------------------------------------------
 
 -- Rename Table Name
-exec sp_rename 'Old_Name','New_Name';
+-- exec sp_rename 'Old_Name','New_Name';
 
 -- Rename Column name
 exec sp_rename 'emp.mgr', 'manager';
@@ -69,7 +69,7 @@ exec sp_rename 'emp.dept', 'deptno';
 
 -- Alter datatype
 ALTER TABLE emp
-ALTER TABLE hiredate date;
+ALTER COLUMN hiredate date;
 
 -- add constraint to existing columns
 ALTER TABLE emp 
@@ -196,8 +196,7 @@ SELECT ename FROM emp WHERE ename like '_A%';
 
 -- Q18 SELECT the names of the employee whose names are exactly five characters in length.
 SELECT ename FROM emp
-WHERE
-    LEN(ename) = 5;
+WHERE LEN(ename) = 5;
 
 -- Q19) Display the total number of employees working for the company.
 SELECT count(ename) as Total_Employees FROM EMP;
@@ -227,14 +226,14 @@ WHERE
     job = 'manager'
     AND deptno = 4;
 
--- Q26) Display the name and salary of highest earnig employee
+-- Q26) Display the name and salary of highest earning employee
 SELECT
     ename as Employee_Name,
     sal as Highest_Salary
 FROM emp
 WHERE sal = (SELECT max(sal) FROM emp);
 
--- Q27 Display the name and salary of lowest earnig employee
+-- Q27) Display the name and salary of lowest earnig employee
 SELECT
     ename as Employee_Name,
     sal as Highest_Salary
@@ -249,7 +248,7 @@ SELECT
 FROM emp
 ORDER BY sal DESC;
 
--- Q29 Display the name of the employee along with their annual salary (sal * 12).
+-- Q29) Display the name of the employee along with their annual salary (sal * 12).
 -- The name of the employee earning the highest annual salary should appear first.
 SELECT 
     ename as Name,

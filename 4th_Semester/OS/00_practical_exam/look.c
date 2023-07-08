@@ -2,8 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-int size = 8;
-int disk_size = 200;
+const int size = 8;
+
+// Compare function for qsort
+int compare(const void *a, const void *b)
+{
+    return (*(int *)a - *(int *)b);
+}
 
 void LOOK(int arr[], int head, char *direction)
 {
@@ -12,7 +17,7 @@ void LOOK(int arr[], int head, char *direction)
     int left[size], right[size];
     int left_size = 0, right_size = 0;
 
-    // Appending values which are currently at left and right direction from the head
+    // Appending values which are currently at left and right direction from the head.
     for (int i = 0; i < size; i++)
     {
         if (arr[i] < head)
@@ -21,34 +26,11 @@ void LOOK(int arr[], int head, char *direction)
             right[right_size++] = arr[i];
     }
 
-    // Sorting left and right arrays for servicing tracks in the correct sequence
-    for (int i = 0; i < left_size - 1; i++)
-    {
-        for (int j = i + 1; j < left_size; j++)
-        {
-            if (left[i] < left[j])
-            {
-                int temp = left[i];
-                left[i] = left[j];
-                left[j] = temp;
-            }
-        }
-    }
+    // Sorting left and right arrays for servicing tracks in the correct sequence.
+    qsort(left, left_size, sizeof(int), compare);
+    qsort(right, right_size, sizeof(int), compare);
 
-    for (int i = 0; i < right_size - 1; i++)
-    {
-        for (int j = i + 1; j < right_size; j++)
-        {
-            if (right[i] > right[j])
-            {
-                int temp = right[i];
-                right[i] = right[j];
-                right[j] = temp;
-            }
-        }
-    }
-
-    // Run the while loop two times, one by one scanning right and left side of the head
+    // Run the while loop two times, one by one scanning right and left side of the head.
     int run = 2;
     while (run--)
     {
@@ -57,6 +39,7 @@ void LOOK(int arr[], int head, char *direction)
             for (int i = left_size - 1; i >= 0; i--)
             {
                 cur_track = left[i];
+
                 // Appending current track to seek sequence
                 printf("%d ", cur_track);
 
@@ -77,6 +60,7 @@ void LOOK(int arr[], int head, char *direction)
             for (int i = 0; i < right_size; i++)
             {
                 cur_track = right[i];
+
                 // Appending current track to seek sequence
                 printf("%d ", cur_track);
 
@@ -97,7 +81,6 @@ void LOOK(int arr[], int head, char *direction)
     printf("\nTotal number of seek operations = %d\n", seek_count);
 }
 
-// Driver code
 int main()
 {
     int n, head;
@@ -108,12 +91,15 @@ int main()
     printf("Enter the queue request: ");
     for (int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
+
     printf("Enter the initial head position: ");
     scanf("%d", &head);
 
     char direction[10];
     printf("Enter the direction of head movement (left/right): ");
     scanf("%s", direction);
+
+    printf("Initial position of head: %d\n", head);
 
     LOOK(arr, head, direction);
 
