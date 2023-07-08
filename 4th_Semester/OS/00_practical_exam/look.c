@@ -99,8 +99,6 @@ int main()
     printf("Enter the direction of head movement (left/right): ");
     scanf("%s", direction);
 
-    printf("Initial position of head: %d\n", head);
-
     LOOK(arr, head, direction);
 
     return 0;
