@@ -2,43 +2,41 @@
 
 ![logo](static/logo.png)
 
-## _Course: 2074(New)_
-
 ## Description
 
-This is a code repository for all the major lab codes necessary for CSIT students according to semester in subject-wise format, currently in 4<sup>th</sup> semester and will be updated.
+This is a code repository for all the major lab codes necessary for CSIT students according to semester in subject-wise format, currently in 5<sup>th</sup> semester and is being updated.
 
 _Please feel free to update the codes as per needs and contribute to the repository._
 
-## [1<sup>st</sup> Semester](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester)
+## [1<sup>st</sup> Semester](/1st_Semester/README.md)
 
-- [IIT (Introduction to Information Technology)](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/IIT)
-- [Digital Logics](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/Digital_logics)
-- [C programming](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/C)
-- [Physics](https://github.com/sthsuyash/CSIT_Labs/tree/main/1st_Semester/Physics)
+- [IIT (Introduction to Information Technology)](/1st_Semester/IIT/README.md)
+- [Digital Logics](/1st_Semester/Digital_logics/README.md)
+- [C programming](/1st_Semester/C)
+- [Physics](/1st_Semester/Physics/README.md)
 
-## [2<sup>nd</sup> Semester](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester)
+## [2<sup>nd</sup> Semester](/2nd_Semester/README.md)
 
-- [Microprocessor](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester/Microprocessor)
-- [Discrete Structures](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester/DS_lab)
-- [OOP using C++](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester/OOP)
-- [Statistics-I](https://github.com/sthsuyash/CSIT_Labs/tree/main/2nd_Semester/Statistics-I)
+- [Microprocessor](/2nd_Semester/Microprocessor/README.md)
+- [Discrete Structures](/2nd_Semester/DS_lab/README.md)
+- [OOP using C++](/2nd_Semester/OOP/README.md)
+- [Statistics-I](/2nd_Semester/Statistics-I/README.md)
 
-## [3<sup>rd</sup> Semester](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester)
+## [3<sup>rd</sup> Semester](/3rd_Semester/README.md)
 
-- [Data Structures and Algorithms](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/DSA)
-- [Numerical Method](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Numerical_Method)
-- [Computer Architecture](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Computer_Architecture)
-- [Computer Graphics](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Computer_Graphics)
-- [Statistics-II](https://github.com/sthsuyash/CSIT_Labs/tree/main/3rd_Semester/Statistics-II)
+- [Data Structures and Algorithms](/3rd_Semester/DSA/README.md)
+- [Numerical Method](/3rd_Semester/Numerical_Method/README.md)
+- [Computer Architecture](/3rd_Semester/Computer_Architecture/README.md)
+- [Computer Graphics](/3rd_Semester/Computer_Graphics/README.md)
+- [Statistics-II](/3rd_Semester/Statistics-II/README.md)
 
-## [4<sup>th</sup> Semester](https://github.com/sthsuyash/CSIT_Labs/tree/main/4th_Semester)
+## [4<sup>th</sup> Semester](/4th_Semester/README.md)
 
-- [Artificial Intelligence](https://github.com/sthsuyash/CSIT_Labs/tree/main/4th_Semester/AI)
-- [Database Management System](https://github.com/sthsuyash/CSIT_Labs/tree/main/4th_Semester/DBMS)
-- [Computer Network](https://github.com/sthsuyash/CSIT_Labs/tree/main/4th_Semester/CN)
-- [Operating System](https://github.com/sthsuyash/CSIT_Labs/tree/main/4th_Semester/OS)
-- [Theory of Computation](https://github.com/sthsuyash/CSIT_Labs/tree/main/4th_Semester/TOC)
+- [Artificial Intelligence](/4th_Semester/AI/README.md)
+- [Database Management System](/4th_Semester/DBMS/README.md)
+- [Computer Network](/4th_Semester/CN/README.md)
+- [Operating System](/4th_Semester/OS/README.md)
+- [Theory of Computation](/4th_Semester/TOC/README.md)
 
 ## Contributing
 
