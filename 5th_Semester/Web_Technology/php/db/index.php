@@ -16,6 +16,10 @@
         if (isset($_GET['success'])) { //get is used to get value from the direted page
             echo "<h2 class='value-inserted'>Value has been inserted</h2>";
         }
+
+        if (isset($_GET['update'])) {
+            echo "<h2 class='value-inserted'>Value has been updated</h2>";
+        }
         ?>
 
         <form method="POST" action="save.php">

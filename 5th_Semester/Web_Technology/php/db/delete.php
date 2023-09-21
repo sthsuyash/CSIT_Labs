@@ -2,7 +2,7 @@
 include "db.php";
 $id = $_GET['id'];
 
-$sql = "delete from web where id=$id";
+$sql = "DELETE FROM web WHERE id=$id";
 
 $res = mysqli_query($conn, $sql);
 

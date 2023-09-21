@@ -11,5 +11,5 @@ $res = mysqli_query($conn, $sql);
 if (!$res) {
     die("Operation failed" . mysqli_error($conn));
 }
-header('location:form.php?success=true'); //location is used to go to another page and ? is used to send message to url
+header('location:index.php?success=true'); //location is used to go to another page and ? is used to send message to url
 ?>

@@ -65,7 +65,7 @@
 
     <!-- <?php
     include "db.php";
-    $sql = "select * from web";
+    $sql = "SELECT * FROM web";
     $res = mysqli_query($conn, $sql);
     ?> -->
     <!-- // if (mysqli_num_rows($res) > 0) {
@@ -88,7 +88,7 @@
         <tbody>
             <?php
             include "db.php";
-            $sql = "select * from web";
+            $sql = "SELECT * FROM web";
             $res = mysqli_query($conn, $sql);
 
             if (mysqli_num_rows($res) > 0) {

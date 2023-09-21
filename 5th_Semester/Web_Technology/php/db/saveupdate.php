@@ -1,6 +1,8 @@
 <?php
 include "db.php";
 
+// Check if the 'id' parameter is set in the POST data.
+$id = $_POST['id'];
 $name = $_POST["name"];
 $roll = $_POST["roll"];
 $phone = $_POST["phone"];
@@ -11,5 +13,5 @@ $res = mysqli_query($conn, $sql);
 if (!$res) {
     die("Operation failed" . mysqli_error($conn));
 }
-header('location:form.php?success=true'); //location is used to go to another page and ? is used to send message to url
+header('location:index.php?update=true'); //location is used to go to another page and ? is used to send message to url
 ?>
