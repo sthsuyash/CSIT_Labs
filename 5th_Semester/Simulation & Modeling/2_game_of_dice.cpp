@@ -27,7 +27,7 @@ int main()
         switch (ch)
         {
         case 1:
-            cout << "\nPlayer 1: Enter 1 to roll the dice: ";
+            cout << "\nPlayer 1:\nEnter 1 to roll the dice: ";
             cin >> p1;
             if (p1 == 1)
             {
@@ -35,7 +35,7 @@ int main()
                 cout << "Player 1 score: " << player1 << "\n";
             }
 
-            cout << "\nPlayer 2: Enter 1 to roll the dice: ";
+            cout << "\nPlayer 2:\nEnter 1 to roll the dice: ";
             cin >> p2;
             if (p2 == 1)
             {
