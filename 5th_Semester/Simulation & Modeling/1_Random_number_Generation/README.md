@@ -45,7 +45,7 @@ where X is the sequence of pseudorandom values m, 0 < m - the "modulus" a, 0 < a
 
 #### Program
 
-[Mixed Linear Congruential Method](./1.1_mixed_congruential.cpp)
+[Mixed Linear Congruential Method](./a_mixed_congruential.cpp)
 
 #### Output
 
@@ -75,7 +75,7 @@ where X is the sequence of pseudorandom values m, 0 < m - the "modulus" a, 0 < a
 
 #### Program
 
-[Multiplicative Congruential Method](./1.2_linear_multiplicative_congruential.cpp)
+[Multiplicative Congruential Method](./b_linear_additive_congruential.cpp)
 
 #### Output
 
@@ -121,7 +121,7 @@ where X is the sequence of pseudorandom values m, 0 < m - the "modulus" c, 0 <= 
 
 #### Program
 
-[Additive Congruential Method](./1.3_linear_additive_congruential.cpp)
+[Additive Congruential Method](./c_linear_multiplicative_congruential.cpp)
 
 #### Output
 
@@ -134,5 +134,65 @@ Generate by running the program.
 Arithmetic congruential generators (ACGs) are a class of pseudorandom number generators (PRNGs) that generate a sequence of integers \[0, m-1\] calculated with a linear equation of the form:
 
 ```math
-Xn+1 =
+Xn+1 = Xn-1 + Xn
 ```
+
+where X is the sequence of pseudorandom values m, 0 < m - the "modulus" X0, 0 <= X0 < m - the "seed" or "start value".
+
+#### Algorithm
+
+1. Start
+2. Initialize X1 and X2 as seed values.
+3. Input n (number of random values to generate) and m (modulus value).
+4. Display "Generated numbers: X1 X2".
+5. Set i = 2.
+6. Repeat the following steps n - 2 times:
+
+   1. Calculate the next random number:
+
+      next = (X1 + X2) % m
+
+   2. Display next.
+
+   3. Update X1 and X2:
+
+      X1 = X2
+      X2 = next
+
+   4. Increment i by 1.
+
+7. End the loop.
+8. Display "Random numbers generated."
+9. End
+
+#### Program
+
+[Arithmetic Congruential Method](./d_linear_arithmetic_congruential.cpp)
+
+#### Output
+
+Generate by running the program.
+
+## Mid Square Method
+
+#### Definition
+
+The middle-square method is a method of generating pseudorandom numbers. In practice it is not a good method, since its period is usually very short and it has some severe weaknesses, such as the output sequence almost always converging to zero.
+
+#### Algorithm
+
+1. Start
+2. Input the value of seed X0
+3. Set i = 0
+4. Generate `Xn+1 = (Xn)^2`
+5. Set i = i + 1
+6. If i < n, goto step 4, otherwise goto step 7.
+7. End
+
+#### Program
+
+[Middle Square Method](./e_mid_square.cpp)
+
+#### Output
+
+Generate by running the program.

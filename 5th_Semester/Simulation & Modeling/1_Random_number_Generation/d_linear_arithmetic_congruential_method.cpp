@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
 
     for (i = 0; i < n - 1; i++)
     {
-        cout << random_num(n) << "";
+        cout << random_num(n) << " ";
     }
     return 0;
 }

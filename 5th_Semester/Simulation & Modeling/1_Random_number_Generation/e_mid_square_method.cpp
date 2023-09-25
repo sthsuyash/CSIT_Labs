@@ -2,8 +2,6 @@
 // 2 digit seed value
 
 #include <iostream>
-#include <cmath>
-
 using namespace std;
 
 int seed_value;
@@ -16,10 +14,10 @@ int main(int argc, char const *argv[])
     cin >> seed_value;
 
     cout << "Generated random numbers are: ";
-    cout << seed_value << ", ";
+    cout << seed_value << " ";
     for (int i = 0; i < 10; i++)
     {
-        cout << midSquareMethod() << ", ";
+        cout << midSquareMethod() << " ";
     }
 
     return 0;
@@ -28,6 +26,5 @@ int main(int argc, char const *argv[])
 int midSquareMethod()
 {
     int squared = seed_value * seed_value;
-    seed_value = (squared / 10) % 100; // extract middle 2 digits
-    return seed_value;
+    return seed_value = (squared / 10) % 100; // extract middle 2 digits
 }
