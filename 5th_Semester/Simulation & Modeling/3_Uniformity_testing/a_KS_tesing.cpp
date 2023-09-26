@@ -1,6 +1,12 @@
 // K-S Testing for Uniformity
+
 //  H0: Uniformly distributed
 //  H1: Not uniformly distributed
+
+/*
+Question:
+Suppose that
+*/
 
 #include <iostream>
 #include <iomanip>
@@ -68,39 +74,44 @@ public:
 
     void display() // display the tabulated format and find D
     {
-        cout << endl;
-        cout << endl;
+        cout << endl
+             << endl;
         cout << setw(10) << "i"; // here setw() function indicates the output field's width in character
+
         for (i = 1; i <= n; i++)
         {
             cout << setw(10) << i;
         }
         cout << endl;
+
         cout << setw(10) << "R(i)";
         for (i = 0; i < n; i++)
         {
             cout << setw(10) << numbers[i];
         }
         cout << endl;
-        cout << setw(10) << "i/n";
 
+        cout << setw(10) << "i/n";
         for (i = 0; i < n; i++)
         {
             cout << setw(10) << setprecision(2) << ratio[i];
         }
         cout << endl;
+
         cout << setw(10) << "D+";
         for (i = 0; i < n; i++)
         {
             cout << setw(10) << setprecision(2) << Dplus[i];
         }
         cout << endl;
+
         cout << setw(10) << "D-";
         for (i = 0; i < n; i++)
         {
             cout << setw(10) << setprecision(2) << Dminus[i];
         }
         cout << endl;
+
         Dplusmax = Dplus[0];
         Dminusmax = Dminus[0];
         for (i = 1; i < n; i++)
@@ -115,6 +126,7 @@ public:
                 Dminusmax = Dminus[i];
             }
         }
+
         cout << "D+ max: " << Dplusmax << endl;
         cout << "D- max: " << Dminusmax << endl;
         cout << "D = max(" << Dplusmax << ", " << Dminusmax << ") =";
