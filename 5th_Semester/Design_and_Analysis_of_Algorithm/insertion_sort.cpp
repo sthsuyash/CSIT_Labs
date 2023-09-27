@@ -11,8 +11,6 @@
  */
 
 #include <iostream>
-#include "../../../utils/generateHeader.h"
-#include "../../../utils/name.h"
 
 using namespace std;
 
@@ -20,7 +18,6 @@ void insertionSort(int[], int);
 
 int main()
 {
-    // generateHeader("Insertion Sort Program");
 
     int n;
 
@@ -42,18 +39,9 @@ int main()
         cout << arr[i] << " ";
     }
 
-    // generateName("0");
     return 0;
 }
 
-/*
- * This function sorts an array using insertion sort algorithm
- *
- * @param arr[] - array to be sorted
- * @param size - size of the array
- *
- * @returns void
- */
 void insertionSort(int arr[], int size)
 {
     int temp, j;
