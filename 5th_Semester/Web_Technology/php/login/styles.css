@@ -99,10 +99,10 @@ form .input-box .details {
     cursor: pointer;
     margin-top: 5px;
     font: var(--body-font);
-    }
-    
-    .user-details .input-box input[type="file"]::placeholder {
-        color: #999;
+}
+
+.user-details .input-box input[type="file"]::placeholder {
+    color: #999;
 }
 
 .user-details .input-box input[type="file"]:focus,
@@ -199,6 +199,7 @@ form .button input:hover {
         flex-direction: column;
     }
 }
+
 .styled-table {
     border-collapse: collapse;
     margin: 0 auto;
@@ -239,14 +240,11 @@ form .button input:hover {
     color: #ffffff;
 }
 
-a {
+.styled-table a {
     text-decoration: none;
 }
 
-a:hover {
-    color: transparent;
-}
-
-a:visited {
+.styled-table a:hover,
+.styled-table a:visited {
     color: transparent;
 }

@@ -12,14 +12,14 @@
     <main>
         <!-- Display error messages if received -->
         <?php
-        if (isset($_GET['success'])) {
+        if (isset($_GET['success']) && (isset($_GET['success']) == false)) {
             $message = $_GET['message'];
-            echo '<p class="error php-value">' . $message . '</p>';
+            echo '<h2 class="error php-value">' . $message . '</h2>';
         }
 
         // Display a success message if received
         if (isset($_GET['success']) && $_GET['success'] == 'true') {
-            echo '<p class="inserted php-value">Registration successful. You can now <a href="login.php">login</a>.</p>';
+            echo '<h2 class="inserted php-value">Registration successful.</br>You can now <a href="login.php">login</a>.</h2>';
         }
         ?>
         <div class="container">

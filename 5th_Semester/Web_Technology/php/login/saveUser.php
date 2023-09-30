@@ -25,7 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (!file_exists("uploads/" . $uname)) {
             mkdir("uploads/" . $uname);
-        } elseif ($imgType != "image/jpeg" && $imgType != "image/jpg" && $imgType != "image/png") {
+        }
+        if ($imgType != "image/jpeg" && $imgType != "image/jpg" && $imgType != "image/png") {
             header('location: register.php?success=false&message=Only jpeg, jpg, and png files are allowed.');
         } elseif ($imgSize >= 5000000) {
             header('location: register.php?success=false&message=File size is too large.');
