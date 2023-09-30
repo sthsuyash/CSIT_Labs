@@ -49,7 +49,8 @@ int main()
     transform(str, str + strlen(str), str, ::toupper);
     cout << endl
          << "Decrypted text: " << str << endl;
-
+         
+    cin.get();
     return 0;
 }
 

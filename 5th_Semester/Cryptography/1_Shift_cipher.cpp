@@ -32,6 +32,7 @@ int main()
     plaintext = decrypt(ciphertext, key);
     cout << "Decrypted Text: " << plaintext << endl;
 
+    cin.get();
     return 0;
 }
 

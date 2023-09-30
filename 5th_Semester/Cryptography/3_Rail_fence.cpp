@@ -28,6 +28,7 @@ int main()
     decrypted_text = decryptMsg(cipher_text, key);
     cout << "Decrypted Text: " << decrypted_text << endl;
 
+    cin.get();
     return 0;
 }
 
