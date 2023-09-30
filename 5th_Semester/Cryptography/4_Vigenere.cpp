@@ -1,5 +1,6 @@
 /*
  * Program to implement Vigenere Cipher
+ * use capital letters only
  */
 
 #include <bits/stdc++.h>

@@ -20,7 +20,10 @@ int main()
     cout << "Enter the value of m: ";
     cin >> m;
 
-    cout << "Additive Inverse of " << a << " under modulo " << m << " is " << modInverse(a, m) << endl;
+    if (modInverse(a, m) == -1)
+        cout << "Additive Inverse doesn't exist" << endl;
+    else
+        cout << "Additive Inverse of " << a << " under modulo " << m << " is " << modInverse(a, m) << endl;
 
     cin.get();
     return 0;
@@ -28,7 +31,8 @@ int main()
 
 int gcd(int a, int b)
 {
-    if (a == 0) return b;
+    if (a == 0)
+        return b;
     return gcd(b % a, a);
 }
 
