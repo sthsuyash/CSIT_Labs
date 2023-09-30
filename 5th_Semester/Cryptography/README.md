@@ -7,11 +7,11 @@
 1. All the programs have Encryption followed by Decryption.
 2. Key is taken from the user.
 
-### Lab 1: Implement Shift Cipher
+### Lab 1: [Implement Shift Cipher](./1_Shift_cipher.cpp)
 
-### Lab 2: Implement Playfair Cipher (display the key matrix as well)
+### Lab 2: [Implement Playfair Cipher (display the key matrix as well)](./2_Playfair.cpp)
 
-### Lab 3: Implement Rail Fence Cipher
+### Lab 3: [Implement Rail Fence Cipher](./3_Rail_fence.cpp)
 
 ### Lab 4: Implement Vigenere Cipher
 

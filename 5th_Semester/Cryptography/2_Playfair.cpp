@@ -1,4 +1,6 @@
-// C++ program to implement Playfair Cipher
+/*
+ * C++ program to implement Playfair Cipher
+ */
 
 #include <bits/stdc++.h>
 #include <cctype>
@@ -82,11 +84,12 @@ void generateKeyTable(char key[], int ks, char keyT[5][5])
     int dicty[26] = {0};
     for (i = 0; i < ks; i++)
     {
-        if (key[i] != 'j') dicty[key[i] - 97] = 2;
+        if (key[i] != 'j')
+            dicty[key[i] - 97] = 2;
     }
 
     dicty['j' - 97] = 1;
-    
+
     i = 0;
     j = 0;
     for (k = 0; k < ks; k++)
