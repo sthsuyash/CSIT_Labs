@@ -8,9 +8,7 @@
 using namespace std;
 
 int getKey();
-
 string encrypt(string, int);
-
 string decrypt(string, int);
 
 int main()
