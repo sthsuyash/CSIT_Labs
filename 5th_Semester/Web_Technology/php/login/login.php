@@ -11,12 +11,17 @@
 <body>
     <main>
         <?php
-        if (isset($_GET['success'])) {
+        if (isset($_GET['success']) && $_GET['success'] === 'true') {
             echo "<h2 class='php-value inserted'>Registration successful. Please login</h2>";
         }
-        if (isset($_GET['login'])) {
+        if (isset($_GET['login']) && $_GET['login'] === 'false') {
             echo "<h2 class='php-value error'>Username or password is incorrect</h2>";
         }
+        if (isset($_GET['logout']) && $_GET['logout'] === 'true'){
+            echo "<h2 class='php-value inserted'>Logout successful.</h2>";
+        }
+    
+
         ?>
         <div class="container">
             <div class="title">Login</div>
@@ -34,6 +39,7 @@
                         <div class="button">
                             <input type="submit" value="Login">
                         </div>
+                    </div>
                 </form>
             </div>
         </div>
