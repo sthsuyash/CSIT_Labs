@@ -38,7 +38,7 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 - [Operating System](/4th_Semester/OS/README.md)
 - [Theory of Computation](/4th_Semester/TOC/README.md)
 
-# 5<sup>th</sup> Semester
+## [5<sup>th</sup> Semester](/5th_Semester/README.md)
 
 - [Design and Analysis of Algorithm](/5th_Semester/Design_and_Analysis_of_Algorithm/README.md)
 - [Multimedia](/5th_Semester/Multimedia/README.md)
