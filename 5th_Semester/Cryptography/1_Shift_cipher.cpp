@@ -1,7 +1,3 @@
-/*
- * Cpp Program for Shift Cipher
- */
-
 #include <iostream>
 #include <string>
 #include "./returnName.h"
@@ -13,28 +9,60 @@ string decrypt(string, int);
 
 int main()
 {
+    int choice;
     int key;
     string plaintext, ciphertext;
 
-    generateHeader("Program for Shift Cipher");
+    generateHeader("Shift Cipher Program");
 
-    cout << "Enter the plaintext: ";
-    getline(cin, plaintext);
+    do
+    {
+        cout << "Menu:\n";
+        cout << "1. Encrypt\n";
+        cout << "2. Decrypt\n";
+        cout << "3. Exit\n";
+        cout << "Enter your choice (1/2/3): ";
+        cin >> choice;
 
-    cout << "Enter the key (an integer between 0 to 25): ";
-    key = getKey();
+        switch (choice)
+        {
+        case 1:
+            cout << "Enter the plaintext: ";
+            cin.ignore();
+            getline(cin, plaintext);
+            cout << "Enter the key (an integer between 0 to 25): ";
+            key = getKey();
+            ciphertext = encrypt(plaintext, key);
+            cout << "Encrypted Text: " << ciphertext << endl
+                 << endl;
+            break;
 
-    ciphertext = encrypt(plaintext, key);
-    cout << "Encrypted Text: " << ciphertext << endl;
+        case 2:
+            cout << "Enter the ciphertext: ";
+            cin.ignore();
+            getline(cin, ciphertext);
+            cout << "Enter the key (an integer between 0 to 25): ";
+            key = getKey();
+            plaintext = decrypt(ciphertext, key);
+            cout << "Decrypted Text: " << plaintext << endl
+                 << endl;
+            break;
 
-    plaintext = decrypt(ciphertext, key);
-    cout << "Decrypted Text: " << plaintext << endl;
+        case 3:
+            cout << "Exiting program...\n";
+            break;
+
+        default:
+            cout << "Invalid choice. Please enter 1, 2, or 3.\n";
+            break;
+        }
+    } while (choice != 3);
 
     cin.get();
     return 0;
 }
 
-// function to get the key from user and validate it
+// function to get the key from the user and validate it
 int getKey()
 {
     int key;
@@ -42,7 +70,7 @@ int getKey()
     if (key < 0 || key > 25)
     {
         cout << "Invalid key. Enter again: ";
-        getKey();
+        return getKey(); // Recursively call getKey until a valid key is entered.
     }
     return key;
 }
@@ -70,5 +98,5 @@ string encrypt(string text, int key)
 // function to decrypt the ciphertext using shift cipher
 string decrypt(string cipher, int key)
 {
-    return encrypt(cipher, 26 - key);
+    return encrypt(cipher, 26 - key); // Decrypting is the same as encrypting with the opposite key.
 }

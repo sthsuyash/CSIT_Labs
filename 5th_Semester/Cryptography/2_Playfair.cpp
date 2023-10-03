@@ -24,32 +24,68 @@ void displayKeyMatrix(char[][5]);
 
 int main()
 {
-    generateHeader("Program for Playfair Cipher");
+    generateHeader("Playfair Cipher Program");
     char str[SIZE], key[SIZE];
     char keyT[5][5];
 
-    cout << "Enter key text: ";
-    cin >> key;
+    int choice;
+    do
+    {
+        cout << "Menu:\n";
+        cout << "1. Encrypt\n";
+        cout << "2. Decrypt\n";
+        cout << "3. Exit\n";
+        cout << "Enter your choice (1/2/3): ";
+        cin >> choice;
 
-    cout << "Enter plain text: ";
-    cin >> str;
+        switch (choice)
+        {
+        case 1:
+            cout << "Enter key text: ";
+            cin >> key;
 
-    // Generate and display the key matrix
-    generateKeyTable(key, strlen(key), keyT);
-    displayKeyMatrix(keyT);
+            cout << "Enter plain text: ";
+            cin >> str;
 
-    // Encrypt and display the cipher text
-    encryptByPlayfairCipher(str, key);
-    transform(str, str + strlen(str), str, ::toupper);
-    cout << endl
-         << "Cipher text: " << str << endl;
+            // Generate and display the key matrix
+            generateKeyTable(key, strlen(key), keyT);
+            displayKeyMatrix(keyT);
 
-    // Decrypt and display the plain text
-    decryptByPlayfairCipher(str, key);
-    transform(str, str + strlen(str), str, ::toupper);
-    cout << endl
-         << "Decrypted text: " << str << endl;
-         
+            // Encrypt and display the cipher text
+            encryptByPlayfairCipher(str, key);
+            transform(str, str + strlen(str), str, ::toupper);
+            cout << endl
+                 << "Cipher text: " << str << endl;
+            break;
+
+        case 2:
+            cout << "Enter key text: ";
+            cin >> key;
+
+            cout << "Enter cipher text: ";
+            cin >> str;
+
+            // Generate and display the key matrix
+            generateKeyTable(key, strlen(key), keyT);
+            displayKeyMatrix(keyT);
+
+            // Decrypt and display the plain text
+            decryptByPlayfairCipher(str, key);
+            transform(str, str + strlen(str), str, ::toupper);
+            cout << endl
+                 << "Decrypted text: " << str << endl;
+            break;
+
+        case 3:
+            cout << "Exiting program...\n";
+            break;
+
+        default:
+            cout << "Invalid choice. Please enter 1, 2, or 3.\n";
+            break;
+        }
+    } while (choice != 3);
+
     cin.get();
     return 0;
 }

@@ -13,20 +13,50 @@ string decryptMsg(string, int);
 int main()
 {
     generateHeader("Rail Fence Cipher");
+
+    int choice, key;
     string plain_text, cipher_text, decrypted_text;
-    int key;
 
-    cout << "Enter the plain text: ";
-    getline(cin, plain_text);
+    do
+    {
+        cout << endl << "Menu:\n";
+        cout << "1. Encrypt\n";
+        cout << "2. Decrypt\n";
+        cout << "3. Exit\n";
+        cout << "Enter your choice (1/2/3): ";
+        cin >> choice;
 
-    cout << "Enter the key: ";
-    cin >> key;
+        switch (choice)
+        {
+        case 1:
+            cout << "Enter the plain text: ";
+            cin.ignore();
+            getline(cin, plain_text);
+            cout << "Enter the key: ";
+            cin >> key;
+            cipher_text = encryptMsg(plain_text, key);
+            cout << "Encrypted Text: " << cipher_text << endl;
+            break;
 
-    cipher_text = encryptMsg(plain_text, key);
-    cout << "Encrypted Text: " << cipher_text << endl;
+        case 2:
+            cout << "Enter the cipher text: ";
+            cin.ignore();
+            getline(cin, cipher_text);
+            cout << "Enter the key: ";
+            cin >> key;
+            decrypted_text = decryptMsg(cipher_text, key);
+            cout << "Decrypted Text: " << decrypted_text << endl;
+            break;
 
-    decrypted_text = decryptMsg(cipher_text, key);
-    cout << "Decrypted Text: " << decrypted_text << endl;
+        case 3:
+            cout << "Exiting program...\n";
+            break;
+
+        default:
+            cout << "Invalid choice. Please enter 1, 2, or 3.\n";
+            break;
+        }
+    } while (choice != 3);
 
     cin.get();
     return 0;

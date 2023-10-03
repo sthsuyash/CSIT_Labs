@@ -14,20 +14,56 @@ string originalText(string, string);
 int main()
 {
     generateHeader("Program to implement Vigenere Cipher");
-    string str, keyword;
 
-    cout << "Enter the plain text: ";
-    getline(cin, str);
+    while (true)
+    {
+        cout << endl
+             << "Menu:" << endl;
+        cout << "1. Encrypt Text" << endl;
+        cout << "2. Decrypt Text" << endl;
+        cout << "3. Exit" << endl;
+        cout << "Enter your choice: ";
 
-    cout << "Enter the keyword(string): ";
-    cin >> keyword;
+        int choice;
+        cin >> choice;
 
-    string key = generateKey(str, keyword);
-    string cipher_text = cipherText(str, key);
+        if (choice == 1)
+        {
+            string str, keyword;
 
-    cout << "Encrypted Text : " << cipher_text << endl;
-    cout << "Decrypted Text : " << originalText(cipher_text, key) << endl;
+            cout << "Enter the plain text: ";
+            cin.ignore();
+            getline(cin, str);
 
+            cout << "Enter the keyword (string): ";
+            cin >> keyword;
+
+            string key = generateKey(str, keyword);
+            string cipher_text = cipherText(str, key);
+
+            cout << "Encrypted Text: " << cipher_text << endl;
+        }
+        else if (choice == 2)
+        {
+            string cipher_text, keyword;
+
+            cout << "Enter the cipher text: ";
+            cin.ignore();
+            getline(cin, cipher_text);
+
+            cout << "Enter the keyword (string): ";
+            cin >> keyword;
+
+            string key = generateKey(cipher_text, keyword);
+            string orig_text = originalText(cipher_text, key);
+
+            cout << "Decrypted Text: " << orig_text << endl;
+        }
+        else if (choice == 3)
+            break;
+        else
+            cout << "Invalid choice. Please enter a valid option." << endl;
+    }
     cin.get();
     return 0;
 }

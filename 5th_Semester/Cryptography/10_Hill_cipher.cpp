@@ -1,6 +1,6 @@
 /*
-* Program to implement Hill Cipher
-*/
+ * Program to implement Hill Cipher
+ */
 
 #include <iostream>
 #include <string>
@@ -19,32 +19,69 @@ string decrypt(const string &, const vector<vector<int>> &, int);
 int main()
 {
     generateHeader("Program to implement Hill Cipher");
-    string message, key;
 
-    cout << "Enter the message (uppercase letters): ";
-    cin >> message;
-
-    cout << "Enter the key matrix (e.g., for a 2x2 matrix, enter 4 uppercase letters): ";
-    cin >> key;
-
-    int n = sqrt(key.length());
-
-    if (n * n != key.length())
+    while (true)
     {
-        cout << "Invalid key matrix size. Please enter a square key matrix." << endl;
-        return 1;
+        cout << "Menu:" << endl;
+        cout << "1. Encrypt Text" << endl;
+        cout << "2. Decrypt Text" << endl;
+        cout << "3. Exit" << endl;
+        cout << "Enter your choice: ";
+
+        int choice;
+        cin >> choice;
+
+        if (choice == 1)
+        {
+            string message, key;
+
+            cout << "Enter the message (uppercase letters): ";
+            cin >> message;
+
+            cout << "Enter the key matrix (e.g., for a 2x2 matrix, enter 4 uppercase letters): ";
+            cin >> key;
+
+            int n = sqrt(key.length());
+            if (n * n != key.length())
+            {
+                cout << "Invalid key matrix size. Please enter a square key matrix." << endl;
+                continue;
+            }
+
+            vector<vector<int>> keyMatrix;
+            getKeyMatrix(key, keyMatrix, n);
+
+            string ciphertext = encrypt(message, keyMatrix, n);
+
+            cout << "Encrypted ciphertext: " << ciphertext << endl;
+        }
+        else if (choice == 2)
+        {
+            string ciphertext, key;
+
+            cout << "Enter the ciphertext (uppercase letters): ";
+            cin >> ciphertext;
+
+            cout << "Enter the key matrix (e.g., for a 2x2 matrix, enter 4 uppercase letters): ";
+            cin >> key;
+
+            int n = sqrt(key.length());
+            if (n * n != key.length())
+            {
+                cout << "Invalid key matrix size. Please enter a square key matrix." << endl;
+                continue;
+            }
+
+            vector<vector<int>> keyMatrix;
+            getKeyMatrix(key, keyMatrix, n);
+            string plaintext = decrypt(ciphertext, keyMatrix, n);
+            cout << "Decrypted plaintext: " << plaintext << endl;
+        }
+        else if (choice == 3)
+            break;
+        else
+            cout << "Invalid choice. Please enter a valid option." << endl;
     }
-
-    vector<vector<int>> keyMatrix;
-    getKeyMatrix(key, keyMatrix, n);
-
-    string ciphertext = encrypt(message, keyMatrix, n);
-
-    cout << "Encrypted ciphertext: " << ciphertext << endl;
-
-    string decryptedText = decrypt(ciphertext, keyMatrix, n);
-
-    cout << "Decrypted plaintext: " << decryptedText << endl;
 
     cin.get();
     return 0;
