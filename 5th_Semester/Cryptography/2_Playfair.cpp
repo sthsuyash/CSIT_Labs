@@ -5,7 +5,7 @@
 #include <bits/stdc++.h>
 #include <cctype>
 #include <algorithm>
-#include "./returnName.h"
+// #include "./returnName.h"
 using namespace std;
 #define SIZE 30
 
@@ -24,7 +24,7 @@ void displayKeyMatrix(char[][5]);
 
 int main()
 {
-    generateHeader("Playfair Cipher Program");
+    // generateHeader("Playfair Cipher Program");
     char str[SIZE], key[SIZE];
     char keyT[5][5];
 
@@ -85,7 +85,6 @@ int main()
             break;
         }
     } while (choice != 3);
-
     cin.get();
     return 0;
 }

@@ -4,7 +4,7 @@
  */
 
 #include <bits/stdc++.h>
-#include "./returnName.h"
+// #include "./returnName.h"
 using namespace std;
 
 string generateKey(string, string);
@@ -13,8 +13,7 @@ string originalText(string, string);
 
 int main()
 {
-    generateHeader("Program to implement Vigenere Cipher");
-
+    // generateHeader("Program to implement Vigenere Cipher");
     while (true)
     {
         cout << endl

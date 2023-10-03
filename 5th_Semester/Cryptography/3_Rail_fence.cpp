@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <string.h>
-#include "./returnName.h"
+// #include "./returnName.h"
 using namespace std;
 
 string encryptMsg(string, int);
@@ -12,14 +12,13 @@ string decryptMsg(string, int);
 
 int main()
 {
-    generateHeader("Rail Fence Cipher");
-
+    // generateHeader("Rail Fence Cipher");
     int choice, key;
     string plain_text, cipher_text, decrypted_text;
-
     do
     {
-        cout << endl << "Menu:\n";
+        cout << endl
+             << "Menu:\n";
         cout << "1. Encrypt\n";
         cout << "2. Decrypt\n";
         cout << "3. Exit\n";
@@ -57,7 +56,6 @@ int main()
             break;
         }
     } while (choice != 3);
-
     cin.get();
     return 0;
 }

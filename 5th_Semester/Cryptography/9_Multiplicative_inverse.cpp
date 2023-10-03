@@ -1,5 +1,5 @@
 #include <iostream>
-#include "./returnName.h"
+// #include "./returnName.h"
 using namespace std;
 
 // Function to compute the multiplicative inverse of a modulo n using Extended Euclidean Algorithm
@@ -32,20 +32,30 @@ int multiplicativeInverse(int a, int n)
 
 int main()
 {
-    generateHeader("Program to compute the multiplicative inverse of a modulo n using Extended Euclidean Algorithm");
-    int a, n;
-    string display_op;
+    // generateHeader("Program to compute the multiplicative inverse of a modulo n using Extended Euclidean Algorithm");
+    do
+    {
+        int a, n;
+        string display_op;
 
-    cout << "Enter an integer a: ";
-    cin >> a;
+        cout << "Enter an integer a: ";
+        cin >> a;
 
-    cout << "Enter a positive integer n (modulus): ";
-    cin >> n;
+        cout << "Enter a positive integer n (modulus): ";
+        cin >> n;
 
-    int inverse = multiplicativeInverse(a, n);
-    inverse == -1 ? display_op = "Multiplicative inverse does not exist." : display_op = "Multiplicative inverse of " + to_string(a) + " modulo " + to_string(n) + " is " + to_string(inverse);
-    cout << display_op << endl;
-
-    cin.get();
+        int inverse = multiplicativeInverse(a, n);
+        if (inverse == -1)
+            cout << "Multiplicative inverse does not exist.";
+        else
+            cout << "Multiplicative inverse of " << a << " modulo " << n << " is " << inverse;
+        char choice;
+        cout << endl
+             << "Do you want to continue? (y/n): ";
+        cin >> choice;
+        if (choice != 'y' && choice != 'Y')
+            break;
+        cin.ignore();
+    } while (true);
     return 0;
 }

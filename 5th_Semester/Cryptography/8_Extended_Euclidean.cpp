@@ -1,14 +1,11 @@
-/*
- * Program to perform the Extended Euclidean Algorithm
- */
-
 #include <iostream>
 #include <vector>
 #include <iomanip>
 #include "./returnName.h"
+
 using namespace std;
 
-vector<vector<long long>> extendedEuclideanTable(long long, long long);
+vector<vector<long long>> extendedEuclideanTable(long long a, long long b);
 
 int main()
 {
@@ -17,20 +14,18 @@ int main()
 
     cout << "Enter two positive integers a and b (a > b): ";
     cin >> a >> b;
-
     vector<vector<long long>> table = extendedEuclideanTable(a, b);
 
-    // Display the table header
     cout << "|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|" << endl;
     cout << "|   i        |   r[i-1]   |    r[i]    |    q[i]    |   x[i-2]   |   x[i-1]   |    x[i]    |   y[i-2]   |   y[i-1]   |    y[i]    |" << endl;
     cout << "|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|" << endl;
 
-    // Display the table rows with equal spacing
-    for (const auto &row : table)
+    for (size_t i = 0; i < table.size(); ++i)
     {
-        for (size_t i = 0; i < row.size(); ++i)
+        const vector<long long> &row = table[i];
+        for (size_t j = 0; j < row.size(); ++j)
         {
-            cout << "| " << setw(10) << row[i] << " ";
+            cout << "| " << setw(10) << row[j] << " ";
         }
         cout << "|" << endl;
     }
@@ -42,21 +37,27 @@ int main()
 
     cout << "GCD(" << a << ", " << b << ") = " << gcd << endl;
     cout << "x = " << x << ", y = " << y << endl;
-
-    cin.get();
     return 0;
 }
 
-// Function to perform the Extended Euclidean Algorithm and create a table
 vector<vector<long long>> extendedEuclideanTable(long long a, long long b)
 {
     vector<vector<long long>> table;
-
     long long rPrev = a, r = b;
     long long xPrev = 1, xCurr = 0;
     long long yPrev = 0, yCurr = 1;
-
-    table.push_back({0, rPrev, r, rPrev / r, xPrev, xCurr, yPrev, yCurr, -1, -1});
+    vector<long long> initialRow;
+    initialRow.push_back(0);
+    initialRow.push_back(rPrev);
+    initialRow.push_back(r);
+    initialRow.push_back(rPrev / r);
+    initialRow.push_back(xPrev);
+    initialRow.push_back(xCurr);
+    initialRow.push_back(yPrev);
+    initialRow.push_back(yCurr);
+    initialRow.push_back(-1);
+    initialRow.push_back(-1);
+    table.push_back(initialRow);
 
     while (r != 0)
     {
@@ -74,7 +75,18 @@ vector<vector<long long>> extendedEuclideanTable(long long a, long long b)
         yCurr = yPrev - q * yCurr;
         yPrev = temp;
 
-        table.push_back({static_cast<long long>(table.size()), rPrev, r, static_cast<long long>(q), xPrev, xCurr, yPrev, yCurr, xPrev, yPrev});
+        vector<long long> row;
+        row.push_back(table.size());
+        row.push_back(rPrev);
+        row.push_back(r);
+        row.push_back(q);
+        row.push_back(xPrev);
+        row.push_back(xCurr);
+        row.push_back(yPrev);
+        row.push_back(yCurr);
+        row.push_back(xPrev);
+        row.push_back(yPrev);
+        table.push_back(row);
     }
     return table;
 }

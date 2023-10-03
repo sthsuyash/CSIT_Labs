@@ -3,7 +3,7 @@
  */
 
 #include <bits/stdc++.h>
-#include "./returnName.h"
+// #include "./returnName.h"
 using namespace std;
 
 int gcd(int, int);
@@ -12,21 +12,26 @@ int power(int, unsigned int, unsigned int);
 
 int main()
 {
-    generateHeader("Program to find additive inverse of A under modulo M");
-    int a, m;
+    // generateHeader("Program to find additive inverse of A under modulo M");
+    do
+    {
+        int a, m;
+        cout << "Enter the value of a: ";
+        cin >> a;
+        cout << "Enter the value of m: ";
+        cin >> m;
+        if (modInverse(a, m) == -1)
+            cout << "Additive Inverse doesn't exist" << endl;
+        else
+            cout << "Additive Inverse of " << a << " under modulo " << m << " is " << modInverse(a, m) << endl;
 
-    cout << "Enter the value of a: ";
-    cin >> a;
-    cout << "Enter the value of m: ";
-    cin >> m;
-
-    if (modInverse(a, m) == -1)
-        cout << "Additive Inverse doesn't exist" << endl;
-    else
-        cout << "Additive Inverse of " << a << " under modulo " << m << " is " << modInverse(a, m) << endl;
-
-    cin.get();
-    return 0;
+        cout << "Do you want to continue? (y/n): ";
+        char choice;
+        cin >> choice;
+        if (choice != 'y' && choice != 'Y')
+            break;
+        cin.ignore();
+    } while (true);
 }
 
 int gcd(int a, int b)
