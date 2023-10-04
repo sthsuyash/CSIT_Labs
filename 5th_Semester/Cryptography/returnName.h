@@ -9,8 +9,7 @@ void generateHeader(const std::string &programName)
     std::cout << std::endl;
     std::cout << std::string(headerLength, '*') << std::endl;
     std::cout << "**  " << programName << "  **" << std::endl;
-    std::cout << std::string(headerLength, '*') << std::endl
-              << std::endl;
+    std::cout << std::string(headerLength, '*') << std::endl;
 }
 
 #endif

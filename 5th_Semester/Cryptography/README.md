@@ -29,11 +29,11 @@
 
 ### Lab 11: Demonstrate how output of S-Box (S1) is generated in DES
 
-### Lab 12: Implement Robin Miller algorithm for primality test
+### Lab 12: [Implement Robin Miller algorithm for primality test](./12_Robin_miller.cpp)
 
-### Lab 13: Take any positive number and display the result after computing Totient value
+### Lab 13: [Take any positive number and display the result after computing Totient value](./13_Totient_value.cpp)
 
-### Lab 14: Compute primitive roots of given number
+### Lab 14: [Compute primitive roots of given number](./14_Primitive_root.cpp)
 
 ### Lab 15: Compute discrete log of given number (provided the modulo and primitive root)
 
