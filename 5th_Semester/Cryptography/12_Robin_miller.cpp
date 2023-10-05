@@ -4,8 +4,7 @@
 
 #include <iostream>
 #include <stdlib.h>
-#include "./returnName.h"
-#include "./name.h"
+// #include "./returnName.h"
 using namespace std;
 
 long long mulmod(long long, long long, long long);
@@ -14,7 +13,7 @@ bool Miller(long long, int);
 
 int main()
 {
-    generateHeader("Program to implement Miller Rabin primality test");
+    // generateHeader("Program to implement Miller Rabin primality test");
     do
     {
         int iteration = 10;
@@ -33,7 +32,6 @@ int main()
             break;
 
     } while (true);
-    generateName(12);
     cin.get();
     return 0;
 }
