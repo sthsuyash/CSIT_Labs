@@ -5,9 +5,7 @@
 #include <iostream>
 #include <bitset>
 #include <string>
-#include "./returnName.h"
-#include "./name.h"
-
+// #include "./returnName.h"
 using namespace std;
 
 // Define the S1 S-Box (4x16)
@@ -28,7 +26,7 @@ bitset<4> S1Substitution(bitset<6> input)
 
 int main()
 {
-    generateHeader("Program to demonstrate how output of S-Box (S1) is generated in DES");
+    // generateHeader("Program to demonstrate how output of S-Box (S1) is generated in DES");
     do
     {
         string inputStr;
@@ -58,6 +56,5 @@ int main()
             break;
 
     } while (true);
-    generateName(11);
     return 0;
 }
