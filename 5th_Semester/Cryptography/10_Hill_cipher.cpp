@@ -5,6 +5,7 @@
 using namespace std;
 
 void getKeyMatrix(const char *, int[][4], int);
+void printKeyMatrix(int[][4], int);
 int modInverse(int, int);
 int determinant(int[][4]);
 void adjugate(int[][4], int[][4]);
@@ -13,7 +14,7 @@ void decrypt(const char *, int[][4], int, char *);
 
 int main()
 {
-    // generateHeader("Program to implement Hill Cipher");
+    // generateHeader("Program to demonstrate Hill Cipher");
     while (true)
     {
         cout << "Menu:" << endl;
@@ -45,6 +46,9 @@ int main()
             int keyMatrix[4][4];
             getKeyMatrix(key, keyMatrix, n);
 
+            cout << "Key Matrix:" << endl;
+            printKeyMatrix(keyMatrix, n);
+
             char ciphertext[100];
             encrypt(message, keyMatrix, n, ciphertext);
 
@@ -69,6 +73,9 @@ int main()
 
             int keyMatrix[4][4];
             getKeyMatrix(key, keyMatrix, n);
+
+            cout << "Key Matrix:" << endl;
+            printKeyMatrix(keyMatrix, n);
 
             char plaintext[100];
             decrypt(ciphertext, keyMatrix, n, plaintext);
@@ -95,6 +102,19 @@ void getKeyMatrix(const char *key, int keyMatrix[][4], int n)
         {
             keyMatrix[i][j] = (key[k++] - 'A') % 26;
         }
+    }
+}
+
+// Function to print the key matrix
+void printKeyMatrix(int keyMatrix[][4], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cout << keyMatrix[i][j] << " ";
+        }
+        cout << endl;
     }
 }
 

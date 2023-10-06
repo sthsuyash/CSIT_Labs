@@ -3,21 +3,28 @@
  */
 
 #include <iostream>
-#include "./returnName.h"
-#include "./name.h" //
+// #include "./returnName.h"
 using namespace std;
 
 void computeTotient(int);
 
 int main()
 {
-    generateHeader("Program to compute Totient value.");
+    // generateHeader("Program to compute Totient value.");
     int n;
-    cout << "Enter a positive integer: ";
-    cin >> n;
-    computeTotient(n);
+    do
+    {
+        cout << "Enter a positive integer: ";
+        cin >> n;
+        computeTotient(n);
 
-    generateName(13);
+        cout << "Do you want to continue? (y/n): ";
+        char ch;
+        cin >> ch;
+        if (ch == 'n' || ch == 'N')
+            break;
+
+    } while (true);
     return 0;
 }
 
