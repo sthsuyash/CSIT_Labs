@@ -1,109 +1,82 @@
 /*
- * Cpp program to demonstrate RSA algorithm
+ * Cpp program to implement RSA Algorithm
  */
 
 #include <iostream>
-#include <cmath>
-#include "./returnName.h"
-#include "./name.h"
+#include <math.h>
+// #include "./returnName.h"
 
 using namespace std;
 
-int gcd(int, int);
-long long modExp(long long, long long, long long);
+// to find gcd
+int gcd(int a, int h)
+{
+    int temp;
+    while (1)
+    {
+        temp = a % h;
+        if (temp == 0)
+            return h;
+        a = h;
+        h = temp;
+    }
+}
 
 int main()
 {
-    generateHeader("Program to demonstrate RSA algorithm");
-    int choice;
-    double p, q, n, phi, d, e, message, c;
-    while (true)
+    // 2 random prime numbers
+    double p, q;
+    char choice;
+    do
     {
-        cout << "RSA Menu:" << endl;
-        cout << "1. Encrypt" << endl;
-        cout << "2. Decrypt" << endl;
-        cout << "3. Quit" << endl;
-        cout << "Enter your choice: ";
-        cin >> choice;
+        cout << "Enter two prime numbers: ";
+        cin >> p >> q;
 
-        switch (choice)
+        double n = p * q;
+        double count;
+        double totient = (p - 1) * (q - 1);
+
+        // public key - e stands for encrypt
+        double e = 2;
+
+        // for checking co-prime which satisfies e>1
+        while (e < totient)
         {
-        // Encryption
-        case 1:
-            cout << "Enter two prime numbers (p and q): ";
-            cin >> p >> q;
-            n = p * q;
-            phi = (p - 1) * (q - 1);
-            cout << "Enter a public key (e): ";
-            cin >> e;
-
-            // Verify that e and phi(n) are coprime
-            if (gcd(e, phi) != 1)
-            {
-                cout << "Error: e and phi(n) are not coprime. Please choose a different e." << endl;
-                continue;
-            }
-
-            cout << "Enter the plaintext message: ";
-            cin >> message;
-            c = modExp(message, e, n);
-            cout << "Encrypted message: " << c << endl;
-            break;
-
-        case 2:
-            // Decryption
-            cout << "Enter two prime numbers (p and q): ";
-            cin >> p >> q;
-            n = p * q;
-            phi = (p - 1) * (q - 1);
-            cout << "Enter the private key (d): ";
-            cin >> d;
-
-            cout << "Enter the ciphertext message: ";
-            cin >> c;
-
-            message = modExp(c, d, n);
-
-            cout << "Decrypted message: " << message << endl;
-            break;
-
-        case 3:
-            break;
-        default:
-            cout << "Invalid choice. Please try again." << endl;
-            break;
+            count = gcd(e, totient);
+            if (count == 1)
+                break;
+            else
+                e++;
         }
-    };
-    generateName(17); //
+
+        // private key - d stands for decrypt
+        double d;
+        // k can be any arbitrary value
+        double k = 2;
+
+        // choosing d such that it satisfies d*e = 1 + k * totient
+        d = (1 + (k * totient)) / e;
+        double msg;
+        cout << "Enter Message to be encrypted(integer): ";
+        cin >> msg;
+
+        double c = pow(msg, e);
+        double m = pow(c, d);
+        c = fmod(c, n);
+        m = fmod(m, n);
+
+        // cout << "Message data = " << msg
+        cout << "p = " << p << endl;
+        cout << "q = " << q << endl;
+        cout << "n = pq = " << n << endl;
+        cout << "totient = " << totient << endl;
+        cout << "e = " << e << endl;
+        cout << "d = " << d << endl;
+        cout << "Encrypted data = " << c << endl;
+        cout << "Original Message sent = " << m << endl;
+
+        cout << "Do you want to continue? (y/n): ";
+        cin >> choice;
+    } while (choice == 'y' || choice == 'Y');
     return 0;
-}
-
-// Find gcd
-int gcd(int a, int b)
-{
-    int t;
-    while (1)
-    {
-        t = a % b;
-        if (t == 0)
-            return b;
-        a = b;
-        b = t;
-    }
-}
-
-// Function to calculate modular exponentiation
-long long modExp(long long base, long long exponent, long long mod)
-{
-    if (exponent == 0)
-        return 1;
-    long long result = 1;
-    while (exponent > 0)
-    {
-        if (exponent % 2 == 1)
-            result = (result * base) % mod;
-        base = (base * base) % mod;
-        exponent /= 2;
-    }
-    return result;
 }
