@@ -4,7 +4,7 @@
 
 **Note:**
 
-1. All the programs have Encryption followed by Decryption.
+1. Almost all the programs have Encryption followed by Decryption.
 2. Key is taken from the user.
 
 ### Lab 1: [Implement Shift Cipher](./1_Shift_cipher.cpp)
@@ -27,7 +27,7 @@
 
 ### Lab 10: [Implement Hill Cipher (Key matrix of size 2\*2)](./10_Hill_cipher.cpp)
 
-### Lab 11: Demonstrate how output of S-Box (S1) is generated in DES
+### Lab 11: [Demonstrate how output of S-Box (S1) is generated in DES](./11_Sbox_S1_des.cpp)
 
 ### Lab 12: [Implement Robin Miller algorithm for primality test](./12_Robin_miller.cpp)
 
@@ -35,12 +35,12 @@
 
 ### Lab 14: [Compute primitive roots of given number](./14_Primitive_root.cpp)
 
-### Lab 15: Compute discrete log of given number (provided the modulo and primitive root)
+### Lab 15: [Compute discrete log of given number (provided the modulo and primitive root)](./15_Discrete_log.cpp)
 
-### Lab 16: Implement Diffie-Helman Key Exchange Algorithm
+### Lab 16: [Implement Diffie-Helman Key Exchange Algorithm](./16_Diffie_Helman.cpp)
 
-### Lab 17: Implement RSA Algorithm (Encryption/Decryption/ Input Should be taken from user)
+### Lab 17: [Implement RSA Algorithm (Encryption/Decryption/ Input Should be taken from user)](./17_RSA.cpp)
 
-### Lab 18: Implement Elgamal Cryptographic System
+### Lab 18: [Implement Elgamal Cryptographic System](./18_Elgamal.cpp)
 
-### Lab 19: Malicious logic code (Trojan Horse/Virus) program that performs some malicious works
+### Lab 19: [Malicious logic code (Trojan Horse/Virus) program that performs some malicious works](./19_Trojan.cpp)
