@@ -1,5 +1,6 @@
 /*
  * Cpp program to shutdown a computer
+ applicable for Windows OS only
  */
 
 #include <iostream>
