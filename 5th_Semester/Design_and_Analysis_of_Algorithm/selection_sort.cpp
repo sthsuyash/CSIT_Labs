@@ -1,3 +1,13 @@
+/*
+ * Program: Selection Sort Program
+ *
+ * Selection sort is a sorting algorithm that sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning.
+ *
+ * Time Complexity: O(n^2)
+ * Space Complexity: O(1)
+ *
+ */
+
 #include <iostream>
 #include "../../../utils/generateHeader.h"
 #include "../../../utils/name.h"
@@ -8,7 +18,7 @@ void selectionSort(int[], int);
 
 int main()
 {
-    generateHeader("Selection Sort Program");
+    // generateHeader("Selection Sort Program");
 
     int n;
 
@@ -30,10 +40,18 @@ int main()
         cout << arr[i] << " ";
     }
 
-    generateName("2(b)");
+    // generateName("0");
     return 0;
 }
 
+/*
+ * This function sorts an array using selection sort algorithm
+ *
+ * @param arr[] - array to be sorted
+ * @param size - size of the array
+ *
+ * @returns void
+ */
 void selectionSort(int arr[], int size)
 {
     int minIndex, temp;

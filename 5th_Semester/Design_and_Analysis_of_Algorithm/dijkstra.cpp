@@ -54,15 +54,6 @@ int main()
     return 0;
 }
 
-/*
- * Dijkstra's Algorithm
- *
- * Parameters: costAdjMat - cost adjacency matrix of the graph
- *             vertices - number of vertices in the graph
- *             startNode - starting node of the graph
- *
- * Returns: void
- */
 void dijkstra(int costAdjMat[MAX][MAX], int vertices, int startNode)
 {
     int cost[MAX][MAX], distance[MAX], pred[MAX], visited[MAX];

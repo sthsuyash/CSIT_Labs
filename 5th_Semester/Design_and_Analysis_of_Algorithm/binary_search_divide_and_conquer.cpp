@@ -45,16 +45,6 @@ int main()
     return 0;
 }
 
-/*
- * This function searches for a key in an array using binary search algorithm
- *
- * @param arr[] - array to be searched
- * @param low - lower bound of the array
- * @param high - upper bound of the array
- * @param key - key to be searched
- *
- * @returns index of the key if found, else -1
- */
 int binarySearchRecursive(int arr[], int low, int high, int key)
 {
     if (low <= high)

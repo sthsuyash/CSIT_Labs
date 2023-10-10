@@ -37,13 +37,6 @@ int main()
     return 0;
 }
 
-/*
- * This function generates the Fibonacci sequence
- *
- * @param n - number of terms in the Fibonacci sequence
- *
- * @returns void
- */
 void generateFibonacciSequence(int n)
 {
     int a = 0, b = 1, f;

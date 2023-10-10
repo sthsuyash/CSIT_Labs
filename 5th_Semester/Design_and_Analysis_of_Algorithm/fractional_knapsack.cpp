@@ -47,14 +47,6 @@ int main()
     return 0;
 }
 
-/*
- * Compare function for sorting
- *
- * @param a - first item
- * @param b - second item
- *
- * @returns true if value/weight of a is greater than value/weight of b, false otherwise
- */
 bool compare(struct Item a, struct Item b)
 {
     double r1 = (double)a.value / a.weight;

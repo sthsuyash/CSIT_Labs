@@ -48,15 +48,6 @@ int main()
     return 0;
 }
 
-/*
- * This function searches for a key in a sorted array using binary search algorithm
- *
- * @param arr[] - array to be searched
- * @param size - size of the array
- * @param key - key to be searched
- *
- * @returns index of the key if found, else -1
- */
 int binarySearch(int arr[], int size, int key)
 {
     int low = 0, high = size - 1, mid;

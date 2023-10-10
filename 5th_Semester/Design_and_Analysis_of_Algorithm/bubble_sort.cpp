@@ -44,14 +44,7 @@ int main()
     return 0;
 }
 
-/*
- * This function sorts an array using bubble sort algorithm
- *
- * @param arr[] - array to be sorted
- * @param size - size of the array
- *
- * @returns void
- */
+
 void bubbleSort(int arr[], int size)
 {
     int temp;
