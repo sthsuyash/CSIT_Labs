@@ -36,14 +36,6 @@ int main()
     return 0;
 }
 
-/*
- * This function calculates the GCD of two numbers using Euclid's algorithm
- *
- * @param a - first number
- * @param b - second number
- *
- * @returns GCD of a and b
- */
 int gcd(int a, int b)
 {
     int temp;
