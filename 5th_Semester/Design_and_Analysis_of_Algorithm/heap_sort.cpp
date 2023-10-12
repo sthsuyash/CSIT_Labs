@@ -11,8 +11,6 @@
  */
 
 #include <iostream>
-// #include "../../utils/generateHeader.h"
-// #include "../../utils/name.h"
 
 using namespace std;
 
@@ -21,8 +19,6 @@ void heapSort(int[], int);
 
 int main()
 {
-    // generateHeader("Heap Sort Program");
-
     int n;
     cout << "Enter the number of elements in the array: ";
     cin >> n;
@@ -42,18 +38,9 @@ int main()
         cout << arr[i] << " ";
     }
 
-    // generateName("0");
     return 0;
 }
 
-/*
- * This function sorts an array using heap sort algorithm
- *
- * @param arr[] - array to be sorted
- * @param n - size of the array
- *
- * @returns void
- */
 void heapSort(int arr[], int n)
 {
     // build heap (rearrange array)
@@ -73,15 +60,6 @@ void heapSort(int arr[], int n)
     }
 }
 
-/*
- * This function to heapify a subtree rooted with node i which is an index in arr[]
- *
- * @param arr[] - array to be sorted
- * @param n - size of the array
- * @param i - index of the node
- *
- * @returns void
- */
 void heapify(int arr[], int n, int i)
 {
     int largest = i;   // initialize largest as root
