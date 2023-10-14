@@ -11,8 +11,6 @@
 #include <iostream>
 #include <cstdlib>
 #include <algorithm>
-// #include "../../utils/generateHeader.h"
-// #include "../../utils/name.h"
 
 using namespace std;
 
@@ -28,8 +26,6 @@ void jobSequencing(struct Job[], int);
 
 int main()
 {
-    // generateHeader("Job Sequencing Problem Program");
-
     int n;
     cout << "Enter the number of jobs: ";
     cin >> n;
@@ -42,30 +38,14 @@ int main()
         cin >> jobs[i].deadline >> jobs[i].profit;
     }
     jobSequencing(jobs, n);
-
-    // generateName("0");
     return 0;
 }
 
-/*
- * This function compares two jobs based on their profit
- *
- * @param a - pointer to the first job
- * @param b - pointer to the second job
- *
- * @returns 1 if profit of the first job is greater than that of the second job, else -1
- */
 int compare(const void *a, const void *b)
 {
     return ((struct Job *)b)->profit - ((struct Job *)a)->profit;
 }
 
-/*
- * This function prints the maximum profit sequence of jobs
- *
- * @param jobs - array of jobs
- * @param n - number of jobs
- */
 void jobSequencing(struct Job jobs[], int n)
 {
     // Sort jobs in decreasing order of profit
