@@ -17,8 +17,6 @@
 
 #include <iostream>
 #include <algorithm>
-// #include "../../utils/generateHeader.h"
-// #include "../../utils/name.h"
 
 using namespace std;
 
@@ -46,8 +44,6 @@ int uni(int i, int j)
 
 int main()
 {
-    // generateHeader("Kruskal's Algorithm Program");
-    
     cout << "Enter the number of nodes: ";
     cin >> n;
     cout << "Enter the adjacency matrix:\n";
@@ -90,6 +86,5 @@ int main()
     cout << endl;
     cout << "Minimum cost = " << mincost << endl;
 
-    // generateName("0");
     return 0;
 }
