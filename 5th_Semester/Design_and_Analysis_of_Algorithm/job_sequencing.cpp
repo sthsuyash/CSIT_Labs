@@ -11,6 +11,8 @@
 #include <iostream>
 #include <cstdlib>
 #include <algorithm>
+#include "../../utils/generateHeader.h"
+#include "../../utils/name.h"
 
 using namespace std;
 
@@ -26,6 +28,8 @@ void jobSequencing(struct Job[], int);
 
 int main()
 {
+    generateHeader("Job Sequencing Problem Program");
+
     int n;
     cout << "Enter the number of jobs: ";
     cin >> n;
@@ -38,6 +42,8 @@ int main()
         cin >> jobs[i].deadline >> jobs[i].profit;
     }
     jobSequencing(jobs, n);
+
+    generateName("0");
     return 0;
 }
 

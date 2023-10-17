@@ -9,8 +9,6 @@
  */
 
 #include <iostream>
-// #include "../../utils/generateHeader.h"
-// #include "../../utils/name.h"
 
 using namespace std;
 
@@ -19,8 +17,6 @@ void mergeSort(int[], int, int);
 
 int main()
 {
-    // generateHeader("Merge Sort Program");
-
     int n;
     cout << "Enter the number of elements in the array: ";
     cin >> n;
@@ -39,23 +35,9 @@ int main()
     {
         cout << arr[i] << " ";
     }
-
-    // generateName("0");
     return 0;
 }
 
-/*
- * This function merges two subarrays of arr[]
- * First subarray is arr[l..m]
- * Second subarray is arr[m+1..r]
- *
- * @param arr[] - array to be sorted
- * @param l - starting index
- * @param m - middle index
- * @param r - ending index
- *
- * @returns void
- */
 void merge(int arr[], int l, int m, int r)
 {
     int i, j, k;
@@ -121,16 +103,6 @@ void merge(int arr[], int l, int m, int r)
         k++;
     }
 }
-
-/*
- * This function sorts the array using merge()
- *
- * @param arr[] - array to be sorted
- * @param l - starting index
- * @param r - ending index
- *
- * @returns void
- */
 void mergeSort(int arr[], int l, int r)
 {
     if (l < r)

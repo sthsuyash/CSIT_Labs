@@ -11,6 +11,8 @@
  */
 
 #include <iostream>
+#include "../../../utils/generateHeader.h"
+#include "../../../utils/name.h"
 
 using namespace std;
 
@@ -18,6 +20,7 @@ void insertionSort(int[], int);
 
 int main()
 {
+    generateHeader("Insertion Sort Program");
 
     int n;
 
@@ -39,6 +42,7 @@ int main()
         cout << arr[i] << " ";
     }
 
+    generateName("0");
     return 0;
 }
 
