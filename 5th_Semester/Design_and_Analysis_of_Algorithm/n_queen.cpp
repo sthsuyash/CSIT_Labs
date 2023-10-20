@@ -12,8 +12,6 @@
 #define N 4
 #include <iostream>
 #include <cstdbool>
-// #include "../../utils/generateHeader.h"
-// #include "../../utils/name.h"
 
 using namespace std;
 
@@ -23,8 +21,6 @@ bool solveNQUtil(int board[N][N], int);
 
 int main()
 {
-    // generateHeader("N-Queen Problem");
-
     int board[N][N] = {{0, 0, 0, 0},
                        {0, 0, 0, 0},
                        {0, 0, 0, 0},
@@ -37,19 +33,11 @@ int main()
     }
 
     printSolution(board);
-    // generateName("0");
     
     return true;
     return 0;
 }
 
-/*
- * A utility function to print solution
- *
- * @param board - the board to be printed
- *
- * @returns void
- */
 void printSolution(int board[N][N])
 {
     for (int i = 0; i < N; i++)
@@ -60,15 +48,6 @@ void printSolution(int board[N][N])
     }
 }
 
-/*
- * function to check whether the position is safe or not
- *
- * @param board - the board to be checked
- * @param row - the row to be checked
- * @param col - the column to be checked
- *
- * @returns true if the position is safe, false otherwise
- */
 bool isSafe(int board[N][N], int row, int col)
 {
     int i, j;
