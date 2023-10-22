@@ -11,8 +11,6 @@
  */
 
 #include <iostream>
-// #include "../../utils/generateHeader.h"
-// #include "../../utils/name.h"
 
 using namespace std;
 
@@ -23,8 +21,6 @@ void swap(int *, int *);
 
 int main()
 {
-    // generateHeader("Randomized Quick Sort Program");
-
     int n;
     cout << "Enter the number of elements in the array: ";
     cin >> n;
@@ -44,19 +40,9 @@ int main()
         cout << arr[i] << " ";
     }
 
-    // generateName("0");
     return 0;
 }
 
-/*
- * This function sorts an array using quick sort algorithm
- *
- * @param arr[] - array to be sorted
- * @param low - starting index
- * @param high - ending index
- *
- * @returns void
- */
 void quickSort(int arr[], int low, int high)
 {
     if (low < high)
@@ -70,15 +56,6 @@ void quickSort(int arr[], int low, int high)
     }
 }
 
-/*
- * This function takes last element as pivot, places the pivot element at its correct position in sorted array, and places all smaller (smaller than pivot) to left of pivot and all greater elements to right of pivot
- *
- * @param arr[] - array to be sorted
- * @param low - starting index
- * @param high - ending index
- *
- * @returns partitioning index
- */
 int partition(int arr[], int low, int high)
 {
     int pivot = arr[high]; // pivot
@@ -98,15 +75,6 @@ int partition(int arr[], int low, int high)
     return (i + 1);
 }
 
-/*
- * This function takes last element as pivot, places the pivot element at its correct position in sorted array, and places all smaller (smaller than pivot) to left of pivot and all greater elements to right of pivot
- *
- * @param arr[] - array to be sorted
- * @param low - starting index
- * @param high - ending index
- *
- * @returns partitioning index
- */
 int randomPartition(int arr[], int low, int high)
 {
     // generate a random number in between low and high
@@ -119,14 +87,6 @@ int randomPartition(int arr[], int low, int high)
     return partition(arr, low, high);
 }
 
-/*
- * This function swaps two elements
- *
- * @param a - first element
- * @param b - second element
- *
- * @returns void
- */
 void swap(int *a, int *b)
 {
     int temp = *a;
