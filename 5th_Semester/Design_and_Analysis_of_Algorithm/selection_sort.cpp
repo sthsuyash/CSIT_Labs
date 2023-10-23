@@ -9,8 +9,6 @@
  */
 
 #include <iostream>
-#include "../../../utils/generateHeader.h"
-#include "../../../utils/name.h"
 
 using namespace std;
 
@@ -18,8 +16,6 @@ void selectionSort(int[], int);
 
 int main()
 {
-    // generateHeader("Selection Sort Program");
-
     int n;
 
     cout << "Enter the number of elements in the array: ";
@@ -40,18 +36,9 @@ int main()
         cout << arr[i] << " ";
     }
 
-    // generateName("0");
     return 0;
 }
 
-/*
- * This function sorts an array using selection sort algorithm
- *
- * @param arr[] - array to be sorted
- * @param size - size of the array
- *
- * @returns void
- */
 void selectionSort(int arr[], int size)
 {
     int minIndex, temp;
