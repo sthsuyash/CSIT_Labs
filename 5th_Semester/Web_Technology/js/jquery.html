@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <p id="p1" style="display: none;">Nepal</p1>
+    <p class="p2" style="display: none;">Nepal</p>
+    <span>Nepalese</span>
+    <br/>
+    <!-- <input type="button" value="Hide/Show" id="btn1"> -->
+    <input type="text" value="" id="btn2">
+    <input type="button" value="Fade" id="btn1">
+  </body>
+  <script>
+    let data = $("#p1").text();
+    let data1 = $(".p2").text();
+    let data2 = $("span").text();
+    console.log(data);
+
+    // $('#btn1').on('click', function(){
+    // //   $('#p1').hide();
+    // //   $('#p1').show();
+    // //    $('#p1').toggle();
+    //    $('#p1 ,.p2').toggle();
+    // });
+
+    $('#btn1').on('click', function(){
+        // $('#p1').fadeIn();
+        // $('#p1').fadeIn("slow");
+    //   $('#p1').fadeOut();
+    //   $('#p1').fadeToggle();
+    $('#p1').fadeToggle("slow");
+    });
+
+    $("input").on('keyup',function(){
+        console.log($(this).val());
+    })
+
+
+  </script>
+</html>
