@@ -1,7 +1,9 @@
 # Web Technology
 
-## Progrms
+## Lab codes
 
-### [Database connection with php](./php/db/README.md)
+1. [Lab Assignment-I](lab1/README.md)
+2. [Lab Assignment-II](lab2/README.md)
+3. [Lab Assignment-III](lab3/README.md)
 
-### [Login using php](./php/login/README.md)
+## [Class Codes](class_codes/README.md)
