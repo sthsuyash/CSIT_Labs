@@ -10,6 +10,8 @@
  */
 
 #include <iostream>
+#include "../../utils/generateHeader.h"
+#include "../../utils/name.h"
 
 using namespace std;
 
@@ -19,6 +21,8 @@ void swap(int *, int *);
 
 int main()
 {
+    generateHeader("Quick Sort Program");
+
     int n;
     cout << "Enter the number of elements in the array: ";
     cin >> n;
@@ -38,6 +42,7 @@ int main()
         cout << arr[i] << " ";
     }
 
+    generateName("0");
     return 0;
 }
 

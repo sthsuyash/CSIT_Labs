@@ -12,6 +12,8 @@
 #define N 4
 #include <iostream>
 #include <cstdbool>
+#include "../../utils/generateHeader.h"
+#include "../../utils/name.h"
 
 using namespace std;
 
@@ -21,6 +23,8 @@ bool solveNQUtil(int board[N][N], int);
 
 int main()
 {
+    generateHeader("N-Queen Problem");
+
     int board[N][N] = {{0, 0, 0, 0},
                        {0, 0, 0, 0},
                        {0, 0, 0, 0},
@@ -33,6 +37,7 @@ int main()
     }
 
     printSolution(board);
+    generateName("0");
     
     return true;
     return 0;

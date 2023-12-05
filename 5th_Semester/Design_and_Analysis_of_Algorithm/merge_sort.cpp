@@ -9,6 +9,8 @@
  */
 
 #include <iostream>
+#include "../../utils/generateHeader.h"
+#include "../../utils/name.h"
 
 using namespace std;
 
@@ -17,6 +19,8 @@ void mergeSort(int[], int, int);
 
 int main()
 {
+    generateHeader("Merge Sort Program");
+
     int n;
     cout << "Enter the number of elements in the array: ";
     cin >> n;
@@ -35,6 +39,8 @@ int main()
     {
         cout << arr[i] << " ";
     }
+
+    generateName("0");
     return 0;
 }
 
@@ -103,6 +109,7 @@ void merge(int arr[], int l, int m, int r)
         k++;
     }
 }
+
 void mergeSort(int arr[], int l, int r)
 {
     if (l < r)
