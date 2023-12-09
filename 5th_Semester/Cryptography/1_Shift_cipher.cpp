@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-// #include "./returnName.h"
+#include "./returnName.h"
 using namespace std;
 
 int getKey();
@@ -9,7 +9,7 @@ string decrypt(string, int);
 
 int main()
 {
-    // generateHeader("Shift Cipher Program");
+    generateHeader("Shift Cipher Program");
     int choice;
     int key;
     string plaintext, ciphertext;
