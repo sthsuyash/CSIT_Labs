@@ -10,17 +10,12 @@
  */
 
 #include <iostream>
-// #include "../../utils/generateHeader.h"
-// #include "../../utils/name.h"
-
 using namespace std;
 
 int binarySearchRecursive(int[], int, int, int);
 
 int main()
 {
-    // generateHeader("Binary Search with Divide and Conquer Program");
-
     int n, key, index;
 
     cout << "Enter the number of elements in the array: ";
@@ -41,7 +36,6 @@ int main()
 
     index == -1 ? cout << "Key not found" : cout << "Key found at position " << index + 1;
 
-    // generateName("0");
     return 0;
 }
 

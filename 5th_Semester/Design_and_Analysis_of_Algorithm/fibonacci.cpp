@@ -15,8 +15,8 @@
  */
 
 #include <iostream>
-// #include "../../utils/generateHeader.h"
-// #include "../../utils/name.h"
+#include "../../utils/generateHeader.h"
+#include "../../utils/name.h"
 
 using namespace std;
 
@@ -24,7 +24,7 @@ void generateFibonacciSequence(int);
 
 int main()
 {
-    // generateHeader("Fibonacci Sequence Program");
+    generateHeader("Fibonacci Sequence Program");
 
     int n;
     cout << "Enter the number of terms in the Fibonacci sequence: ";
@@ -33,7 +33,7 @@ int main()
     cout << "Fibonacci Sequence: ";
     generateFibonacciSequence(n);
 
-    // generateName("0");
+    generateName("0");
     return 0;
 }
 

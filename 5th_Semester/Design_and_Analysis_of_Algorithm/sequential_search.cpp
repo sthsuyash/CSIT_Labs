@@ -15,8 +15,8 @@
  */
 
 #include <iostream>
-// #include "../../utils/generateHeader.h"
-// #include "../../utils/name.h"
+#include "../../utils/generateHeader.h"
+#include "../../utils/name.h"
 
 using namespace std;
 
@@ -24,7 +24,7 @@ int sequentialSearch(int[], int, int);
 
 int main()
 {
-    // generateHeader("Sequential Search Program");
+    generateHeader("Sequential Search Program");
 
     int n, key, index;
 
@@ -45,7 +45,7 @@ int main()
 
     index == -1 ? cout << "Key not found" : cout << "Key found at position " << index + 1;
 
-    // generateName("0");
+    generateName("0");
     return 0;
 }
 

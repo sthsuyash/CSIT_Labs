@@ -9,41 +9,29 @@
  *
  */
 #include <iostream>
-#include "../../../utils/generateHeader.h"
-#include "../../../utils/name.h"
-
 using namespace std;
 
 void bubbleSort(int[], int);
 
 int main()
 {
-    // generateHeader("Bubble Sort Program");
-
     int n;
-
     cout << "Enter the number of elements in the array: ";
     cin >> n;
 
     int arr[n];
     cout << "Enter the elements of the array: ";
     for (int i = 0; i < n; i++)
-    {
         cin >> arr[i];
-    }
 
     bubbleSort(arr, n);
 
     cout << "Sorted array: ";
     for (int i = 0; i < n; i++)
-    {
         cout << arr[i] << " ";
-    }
 
-    // generateName("0");
     return 0;
 }
-
 
 void bubbleSort(int arr[], int size)
 {

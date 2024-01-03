@@ -9,17 +9,12 @@
  */
 
 #include <iostream>
-#include "../../../utils/generateHeader.h"
-#include "../../../utils/name.h"
-
 using namespace std;
 
 void selectionSort(int[], int);
 
 int main()
 {
-    generateHeader("Selection Sort Program");
-
     int n;
 
     cout << "Enter the number of elements in the array: ";
@@ -40,7 +35,6 @@ int main()
         cout << arr[i] << " ";
     }
 
-    generateName("0");
     return 0;
 }
 
