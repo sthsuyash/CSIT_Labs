@@ -37,16 +37,20 @@
 
 ### 7. Dynamic Programming
 
-- 0/1 knapsack • [Code](./zero_one_knapsack.cpp) • [Theory](#01-knapsack)
 - Matrix chain multiplication • [Code](./matrix_chain_multiplication.cpp) • [Theory](#matrix-chain-multiplication)
+- String Edit Distance • [Code](./string_editing.cpp) • [Theory](#string-edit-distance)
+- Floyd Warshall algorithm • [Code](./floyd_warshall.cpp) • [Theory](#floyd-warshall-algorithm)
+- 0/1 knapsack • [Code](./zero_one_knapsack.cpp) • [Theory](#01-knapsack)
+- Travelling salesman problem • [Code](./travelling_salesman.cpp) • [Theory](#travelling-salesman-problem)
 
 ### 8. Algorithms using Backtracking program
 
 - N-Queen problem • [Code](./n_queen.cpp) • [Theory](#n-queen-problem)
+- Subset sum problem • [Code](./subset_sum.cpp) • [Theory](#subset-sum-problem)
 
 ### 9. Implement approximation algorithm
 
-<!-- - Travelling salesman problem • [Code](./tsp.cpp) • [Theory](#travelling-salesman-problem) -->
+- Vertex Cover Problem • [Code](./vertex_cover_problem.cpp) • [Theory](#vertex-cover)
 
 ## Theory section
 
@@ -642,6 +646,94 @@ MatrixChainMultiplication(p, n)
 - Sorting in place: `No`
 - Stable: `No`
 
+### [String edit distance](./string_editing.cpp)
+
+Given two strings str1 and str2 and below operations that can performed on str1. Find minimum number of edits (operations) required to convert ‘str1’ into ‘str2’.
+
+- Insert
+- Remove
+- Replace
+
+#### Algorithm
+
+```c
+EditDistance(str1, str2, m, n)
+    if m == 0
+        return n
+    if n == 0
+        return m
+    if str1[m-1] == str2[n-1]
+        return EditDistance(str1, str2, m-1, n-1)
+    return 1 + min(EditDistance(str1, str2, m, n-1), EditDistance(str1, str2, m-1, n), EditDistance(str1, str2, m-1, n-1))
+```
+
+#### Time complexity
+
+- Best case: `O(mn)`
+- Worst case: `O(mn)`
+- Average case: `O(mn)`
+- Worst case space complexity: `O(mn)`
+- Auxiliary space complexity: `O(mn)`
+- Sorting in place: `No`
+- Stable: `No`
+
+### [Floyd Warshall algorithm](./floyd_warshall.cpp)
+
+The Floyd Warshall Algorithm is for solving the All Pairs Shortest Path problem. The problem is to find shortest distances between every pair of vertices in a given edge weighted directed Graph. The Floyd Warshall algorithm works by successively improving an estimate on the shortest path between two vertices, until the estimate is optimal.
+
+#### Algorithm
+
+```c
+FloydWarshall(Graph)
+    for i = 0 to V-1
+        for j = 0 to V-1
+            dist[i][j] = graph[i][j]
+    for k = 0 to V-1
+        for i = 0 to V-1
+            for j = 0 to V-1
+                if dist[i][k] + dist[k][j] < dist[i][j]
+                    dist[i][j] = dist[i][k] + dist[k][j]
+```
+
+#### Time complexity
+
+- Best case: `O(V^3)`
+- Worst case: `O(V^3)`
+- Average case: `O(V^3)`
+- Worst case space complexity: `O(V^2)`
+- Auxiliary space complexity: `O(V^2)`
+- Sorting in place: `No`
+- Stable: `No`
+
+### [Travelling salesman problem](./travelling_salesman.cpp)
+
+Given a set of cities and distance between every pair of cities, the problem is to find the shortest possible route that visits every city exactly once and returns to the starting point. Note the difference between Hamiltonian Cycle and TSP. The Hamiltonian cycle problem is to find if there exist a tour that visits every city exactly once. Here we know that Hamiltonian Tour exists (because the graph is complete) and in fact many such tours exist, the problem is to find a minimum weight Hamiltonian Cycle.
+
+#### Algorithm
+
+```c
+TravellingSalesmanProblem(graph, s)
+    for i = 0 to V-1
+        for j = 0 to V-1
+            dist[i][j] = graph[i][j]
+    for k = 0 to V-1
+        for i = 0 to V-1
+            for j = 0 to V-1
+                if dist[i][k] + dist[k][j] < dist[i][j]
+                    dist[i][j] = dist[i][k] + dist[k][j]
+    return dist[s][0]
+```
+
+#### Time complexity
+
+- Best case: `O(V^2 * 2^V)`
+- Worst case: `O(V^2 * 2^V)`
+- Average case: `O(V^2 * 2^V)`
+- Worst case space complexity: `O(V * 2^V)`
+- Auxiliary space complexity: `O(V * 2^V)`
+- Sorting in place: `No`
+- Stable: `No`
+
 ### [N-Queen problem](./n_queen.cpp)
 
 The N Queen is the problem of placing N chess queens on an N×N chessboard so that no two queens attack each other. For example, following is a solution for 4 Queen problem.
@@ -686,5 +778,55 @@ isSafe(board, row, col)
 - Average case: `O(n!)`
 - Worst case space complexity: `O(n^2)`
 - Auxiliary space complexity: `O(n^2)`
+- Sorting in place: `No`
+- Stable: `No`
+
+### [Subset sum problem](./subset_sum.cpp)
+
+Given a set of non-negative integers, and a value sum, determine if there is a subset of the given set with sum equal to given sum.
+
+#### Algorithm
+
+```c
+SubsetSum(set, n, sum)
+    if sum == 0
+        return true
+    if n == 0 and sum != 0
+        return false
+    if set[n-1] > sum
+        return SubsetSum(set, n-1, sum)
+    return SubsetSum(set, n-1, sum) or SubsetSum(set, n-1, sum-set[n-1])
+```
+
+#### Time complexity
+
+- Best case: `O(n * sum)`
+- Worst case: `O(n * sum)`
+- Average case: `O(n * sum)`
+- Worst case space complexity: `O(n * sum)`
+- Auxiliary space complexity: `O(n * sum)`
+
+### [Vertex cover](./vertex_cover_problem.cpp)
+
+The vertex cover problem is the optimization problem of finding the smallest vertex cover for a given graph. A vertex cover of a graph is a set of vertices such that each edge of the graph is incident to at least one vertex of the set. A vertex cover of minimum size is called a minimum vertex cover. The vertex cover problem is a classical optimization problem in computer science and is a typical example of an NP-hard optimization problem that has an approximation algorithm.
+
+#### Algorithm
+
+```c
+VertexCover(G)
+    for each edge (u, v) in G
+        if u is not in vertexCover and v is not in vertexCover
+            vertexCover.add(u)
+            vertexCover.add(v)
+    return vertexCover
+```
+
+#### Time complexity
+
+- Best case: `O(V + E)`
+- Worst case: `O(V + E)`
+- Average case: `O(V + E)`
+- Worst case space complexity: `O(V + E)`
+- Auxiliary space complexity: `O(V + E)`
 - Sorting in place: `No`
 - Stable: `No`
