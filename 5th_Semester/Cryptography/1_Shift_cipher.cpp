@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "./returnName.h"
+#include "../../utils/generateHeader.h"
 using namespace std;
 
 int getKey();

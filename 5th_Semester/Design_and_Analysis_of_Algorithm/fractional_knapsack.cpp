@@ -10,9 +10,6 @@
  */
 #include <iostream>
 #include <algorithm>
-// #include "../../utils/generateHeader.h"
-// #include "../../utils/name.h"
-
 using namespace std;
 
 struct Item
@@ -26,8 +23,6 @@ double fractionalKnapsack(int, struct Item[], int);
 
 int main()
 {
-    // generateHeader("Fractional Knapsack Problem Program");
-
     int W, n;
     cout << "Enter the number of items: ";
     cin >> n;
@@ -37,13 +32,10 @@ int main()
     struct Item arr[n];
     cout << "Enter the value and weight of each item: ";
     for (int i = 0; i < n; i++)
-    {
         cin >> arr[i].value >> arr[i].weight;
-    }
 
     cout << "Maximum value we can obtain = " << fractionalKnapsack(W, arr, n);
 
-    // generateName("0");
     return 0;
 }
 

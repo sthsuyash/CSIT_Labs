@@ -11,8 +11,6 @@
  */
 
 #include <iostream>
-#include "../../utils/generateHeader.h"
-#include "../../utils/name.h"
 using namespace std;
 
 int a, b, u, v, n, i, j, ne = 1;
@@ -22,8 +20,6 @@ int cost[10][10];
 
 int main()
 {
-    generateHeader("Prim's Algorithm Program");
-
     cout << "Enter the number of nodes: ";
     cin >> n;
     cout << "Enter the adjacency matrix:\n";
@@ -70,6 +66,5 @@ int main()
     cout << endl;
     cout << "Minimum cost = " << mincost << endl;
 
-    generateName("0");
     return 0;
 }

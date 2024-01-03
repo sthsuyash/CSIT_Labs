@@ -18,8 +18,6 @@
 
 #include <iostream>
 #include <limits>
-// #include "../../utils/generateHeader.h"
-// #include "../../utils/name.h"
 using namespace std;
 
 #define INFINITY numeric_limits<int>::max()
@@ -29,8 +27,6 @@ void dijkstra(int costAdjMat[MAX][MAX], int vertices, int startNode);
 
 int main()
 {
-    // generateHeader("Dijkstra's Algorithm Program");
-
     int vertices, startNode, costAdjMat[MAX][MAX];
 
     cout << "Enter number of vertices: ";
@@ -50,7 +46,6 @@ int main()
 
     dijkstra(costAdjMat, vertices, startNode);
 
-    // generateName("0");
     return 0;
 }
 
@@ -64,13 +59,9 @@ void dijkstra(int costAdjMat[MAX][MAX], int vertices, int startNode)
         for (int j = 1; j <= vertices; j++)
         {
             if (costAdjMat[i][j] == 0)
-            {
                 cost[i][j] = INFINITY;
-            }
             else
-            {
                 cost[i][j] = costAdjMat[i][j];
-            }
         }
     }
 
