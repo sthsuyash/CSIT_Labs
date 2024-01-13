@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a code repository for all the major lab codes necessary for CSIT students according to semester in subject-wise format, currently in 5<sup>th</sup> semester and is being updated.
+This is a code repository for all the major lab codes necessary for CSIT students according to semester in subject-wise format, currently in 6<sup>th</sup> semester and is being updated.
 
 _Please feel free to update the codes as per needs and contribute to the repository._
 
@@ -46,6 +46,11 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 - [System Analysis and Design](/5th_Semester/System_Analysis_and_Design/README.md)
 - [Web Technology](/5th_Semester/Web_Technology/README.md)
 - [Cryptography](/5th_Semester/Cryptography/README.md)
+
+## [6<sup>th</sup> Semester](/6th_Semester/README.md)
+
+- [Compiler Design](/6th_Semester/Compiler_Design/README.md)
+- [Software Engineering](/6th_Semester/Software_Engineering/README.md)
 
 ## Contributing
 

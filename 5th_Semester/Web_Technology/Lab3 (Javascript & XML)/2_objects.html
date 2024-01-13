@@ -19,15 +19,13 @@
         this.year = year;
       }
 
-      document.write('<h1>Person</h1>');
-      document.write('Name: ' + person.name + '</br>');
-      document.write('Age: ' + person.age + '</br>');
-      document.write('Gender: ' + person.gender + '</p>');
+      console.log('Person Object: ');
+      console.log('Name: ' + person.name);
+      console.log('Age: ' + person.age);
+      console.log('Gender' + person.gender);
 
       var myCar = new Car('Toyota', 'Camry', 2022);
-      document.write('<h1>Car</h1>');
-      document.write('<p>Make: ' + myCar.make + '</br>');
-      document.write('Model: ' + myCar.model + '</p>');
+      console.log(myCar);
     </script>
   </body>
 </html>

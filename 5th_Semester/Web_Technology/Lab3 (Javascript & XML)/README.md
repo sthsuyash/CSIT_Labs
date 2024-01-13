@@ -1,4 +1,4 @@
-# Lab Assignment – V (JavaScript and XML)
+# Lab Assignment – III (JavaScript and XML)
 
 1. Illustrate with examples the concept of alert, confirm and popup boxes • [Code](1_alert_confirm_popup.html)
 
