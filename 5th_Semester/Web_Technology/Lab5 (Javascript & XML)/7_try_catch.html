@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q.7 Try/Catch Example</title>
+  </head>
+  <body>
+    <script>
+      try {
+        var x = y + 5;
+        document.write('<p>x=' + x + 'y=' + y + '</p>');
+        document.write('<p>This line will not be executed due to the error.</p>');
+      } catch (error) {
+        document.write('<p>An error occurred: ' + error + '</p>');
+        if (error instanceof ReferenceError) {
+          document.write('<p>ReferenceError occurred. Handle it accordingly.</p>');
+        }
+      } finally {
+        document.write('This line will be executed no matter what.</p>');
+      }
+    </script>
+  </body>
+</html>

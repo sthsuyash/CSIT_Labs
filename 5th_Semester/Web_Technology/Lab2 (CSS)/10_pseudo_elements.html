@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q.10 Pseudo Elements</title>
+    <style>
+      p::first-line {
+        color: #3366cc;
+        font-weight: bold;
+      }
+
+      p::first-letter {
+        font-size: 24px;
+        color: #cc3366;
+        float: left;
+        margin-right: 6px;
+      }
+
+      p::after {
+        content: ' - Read more';
+        color: #339966;
+        font-style: italic;
+      }
+
+      ::selection {
+        background-color: #ffff99;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      ultricies efficitur velit, ut venenatis leo varius vel.
+    </p>
+  </body>
+</html>

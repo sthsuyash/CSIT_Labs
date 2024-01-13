@@ -1,0 +1,19 @@
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+}
+
+a {
+    display: block;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #2980b9;
+}

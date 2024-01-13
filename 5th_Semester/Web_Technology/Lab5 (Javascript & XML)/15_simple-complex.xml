@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="library.xsd">
+
+    <!-- Simple Type Example -->
+    <book>
+        <title>Introduction to XML</title>
+        <author>John Doe</author>
+        <publicationYear>2022</publicationYear>
+        <price>29.99</price>
+    </book>
+
+    <!-- Complex Type Example -->
+    <bookstore>
+        <book>
+            <title>Web Development Basics</title>
+            <author>Jane Smith</author>
+            <publicationYear>2021</publicationYear>
+            <details>
+                <genre>Programming</genre>
+                <pages>300</pages>
+            </details>
+        </book>
+    </bookstore>
+
+</library>
+
+<!-- 
+- The <price> element is defined as a simple type with the type xs:decimal.
+- The <details> element is defined as a complex type with a sequence of child elements (<genre> and <pages>).
+- The root element <library> allows a choice between <book> and <bookstore>.
+- The <book> element is defined as a complex type with a choice of child elements including the simple type <price> and the complex type <details>.
+- The <bookstore> element is defined as a complex type allowing a collection of <book> elements. 
+-->

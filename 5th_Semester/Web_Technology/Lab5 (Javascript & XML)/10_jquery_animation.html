@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q.10 jQuery Animation Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+      #animatedBox {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="animateButton">Animate Box</button>
+    <div id="animatedBox"></div>
+
+    <script>
+      $(document).ready(function () {
+        // Animate Box when the button is clicked
+        $('#animateButton').on('click', function () {
+          // Use the animate function to change CSS properties over time
+          $('#animatedBox').animate(
+            {
+              left: '+=150', // Move 150 pixels to the right
+              opacity: 0.5, // Change opacity to 0.5
+              width: '+=50', // Increase width by 50 pixels
+              height: '+=50', // Increase height by 50 pixels
+            },
+            1000,
+            function () {
+              alert('Animation complete!');
+            }
+          );
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book>
+    <title>Introduction to XML</title>
+    <author>John Doe</author>
+    <publicationYear>2022</publicationYear>
+</book>
+
+<!-- The root element is <book>.
+It contains child elements <title>, <author>, and <publicationYear>.
+Each child element has text content providing information about the book.
+This is a basic structure, and XML can be used to represent more complex data with nested elements and attributes. Remember that XML documents start with a declaration (<?xml version="1.0" encoding="UTF-8"?>). The declaration specifies the XML version and the character encoding used in the document. 
+-->

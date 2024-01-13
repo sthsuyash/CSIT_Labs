@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q.7 Styled Table</title>
+    <style>
+      table {
+        border: 2px solid #333;
+        width: 600px;
+        height: 550px;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 2px solid #333;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .classA {
+        background-color: #ffcc00;
+        color: #990000;
+      }
+
+      .classB {
+        background-color: #66ccff;
+        color: #003366;
+      }
+
+      .classC {
+        background-color: #99ff99;
+        color: #006600;
+        text-transform: uppercase;
+      }
+
+      .classD {
+        background-color: #ff9999;
+        color: #cc0000;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th class="classA">Class A</th>
+        <th class="classB">Class B</th>
+      </tr>
+      <tr>
+        <td class="classC">Class C</td>
+        <td class="classD">Class D</td>
+      </tr>
+    </table>
+  </body>
+</html>

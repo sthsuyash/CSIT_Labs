@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <title>Introduction to XML</title>
+        <author>John Doe</author>
+    </book>
+    <book>
+        <title>Web Development Basics</title>
+        <author>Jane Smith</author>
+    </book>
+</library>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q.5 Form Validation</title>
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Form Validation</h2>
+    <form id="myForm" onsubmit="validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <span id="nameError" class="error"></span><br />
+
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age" />
+      <span id="ageError" class="error"></span><br />
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" />
+      <span id="phoneError" class="error"></span><br />
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" />
+      <span id="emailError" class="error"></span><br />
+
+      <label for="colleges">Colleges:</label>
+      <select id="colleges" name="colleges">
+        <option value="" disabled selected>Select a college</option>
+        <option value="college1">College 1</option>
+        <option value="college2">College 2</option> </select
+      ><br />
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" /> Male
+      <input type="radio" id="female" name="gender" value="female" /> Female
+      <input type="radio" id="other" name="gender" value="other" /> Other<br />
+      <span id="genderError" class="error"></span><br />
+
+      <label>
+        <input type="checkbox" id="terms" name="terms" /> I accept all the terms
+      </label>
+      <span id="termsError" class="error"></span><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      function validateForm() {
+        var name = document.getElementById('name').value;
+        var age = document.getElementById('age').value;
+        var phone = document.getElementById('phone').value;
+        var email = document.getElementById('email').value;
+        var colleges = document.getElementById('colleges').value;
+        var gender = document.querySelector('input[name="gender"]:checked');
+        var terms = document.getElementById('terms').checked;
+
+        if (name.length < 7 || !/^[a-zA-Z\s]+$/.test(name)) {
+          document.getElementById('nameError').innerHTML =
+            'Name must be at least 7 characters long and contain only alphabets and spaces.';
+          return false;
+        }
+
+        if (!/^\d+$/.test(age) || age < 18 || age > 50) {
+          document.getElementById('ageError').innerHTML =
+            'Age must be an integer between 18 and 50.';
+          return false;
+        }
+
+        if (!/^[9][78]\d{8}$/.test(phone)) {
+          document.getElementById('phoneError').innerHTML =
+            'Phone number must be exactly 10 digits long and start with 98 or 97.';
+          return false;
+        }
+
+        if (!/^\S+@\S+\.\S+$/.test(email)) {
+          document.getElementById('emailError').innerHTML =
+            'Invalid email address.';
+          return false;
+        }
+
+        if (colleges === '') {
+          alert('Please select a college.');
+          return false;
+        }
+
+        if (!gender) {
+          document.getElementById('genderError').innerHTML =
+            'Please select a gender.';
+          return false;
+        }
+
+        if (!terms) {
+          document.getElementById('termsError').innerHTML =
+            'Please accept the terms.';
+          return false;
+        }
+
+        alert('Form submitted successfully!');
+        return true;
+      }
+    </script>
+  </body>
+</html>

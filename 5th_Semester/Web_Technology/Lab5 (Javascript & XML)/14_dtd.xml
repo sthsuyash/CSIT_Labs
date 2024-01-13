@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Report SYSTEM "report.dtd">
+<Report>
+    <Students>
+        <Student StudId="s1">
+            <Name>
+                <First>John</First>
+                <Last>Doe</Last>
+            </Name>
+            <Status>Enrolled</Status>
+            <CrsTaken CrsCode="c1"/>
+            <CrsTaken CrsCode="c2"/>
+        </Student>
+        <Student StudId="s2">
+            <Name>
+                <First>Jane</First>
+                <Last>Smith</Last>
+            </Name>
+            <Status>Graduated</Status>
+            <CrsTaken CrsCode="c1"/>
+        </Student>
+    </Students>
+    <Classes>
+        <Class>
+            <Semester>Fall 2022</Semester>
+            <ClassRoster Members="s1 s2"/>
+        </Class>
+    </Classes>
+    <Courses>
+        <Course CrsCode="c1">Computer Science</Course>
+        <Course CrsCode="c2">Mathematics</Course>
+    </Courses>
+</Report>
+
+<!-- The XML document references the DTD using the <!DOCTYPE ...> declaration.
+The structure of the XML document follows the specified DTD elements and attributes.
+The StudId attribute for the <Student> element, CrsCode attribute for the <Course> element, and CrsCode attribute for the <CrsTaken> element are defined as IDs or IDREFs in the DTD.
+The Members attribute for the <ClassRoster> element is defined as IDREFS in the DTD.
+This is a simple example, and in a real-world scenario, the XML document may contain more data and follow a more complex structure based on the specific requirements. -->

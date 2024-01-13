@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q.4 Nested List</title>
+    <style>
+      ul {
+        list-style-type: square;
+      }
+
+      ul ul {
+        list-style-type: circle;
+        margin-left: 20px;
+      }
+
+      ul ul ul {
+        list-style-type: disc;
+        margin-left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>List item 1</li>
+      <li>
+        List item 2
+        <ul>
+          <li>Sub-item 2.1</li>
+          <li>
+            Sub-item 2.2
+            <ul>
+              <li>Sub-sub-item 2.2.1</li>
+              <li>Sub-sub-item 2.2.2</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>List item 3</li>
+    </ul>
+  </body>
+</html>

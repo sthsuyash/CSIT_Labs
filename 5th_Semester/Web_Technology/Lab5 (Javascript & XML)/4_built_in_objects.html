@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q.4 Builtin Objects</title>
+  </head>
+  <body>
+    <script>
+      var colors = ['red', 'green', 'blue'];
+
+      // Array methods
+      colors.push('yellow'); // Add element to the end
+      colors.pop(); // Remove element from the end
+      colors.unshift('orange'); // Add element to the beginning
+      colors.shift(); // Remove element from the beginning
+
+      document.write('<h1>Array Methods</h1>');
+      document.write('<p>colors = ' + colors + '</p>');
+
+      var currentDate = new Date();
+      document.write('<h1>Date Methods</h1>');
+      document.write('<p>currentDate = ' + currentDate + '</br>');
+      document.write('currentDate.getFullYear() = ' + currentDate.getFullYear() + '</br>');
+      document.write('currentDate.getMonth() = ' + currentDate.getMonth() + '</br>');
+      document.write('currentDate.getDate() = ' + currentDate.getDate() + '</p>');
+
+      var message = 'Hello, World!';
+      document.write('<h1>String Methods</h1>');
+      document.write('<p>message = ' + message + '</br>');
+      document.write('message.length = ' + message.length + '</br>');
+      document.write('message.toUpperCase() = ' + message.toUpperCase() + '</br>');
+      document.write('message.indexOf("World") = ' + message.indexOf('World') + '</p>');
+
+      document.write('<h1>Math Methods</h1>');
+      document.write('<p>Math.random() = ' + Math.random() + '</br>');
+      document.write('Math.round(4.7) = ' + Math.round(4.7) + '</br>');
+      document.write('Math.pow(2, 3) = ' + Math.pow(2, 3) + '</p>');
+    </script>
+  </body>
+</html>

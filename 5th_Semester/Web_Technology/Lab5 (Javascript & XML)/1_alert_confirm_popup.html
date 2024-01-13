@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1. Popup Box Examples</title>
+</head>
+<body>
+
+<script>
+    alert("This is an alert message!");
+
+    var result = confirm("Do you want to proceed?");
+    
+    if (result) {
+        alert("You clicked OK!");
+    } else {
+        alert("You clicked Cancel!");
+    }
+
+    var userInput = prompt("Please enter your name:", "John Doe");
+    
+    if (userInput !== null) {
+        alert("Hello, " + userInput + "!");
+    } else {
+        alert("You clicked Cancel or did not enter anything.");
+    }
+</script>
+
+</body>
+</html>

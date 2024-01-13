@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q.9 jQuery Effects</title>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+      #myImage {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="showHideButton">Toggle Image</button>
+    <button id="fadeInOutButton">Fade In/Out</button>
+    <button id="stopButton">Stop Animation</button>
+
+    <img
+      id="myImage"
+      src="https://via.placeholder.com/200"
+      alt="Sample Image"
+    />
+
+    <script>
+      // Show/Hide Effect
+      $('#showHideButton').on('click', function () {
+        $('#myImage').toggle('slow');
+      });
+
+      // Fade In/Out Effect
+      $('#fadeInOutButton').on('click', function () {
+        $('#myImage').fadeToggle('slow');
+      });
+
+      // Stop Animation
+      $('#stopButton').on('click', function () {
+        $('#myImage').stop();
+      });
+    </script>
+  </body>
+</html>

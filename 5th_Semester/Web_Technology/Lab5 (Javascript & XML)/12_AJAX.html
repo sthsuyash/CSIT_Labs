@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q.12 AJAX Example</title>
+  </head>
+  <body>
+    <button id="getDataButton">Get Data</button>
+    <div id="result"></div>
+
+    <script>
+      document
+        .getElementById('getDataButton')
+        .addEventListener('click', function () {
+          // Create a new XMLHttpRequest object
+          var xhr = new XMLHttpRequest();
+
+          // Configure it to make a GET request to the specified URL
+          xhr.open('GET', 'https://jsonplaceholder.typicode.com/todos/1', true);
+
+          // Set up a callback function to handle the response
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+              // Parse the JSON response
+              var responseData = JSON.parse(xhr.responseText);
+
+              // Update the content on the client side
+              document.getElementById('result').innerHTML = `
+                    <p>User ID: ${responseData.userId}<br/>
+                    Title: ${responseData.title}<br/>
+                    Completed: ${responseData.completed}</p>
+                `;
+            }
+          };
+
+          // Send the request
+          xhr.send();
+        });
+    </script>
+  </body>
+</html>

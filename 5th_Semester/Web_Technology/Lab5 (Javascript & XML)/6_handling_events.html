@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q.6 Event Handling Example</title>
+  </head>
+  <body>
+    <button id="myButton">Click me!</button>
+
+    <script>
+      var button = document.getElementById('myButton');
+
+      function buttonClickHandler() {
+        alert('Button clicked!');
+      }
+
+      button.addEventListener('click', buttonClickHandler);
+    </script>
+  </body>
+</html>
