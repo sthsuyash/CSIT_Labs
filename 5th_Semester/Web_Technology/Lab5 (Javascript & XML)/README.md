@@ -13,6 +13,7 @@
    - String Methods
    - Math Methods
 
+.
 5. WAP that contains a text field for name, age, phone number, email, dropdown for colleges, radio for gender and a checkboxes for i accept all the terms. Perform the client side validations as: • [Code](5_client-side-validation.html)
 
    - All fields are required
