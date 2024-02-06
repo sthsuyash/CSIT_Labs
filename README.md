@@ -49,8 +49,12 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 
 ## [6<sup>th</sup> Semester](/6th_Semester/README.md)
 
-- [Compiler Design](/6th_Semester/Compiler_Design/README.md)
+- [Compiler Design and Construction](/6th_Semester/Compiler_Design_and_Construction/README.md)
+- [EGovernance](EGovernance/README.md)
+- [Ecommerce](Ecommerce/README.md)
+- [NET_Centric_Computing](NET_Centric_Computing/README.md)
 - [Software Engineering](/6th_Semester/Software_Engineering/README.md)
+- [Technical Writing](Technical_Writing/README.md)
 
 ## Contributing
 
