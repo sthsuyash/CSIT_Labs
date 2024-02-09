@@ -118,6 +118,26 @@ namespace C_Basic
 
             Console.WriteLine("\n\n----------------------------\n\n");
 
+            Console.WriteLine("**** File handling ****");
+            FileHandling fileHandling = new FileHandling();
+            Console.WriteLine("Do you want to read from the file or write to the file? (read/write): ");
+            if (Console.ReadLine() == "write")
+            {
+                fileHandling.WriteFile();
+            }
+            else
+            {
+                fileHandling.ReadFile();
+            }
+
+            Console.WriteLine("\n\n----------------------------\n\n");
+
+            Console.WriteLine("**** Example of array ****");
+            Array array = new Array();
+            array.set1DArray();
+            array.set2DArray();
+            array.setJaggedArray();
+            Console.WriteLine("\n\n----------------------------\n\n");
 
             // Console.ReadKey(); // to hold the console screen
 
