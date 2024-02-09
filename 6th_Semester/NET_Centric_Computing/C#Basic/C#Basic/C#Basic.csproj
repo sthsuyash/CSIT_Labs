@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Box.cs" />
     <Compile Include="Constructors.cs" />
+    <Compile Include="CustomException.cs" />
+    <Compile Include="Exception.cs" />
     <Compile Include="Inheritance.cs" />
     <Compile Include="MethodOverloading.cs" />
     <Compile Include="MultilevelInheritance.cs" />

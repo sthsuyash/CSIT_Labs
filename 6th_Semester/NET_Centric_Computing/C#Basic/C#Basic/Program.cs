@@ -105,6 +105,20 @@ namespace C_Basic
             child.square();
             Console.WriteLine("\n\n----------------------------\n\n");
 
+            Console.WriteLine("**** Example of exception handling ****");
+            ExceptionDemo exception = new ExceptionDemo();
+            exception.setData();
+            exception.divide();
+            Console.WriteLine("\n\n----------------------------\n\n");
+
+            Console.WriteLine("**** Example of custom exception handling ****");
+            CustomException customException = new CustomException();
+            customException.setAge(15);
+            customException.setAge(20);
+
+            Console.WriteLine("\n\n----------------------------\n\n");
+
+
             // Console.ReadKey(); // to hold the console screen
 
         }
