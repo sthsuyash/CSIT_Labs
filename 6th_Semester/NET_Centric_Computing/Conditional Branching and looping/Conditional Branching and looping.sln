@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conditional Branching and looping", "Conditional Branching and looping.csproj", "{486DF946-336A-4D7C-93B6-7D0C772C90CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{486DF946-336A-4D7C-93B6-7D0C772C90CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{486DF946-336A-4D7C-93B6-7D0C772C90CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{486DF946-336A-4D7C-93B6-7D0C772C90CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{486DF946-336A-4D7C-93B6-7D0C772C90CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CB3C33D-993B-47F4-8CE5-62C737526375}
+	EndGlobalSection
+EndGlobal

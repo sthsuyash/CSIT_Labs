@@ -173,7 +173,7 @@ namespace StudentGradingApplication
             this.CalculateScore();
 
             // display the tabular format of the marks
-            Console.WriteLine($"{this.name}:\t\t{this.average}\t{this.grade}");
+            Console.WriteLine($"{this.name}\t\t0\t\t\t{this.average}\t{this.grade}\t\t0 (0 points)");
         }
     }
 }
