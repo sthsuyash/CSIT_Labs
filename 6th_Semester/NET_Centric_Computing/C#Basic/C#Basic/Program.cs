@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace C_Basic
 {
@@ -138,6 +140,46 @@ namespace C_Basic
             array.set2DArray();
             array.setJaggedArray();
             Console.WriteLine("\n\n----------------------------\n\n");
+
+            Console.WriteLine("**** Example of lambda expression and list ****");
+            ListDemo listDemo = new ListDemo();
+            listDemo.setList();
+
+            Console.WriteLine("\n**** Second part ****");
+            // for second part
+            // create 5 objects of Teachers class using list
+            List<Teachers> teachers = new List<Teachers>()
+            {
+                new Teachers() { Id = 1, Name = "Suyash", Department = "CSIT" },
+                new Teachers() { Id = 2, Name = "Sandesh", Department = "CSIT" },
+                new Teachers() { Id = 3, Name = "Shreyan", Department = "CSIT" },
+                new Teachers() { Id = 4, Name = "Prashanna", Department = "CSIT" },
+                new Teachers() { Id = 5, Name = "Amish", Department = "CSIT" }
+            };
+
+            foreach (var teacherObject in teachers)
+            {
+                Console.WriteLine($"Id: {teacherObject.Id}");
+                Console.WriteLine($"Name: {teacherObject.Name}");
+                Console.WriteLine($"Department: {teacherObject.Department}");
+            }
+
+            // using lambda to sort object and display
+            var teachersSorted = teachers.OrderBy(teacherObject => teacherObject.Name);
+            foreach (var teacherObject in teachersSorted)
+            {
+                Console.WriteLine($"Id: {teacherObject.Id}");
+                Console.WriteLine($"Name: {teacherObject.Name}");
+                Console.WriteLine($"Department: {teacherObject.Department}");
+            }
+
+            var findTeacher = teachers.FindAll(teacherObject => teacherObject.Id == 1);
+            foreach (var teacherObject in teachersSorted)
+            {
+                Console.WriteLine($"Id: {teacherObject.Id}");
+                Console.WriteLine($"Name: {teacherObject.Name}");
+                Console.WriteLine($"Department: {teacherObject.Department}");
+            }
 
             // Console.ReadKey(); // to hold the console screen
 

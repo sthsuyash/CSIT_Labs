@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E00787D2-39D2-49F9-A224-9C52C33F0694}</ProjectGuid>
+    <ProjectGuid>{D74979CD-AC8D-44E6-A391-0C365A197B3E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>C_Basic</RootNamespace>
-    <AssemblyName>C#Basic</AssemblyName>
+    <RootNamespace>DatabaseConnection</RootNamespace>
+    <AssemblyName>DatabaseConnection</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,20 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Box.cs" />
-    <Compile Include="Array.cs" />
-    <Compile Include="Constructors.cs" />
-    <Compile Include="CustomException.cs" />
-    <Compile Include="Exception.cs" />
-    <Compile Include="FileHandling.cs" />
-    <Compile Include="Inheritance.cs" />
-    <Compile Include="LambdaExpression.cs" />
-    <Compile Include="ListDemo.cs" />
-    <Compile Include="MethodOverloading.cs" />
-    <Compile Include="MultilevelInheritance.cs" />
+    <Compile Include="Insert.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rectangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
