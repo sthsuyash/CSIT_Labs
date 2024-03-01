@@ -20,29 +20,30 @@ namespace DatabaseConnection
             Console.WriteLine("5. Exit");
             Console.WriteLine("------------------------\n");
 
-            int choice = Convert.ToInt32(Console.ReadLine());
+            int choice;
             do {
+                choice = Convert.ToInt32(Console.ReadLine());
 
                 switch (choice)
                 {
                     case 1:
                         databaseConnection.GetAllData();
-                        return;
+                        break;
                     case 2:
                         databaseConnection.GetDataById();
-                        return;
+                        break;
                     case 3:
                         databaseConnection.UpdateData();
-                        return;
+                        break;
                     case 4:
                         databaseConnection.DeleteData();
-                        return;
+                        break;
                     default:
                         Console.WriteLine("Please select the provided options.");
-                        return;
+                        break;
                 }
 
-                }while (choice > 4) ;
+            } while (choice != 5);
         }
     }
 }
