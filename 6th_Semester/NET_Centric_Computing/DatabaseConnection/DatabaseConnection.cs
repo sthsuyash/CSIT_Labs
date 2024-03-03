@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient; // for sql connection
 using System.Data;
 
@@ -30,22 +29,28 @@ namespace DatabaseConnection
 {
     class DatabaseConnection
     {
+        private SqlConnection OpenConnection()
+        {
+            String server_name = "KSUYASH";
+            String dbname = "db_net";
+            String connectionString = $"Data Source={server_name};Initial Catalog={dbname};Integrated Security=true";
+            // integrated security = true means windows authentication
+            // if we want to use sql server authentication then we have to provide username and password
+
+            // in exam, data source can be SERVER
+
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+            return conn;
+        }
+
+        /*
+         * Create table
+         */
         public void CreateTable()
         {
             try
             {
-                String server_name = "KSUYASH";
-                String dbname = "db_net";
-                String connectionString = $"Data Source={server_name};Initial Catalog={dbname};Integrated Security=true";
-                // integrated security = true means windows authentication
-                // if we want to use sql server authentication then we have to provide username and password
-
-                // in exam, data source can be SERVER
-
-                SqlConnection conn = new SqlConnection(connectionString);
-                conn.Open(); // opening connection
-
-                /* Creating table */
                 string tableQuery = "CREATE TABLE tbl_emp IF_NOT_EXISTS(" +
 
                                     "id INT PRIMARY KEY IDENTITY(1,1)," +
@@ -56,6 +61,7 @@ namespace DatabaseConnection
                                     "salary FLOAT" +
                                     ")";
 
+                SqlConnection conn = OpenConnection();
                 /* Execute the query */
                 SqlCommand sc = new SqlCommand(tableQuery, conn); // first parameter => query, second parameter => connection
                 sc.ExecuteNonQuery(); // to execute the query
@@ -70,26 +76,19 @@ namespace DatabaseConnection
             }
         }
 
+        /*
+         * Insert static data
+         */
         public void InsertData()
         {
             try
             {
-                String server_name = "KSUYASH";
-                String dbname = "db_net";
-                String connectionString = $"Data Source={server_name};Initial Catalog={dbname};Integrated Security=true";
-                // integrated security = true means windows authentication
-                // if we want to use sql server authentication then we have to provide username and password
-
-                // in exam, data source can be SERVER
-
-                SqlConnection conn = new SqlConnection(connectionString);
-                conn.Open(); // opening connection
-
                 /*Inserting into table */
                 string insertQuery = "INSERT INTO tbl_emp" +
                     "(name, age, gender, department, salary)" +
                     "VALUES('Suyash', 22, 'Male', 'IT', 50000)";
 
+                SqlConnection conn = OpenConnection();
                 SqlCommand sc = new SqlCommand(insertQuery, conn);
                 int response = sc.ExecuteNonQuery();
 
@@ -115,10 +114,7 @@ namespace DatabaseConnection
         {
             try
             {
-                String connectionString = "Data Source=KSUYASH;Initial Catalog=db_net;Integrated Security=true";
-
-                SqlConnection conn = new SqlConnection(connectionString);
-                conn.Open();
+                SqlConnection conn = OpenConnection();
 
                 Console.Write("Enter name: ");
                 string name = Console.ReadLine();
@@ -167,10 +163,7 @@ namespace DatabaseConnection
         {
             try
             {
-                string connectionString = "Data Source=KSUYASH;Initial Catalog=db_net;Integrated Security=true";
-
-                SqlConnection conn = new SqlConnection(connectionString);
-                conn.Open();
+                SqlConnection conn = OpenConnection();
 
                 string fetchQuery = "SELECT * FROM tbl_emp";
                 // to fetch the  data, ExecuteReader is used.
@@ -209,9 +202,7 @@ namespace DatabaseConnection
         {
             try
             {
-                string connectionString = "Data Source=KSUYASH;Initial Catalog=db_net;Integrated Security=true";
-                SqlConnection conn = new SqlConnection(connectionString);
-                conn.Open();
+                SqlConnection conn = OpenConnection();
 
                 string fetchQuery = "SELECT * FROM tbl_emp WHERE id=@id";
                 SqlCommand sc = new SqlCommand(fetchQuery, conn);
@@ -231,7 +222,7 @@ namespace DatabaseConnection
                     Console.WriteLine($"Salary: {response["salary"]}");
                 }
             }
-            catch(SqlException e)
+            catch (SqlException e)
             {
                 Console.WriteLine(e.Message);
             }
@@ -243,10 +234,7 @@ namespace DatabaseConnection
         {
             try
             {
-                string connectionString = "Data Source=KSUYASH;Initial Catalog=db_net;Integrated Security=true";
-                SqlConnection conn = new SqlConnection(connectionString);
-
-                conn.Open();
+                SqlConnection conn = OpenConnection();
 
                 string updateQuery = "UPDATE tbl_emp SET " +
                     "name=@name, salary=@salary " +
@@ -278,14 +266,14 @@ namespace DatabaseConnection
             }
         }
 
+        /*
+         * Delete the data of user by ID
+         */
         public void DeleteData()
         {
             try
             {
-                string connectionString = "Data Source=KSUYASH;Initial Catalog=db_net;Integrated Security=true";
-                SqlConnection conn = new SqlConnection(connectionString);
-
-                conn.Open();
+                SqlConnection conn = OpenConnection();
 
                 string deleteQuery = "DELETE FROM tbl_emp WHERE id=@id";
 
@@ -295,7 +283,7 @@ namespace DatabaseConnection
                 SqlCommand sc = new SqlCommand(deleteQuery, conn);
                 sc.Parameters.AddWithValue("@id", id);
             }
-            catch(SqlException e)
+            catch (SqlException e)
             {
                 Console.WriteLine(e.Message);
             }

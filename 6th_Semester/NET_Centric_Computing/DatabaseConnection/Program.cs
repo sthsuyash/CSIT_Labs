@@ -22,6 +22,7 @@ namespace DatabaseConnection
 
             int choice;
             do {
+                Console.Write("\nEnter your choice: ");
                 choice = Convert.ToInt32(Console.ReadLine());
 
                 switch (choice)
@@ -37,6 +38,16 @@ namespace DatabaseConnection
                         break;
                     case 4:
                         databaseConnection.DeleteData();
+                        break;
+                    case 5:
+                        Console.Write("Exiting");
+                        for (int i = 0; i < 3; i++)
+                        {
+                            // time delay
+                            System.Threading.Thread.Sleep(500);
+                            Console.Write(".");
+                        }
+                        Console.WriteLine();
                         break;
                     default:
                         Console.WriteLine("Please select the provided options.");
