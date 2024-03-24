@@ -1,13 +1,19 @@
 # NET Centric Computing
 
-## Class Codes
+## [Class Codes](Class%20codes/)
 
-1. [C# Basics](C%23Basic/C%23Basic)
-2. [Database Connection](DatabaseConnection/)
+- [C# .NET Basics](Class%20codes/C#Basic/)
+- [Database Connection with ADO.NET](Class%20codes/DatabaseConnection/)
+- [ASP.NET Web Forms](Class%20codes/Web%20Forms%20Demo/)
 
-## Projects
+## [Lab Codes](Lab%20Codes/)
 
-- [Student Grading Application](StudentGradingApplication/README.md)
-- [Do while Programs](Do-while-programs/README.md)
-- [Animal Shelter Conditional branching](AnimalShelter-Conditional-branching-and-looping/)
-- [Role Playing Game Battle](Role%20playing%20game%20battle/README.md)
+- [Practical 1 (C# Basics)](Practical%201/)
+- [Practical 2 (ADO.NET and Web forms)](Practical%202/)
+
+## [Self Projects](Self%20Projects)
+
+- [Student Grading Application](Self%20Projects/StudentGradingApplication/README.md)
+- [Do while Programs](Self%20Projects/Do-while-programs/README.md)
+- [Animal Shelter Conditional branching](Self%20Projects/AnimalShelter-Conditional-branching-and-looping/)
+- [Role Playing Game Battle](Self%20Projects/Role%20playing%20game%20battle/README.md)
