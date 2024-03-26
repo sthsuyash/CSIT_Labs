@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 /*
  * Create a class EmployeeDetails having data member empId, empName, empGender, empAddress, and empPosition.

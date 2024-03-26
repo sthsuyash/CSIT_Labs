@@ -58,6 +58,7 @@ namespace Practical1
             dog.Bark();
 
             Chiuaua chiuaua = new Chiuaua();
+            chiuaua.Eat();
             chiuaua.Bark();
             chiuaua.SmallBark();
             Console.WriteLine("----------------------------------\n");
