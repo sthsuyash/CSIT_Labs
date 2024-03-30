@@ -1,32 +1,33 @@
-﻿using System;
+﻿/*
+ * Exception is any kind of error that disturbs the normal flow of the program.
+ * if exception occurs, then whole program is stopped.
+ * to deal with such error exception handling mechanism is required.
+ * it contains 4 keywords
+ *
+ * 1. try: use to surround a code that can cause error
+ * 2. catch: use to handle the error
+ * 3. throw: use to throw an exception
+ * 4. finally: this block will always execute whether exception occurs or not
+*/
+using System;
 
-// exception is any kind of error that disturbs the normal flow of the program.
-// if exception occurs, then whole program is stopped.
-// to deal with such error exception handling mechanism is required.
-// it contains 4 keywords
-
- // 1. try: use to surround a code that can cause error
- // 2. catch: use to handle the error
- // 3. throw: use to throw an exception
- // 4. finally: this block will always execute whether exception occurs or not
-          
-namespace C_Basic
+namespace Basics
 {
-    class ExceptionDemo
+    class ExceptionHandling
     {
         private int x;
         private int y;
 
-        public void setData()
+        public void SetData()
         {
             Console.WriteLine("Enter first number: ");
-            this.x = Int32.Parse(Console.ReadLine());
+            x = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Enter second number: ");
-            this.y = Int32.Parse(Console.ReadLine());
+            y = Convert.ToInt32(Console.ReadLine());
         }
 
-        public void divide()
+        public void Divide()
         {
             try
             {

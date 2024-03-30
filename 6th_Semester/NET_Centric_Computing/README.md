@@ -2,14 +2,14 @@
 
 ## [Class Codes](Class%20codes/)
 
-- [C# .NET Basics](Class%20codes/C#Basic/)
+- [C# .NET Basics](Class%20codes/Basics/)
 - [Database Connection with ADO.NET](Class%20codes/DatabaseConnection/)
 - [ASP.NET Web Forms](Class%20codes/Web%20Forms%20Demo/)
 
 ## [Lab Codes](Lab%20Codes/)
 
-- [Practical 1 (C# Basics)](Practical%201/)
-- [Practical 2 (ADO.NET and Web forms)](Practical%202/)
+- [Practical 1 (C# Basics)](Lab%20Codes/Practical1/)
+- [Practical 2 (ADO.NET and Web forms)](Lab%20Codes/Practical2/)
 
 ## [Self Projects](Self%20Projects)
 
