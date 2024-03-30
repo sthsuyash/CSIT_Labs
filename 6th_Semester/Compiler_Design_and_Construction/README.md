@@ -2,8 +2,8 @@
 
 **Lab 1:**
 
-1. [Write a program to check whether the input is digit or not](./1_a_digit_or_not.c)
-2. [Write a program to identify tokens](./1_b_identify_tokens.c)
+1. [Write a program to check whether the input is digit or not](./1_a_digit_or_not.l)
+2. [Write a program to identify tokens](./1_b_identify_tokens.l)
 
 **Lab 2:**
 
