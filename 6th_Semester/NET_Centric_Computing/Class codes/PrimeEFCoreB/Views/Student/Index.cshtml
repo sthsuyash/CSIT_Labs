@@ -1,0 +1,29 @@
+﻿@model List<PrimeEFCoreB.Models.Student>
+@{
+    ViewData["Title"] = "Students List";
+}
+
+<h1>List of all Students</h1>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Address</th>
+        <th>Faculty</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    @foreach (var student in Model)
+    {
+        <tr>
+            <td>@student.Id</td>
+            <td>@student.Name</td>
+            <td>@student.Gender</td>
+            <td>@student.Address</td>
+            <td>@student.Faculty</td>
+            <td><a href="Edit/@student.Id">Edit</a></td>
+            <td><a href="Delete/@student.Id">Delete</a></td>
+        </tr>
+    }
+</table>

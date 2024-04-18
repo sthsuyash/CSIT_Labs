@@ -1,0 +1,25 @@
+﻿@model PrimeEFCoreB.Models.Student
+
+<form action="Edit" method="post">
+    <!-- Id is hidden -->
+    <input type="hidden" name="Id" value="@Model.Id" />
+
+    <!-- Name -->
+    <label for="Name">Name</label>
+    <input type="text" id="Name" name="Name" value="@Model.Name" />
+
+    <!-- Gender -->
+    <label for="Gender">Gender</label>
+    <input type="text" id="Gender" name="Gender" value="@Model.Gender" />
+
+    <!-- Address-->
+    <label for="Address">Address</label>
+    <input type="text" id="Address" name="Address" value="@Model.Address" />
+
+    <!-- Faculty -->
+    <label for="Faculty">Faculty</label>
+    <input type="text" id="Faculty" name="Faculty" value="@Model.Faculty" />
+
+    <button type="submit">Save</button>
+    <a href="Index">Cancel</a>
+</form>
