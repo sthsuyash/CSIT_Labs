@@ -1,0 +1,14 @@
+﻿@*
+    create login form and also extract return url
+*@
+@{
+    string retUrl = ViewData["returnURL"] as string;
+}
+<form method="post" action="Login?ReturnUrl=@System.Net.WebUtility.UrlEncode(retUrl)">
+    <label>username</label>
+    <input type="text" name="username" /><br/>
+    <label>password</label>
+    <input type="text" name="password" /><br/>
+    <input type="submit" name="submit" value="login" />
+
+</form>
