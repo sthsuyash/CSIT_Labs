@@ -1,10 +1,10 @@
 using Authentication.Models;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication; // to add authentication
+using Microsoft.AspNetCore.Authentication.Cookies; // to add cookie
 using Microsoft.AspNetCore.Authorization; // to add authorization
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using System.Security.Claims;
+using System.Security.Claims; // to add claims -> claims are the authorization details
 
 namespace Authentication.Controllers
 {
@@ -22,46 +22,52 @@ namespace Authentication.Controllers
             return View();
         }
 
-        // Let's say we need authorization to view Index
+        // Let's say we need authorization to view Privacy page
         // then we need to add this attribute
         [Authorize]
         public IActionResult Privacy()
         {
             return View();
         }
-        [Authorize(Roles ="Student")]
+        [Authorize(Roles = "Student")]
         public IActionResult DashBoard()
         {
             return View();
-                }
+        }
+
+        // This is the get method for login
+        // It will take return url and send it to the view
         [HttpGet]
         public IActionResult Login(string ReturnUrl)
         {
             //take retrun url to view for this use viewbag
-            ViewData["returnURL"]= ReturnUrl;
+            ViewData["returnURL"] = ReturnUrl;
             return View();
         }
+
+        // This is the post method for login
+        // It will take username and password and return to the return url
         [HttpPost]
-        public IActionResult Login(string username,string password, string ReturnUrl)
+        public IActionResult Login(string username, string password, string ReturnUrl)
         {
             if (username == "ram" && password == "ram")
             {
-                //add authroization
-                //claim: authorization detail
-                //identity:which mechanism to be used for authorization:cookie
-                //principle: to whom to authorized
+                // add authroization
+                // claim: authorization detail
+                // identity: which mechanism to be used for authorization:cookie
+                // principal: who is authorized
                 List<Claim> claims = new List<Claim>();
                 claims.Add(new Claim(ClaimTypes.NameIdentifier, username));
                 claims.Add(new Claim(ClaimTypes.Name, username));
                 claims.Add(new Claim(ClaimTypes.Role, "Student"));
-                //identity
- ClaimsIdentity identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                //principle
+                // identity->claims
+                ClaimsIdentity identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                // principal->identity 
                 ClaimsPrincipal principal = new ClaimsPrincipal(identity);
-                //executing
-                HttpContext.SignInAsync(principal);//execute
+                // executing->sign in
+                HttpContext.SignInAsync(principal); //execute
                 return Redirect(ReturnUrl);
-                 
+
             }
             return View();
 

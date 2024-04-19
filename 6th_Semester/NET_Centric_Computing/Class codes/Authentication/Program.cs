@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 // adding authentication through cookie
-// cookie add garesi login path chai /Home/Login huna parcha
+// after adding cookie, login path must be /Home/Login
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
