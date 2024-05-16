@@ -1,0 +1,16 @@
+﻿@{
+    string name = ViewBag.Name;
+    int age = ViewBag.Age;
+    /*
+    * Here, the name and age are stored in ViewBag and then retrieved in the view
+    * we could have also passed the name and age as parameters to the view
+    * We can do so by creating a model class and passing the object of that class to the view
+    * Then access the properties of the model object in the view using the @Model property, which is done in Details.cshtml
+    */
+}
+
+<h1>Print data page</h1>
+<h2>Name: @name</h2>
+<p>Age: @age</p>
+
+<span>Note: Add ?name="name"&age="age" to view the data.</span>

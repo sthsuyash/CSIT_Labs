@@ -1,0 +1,33 @@
+﻿@using MVC_Demonstration.Models
+@model IEnumerable<Student>
+
+@{
+    ViewData["Title"] = "Student Page";
+}
+<h1>This is Students home page</h1>
+<table border="1" cellpadding="3" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Course</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Student student in Model)
+        {
+            <tr>
+
+                <td>@student.Id</td>
+                <td>@student.Name</td>
+                <td>@student.Age</td>
+                <td>@student.Address</td>
+                <td>@student.Phone</td>
+                <td>@student.Course</td>
+            </tr>
+        }
+    </tbody>
+</table>

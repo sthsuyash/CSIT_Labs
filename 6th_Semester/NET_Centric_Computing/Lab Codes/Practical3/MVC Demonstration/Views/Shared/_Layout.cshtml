@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The ViewData dictionary is used to pass data from the controller to the view -->
+    <title>@ViewData["Title"] - MVC Demonstration</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a asp-area="" asp-controller="Home" asp-action="Index">MVC Demonstration</a>
+                <div>
+                    <ul>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <!-- Here, the asp-controller field specifies the Controller name the respective links are located at -->
+                        <!-- Like in the code below, the Student controller contains all these, and above, the index is in HomeController.cs -->
+                        <li>
+                            <a asp-area="" asp-controller="Student" asp-action="Greetings">Greeting</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Student" asp-action="Index">Students</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Student" asp-action="Details">Student Detail</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Student" asp-action="PrintData">Print Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>

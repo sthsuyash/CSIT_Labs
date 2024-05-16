@@ -1,0 +1,22 @@
+﻿@using MVC_Demonstration.Models <!-- Add this line to use the Student model -->
+@model Student
+
+<h1>Student details page</h1>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Course</th>
+    </tr>
+    <tr>
+        <td>@Model.Id</td>
+        <td>@Model.Name</td>
+        <td>@Model.Age</td>
+        <td>@Model.Address</td>
+        <td>@Model.Phone</td>
+        <td>@Model.Course</td>
+    </tr>
+</table>

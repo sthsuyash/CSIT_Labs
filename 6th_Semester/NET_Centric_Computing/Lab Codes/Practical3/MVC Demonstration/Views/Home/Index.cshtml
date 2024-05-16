@@ -1,0 +1,46 @@
+﻿@*
+    Razor syntax is used to embed C# code in view(HTML file).
+    When page is load first, razor syntax is executed and then HTML is rendered, so the page is displayed.
+    To use the razor syntax, we use @ symbol.
+    It can be placed anywhere in HTML file.
+*@
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>This is the home page.</h1>
+
+@{
+    <h3>This is Razor syntax example!</h3>
+    // declaring the variable in razor syntax
+    string data = "CSIT 6th Sem";
+
+    <h3>Looping in the razor syntax</h3>
+    for (int i = 1; i < 10; i++)
+    {
+        <span>@i</span>
+    }
+
+    if (data == "CSIT 6th Sem")
+    {
+        <p>Student is in 6th Sem</p>
+    }
+    else
+    {
+        <p>Student is not in 6th Sem</p>
+    }
+}
+
+<h3>This is for HTML Tag helpers demo.</h3>
+<!-- HTML Tag helpers -->
+<!-- It is used to generate HTML elements in the view. -->
+
+@using MVC_Demonstration.Models
+@model Student
+<form method="post">
+    <label asp-for="Name">Name:</label>
+    <input asp-for="Name" />
+    <br/>
+    <button type="submit">Submit</button>
+</form>

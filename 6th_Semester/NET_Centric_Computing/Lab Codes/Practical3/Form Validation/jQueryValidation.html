@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery login form validation</title>
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#submit').click(function () {
+          const name = $('#name').val();
+          const password = $('#password').val();
+
+          // Check if the name and password fields are empty
+          if (name == '') {
+            alert('Please enter your name');
+            return false;
+          }
+
+          if (password == '') {
+            alert('Please enter your password');
+            return false;
+          }
+
+          // Check if the password is less than 6 characters
+          if (password.length < 6) {
+            alert('Password must be at least 6 characters long');
+            return false;
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <form id="loginForm">
+      <!-- Name field -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <br /><br />
+      <!-- Password field -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <br /><br />
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
