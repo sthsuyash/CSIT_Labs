@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Authentication and Authorization</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a asp-area="" asp-controller="Home" asp-action="Index">Authentication and Authorization</a>
+                <div>
+                    <ul>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Private">Private</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Dashboard">Dashboard</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="UserPage">User Page</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="AdminPage">Admin Page</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>

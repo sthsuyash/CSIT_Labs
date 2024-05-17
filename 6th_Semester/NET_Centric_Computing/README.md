@@ -5,11 +5,16 @@
 - [C# .NET Basics](Class%20codes/Basics/)
 - [Database Connection with ADO.NET](Class%20codes/DatabaseConnection/)
 - [ASP.NET Web Forms](Class%20codes/Web%20Forms%20Demo/)
+- [Entity Framework](Class%20codes/PrimeEFCoreB/)
+- [ASP.NET MVC](Class%20codes/WebMVC/)
+- [ASP.NET Authentication](Class%20codes/Authentication/)
+- [ASP.NET Web API](Class%20codes/WebAPI%20Demo/)
 
 ## [Lab Codes](Lab%20Codes/)
 
 - [Practical 1 (C# Basics)](Lab%20Codes/Practical1/)
 - [Practical 2 (ADO.NET and Web forms)](Lab%20Codes/Practical2/)
+- [Practical 3 (Other)](Lab%20Codes/Practical3/)
 
 ## [Self Projects](Self%20Projects)
 

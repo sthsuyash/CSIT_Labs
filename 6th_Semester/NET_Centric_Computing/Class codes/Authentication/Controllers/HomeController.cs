@@ -40,7 +40,7 @@ namespace Authentication.Controllers
         [HttpGet]
         public IActionResult Login(string ReturnUrl)
         {
-            //take retrun url to view for this use viewbag
+            //take return url to view for this use viewbag
             ViewData["returnURL"] = ReturnUrl;
             return View();
         }

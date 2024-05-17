@@ -1,0 +1,23 @@
+﻿@*
+    Creating a login form with username and password fields and extract returnUrl from viewbag to redirect to the page that the user was trying to access before being redirected to the login page.
+*@
+
+@{
+    string returnUrl = ViewBag.ReturnUrl;
+}
+
+<form 
+    method="post"
+    action="Login?ReturnUrl=@System.Net.WebUtility.UrlEncode(returnUrl)"
+>
+    <input type="hidden" name="returnUrl" value="@returnUrl" />
+    <div>
+        <label>Username</label>
+        <input type="text" name="username" /><br />
+    </div>
+    <div>
+        <label>Password</label>
+        <input type="password" name="password" /><br />
+    </div>
+    <input type="submit" name="submit" value="login" />
+</form>
