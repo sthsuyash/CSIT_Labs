@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Session state management";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@{
+    if (!string.IsNullOrEmpty(ViewBag.name) && !string.IsNullOrEmpty(ViewBag.email))
+    {
+        <h3>Session data:</h3>
+        <p>Name: @ViewBag.name</p>
+        <p>Email: @ViewBag.email</p>
+        <form asp-action="Clear">
+            <button type="submit">Clear</button>
+        </form>
+    }
+    else
+    {
+        <form asp-action="Index" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <button type="submit">Set session</button>
+        </form>
+    }
+}
+

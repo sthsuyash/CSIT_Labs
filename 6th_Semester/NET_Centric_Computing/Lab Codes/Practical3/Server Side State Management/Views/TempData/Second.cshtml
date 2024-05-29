@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Second";
+    <!-- For only one time access -->
+    // var name = TempData["Name"]?.ToString();
+    // This will access the tempdata and then remove it
+
+    <!-- For persisting data -->
+    <!-- Using Keep() method -->
+    var name = TempData["Name"]?.ToString();
+    TempData.Keep("Name");
+
+    <!-- Using Peek() method -->
+    // var name = TempData.Peek("Name")?.ToString();
+}
+
+
+<h1>Second</h1>
+<p>Name: @name</p>
+
+@{
+    ViewData["Title"] = "State management using TempData";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@{
+    <div>
+        <a asp-action="Third">Go to Third</a>
+    </div>
+}

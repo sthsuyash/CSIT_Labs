@@ -1,6 +1,6 @@
 # Client side state management in ASP.NET
 
-Client side state management is a technique used to store the state of a web page in the client's browser. This technique is used to maintain the state of a web page across postbacks.
+Client side state management is a technique used to store the state of a web page in the client's browser. This technique is used to maintain the state of a web page across multiple requests without storing the state on the server. This can help improve the performance of the web application by reducing the load on the server and reducing the amount of data that needs to be transferred between the client and the server.
 
 In ASP.NET, there are several ways to manage the state of a web page on the client side. Some of the common ways are:
 

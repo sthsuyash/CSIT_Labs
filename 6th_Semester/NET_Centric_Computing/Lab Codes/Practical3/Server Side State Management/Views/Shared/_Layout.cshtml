@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Server Side State Management</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li>
+                    <a asp-controller="Session" asp-action="Index">Session</a>
+                </li>
+                <li>
+                    <a asp-controller="TempData" asp-action="Index">TempData Home</a>
+                    <a asp-controller="TempData" asp-action="Second">TempData Second</a>
+                    <a asp-controller="TempData" asp-action="Third">TempData Third</a>
+                </li>
+                <li>
+                    <a asp-controller="HttpContext" asp-action="Index">HttpContext</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>
