@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "HiddenField for Client-Side State Management";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Index" method="post">
+    <input type="hidden" id="Id" name="Id" value="@ViewBag.Id" />
+    <label for="Name">Name:</label>
+    <input type="text" id="Name" name="Name" value="@ViewBag.Name" />
+    <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Client Side State Management</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li>
+                    <a asp-controller="Cookie" asp-action="Index">Cookie</a>
+                </li>
+                <li>
+                    <a asp-controller="QueryString" asp-action="Index">Query Strings</a>
+                </li>
+                <li>
+                    <a asp-controller="HiddenField" asp-action="Index">Hidden Field</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Cookies State management";
+}
+<h2>Manage Cookie</h2>
+
+@if (ViewBag.Username != null)
+{
+    <p>Cookie Value: @ViewBag.Username</p>
+
+    <form method="post" asp asp-action="DeleteCookie">
+        <input type="hidden" name="key" value="Username" />
+        <button type="submit">Delete Cookie</button>
+    </form>
+}
+else
+{
+    <p>No cookie found.</p>
+
+
+    <form method="post" asp-action="Index">
+        <div>
+            <label for="key">Key:</label>
+            <input type="text" id="key" name="key" value="Username" readonly />
+        </div>
+        <div>
+            * <label for="value">Value:</label>
+            <input type="text" id="value" name="value" required />
+        </div>
+        <div>
+            <label for="expireTime">Expire Time (minutes):</label>
+            <input type="number" id="expireTime" name="expireTime" />
+        </div>
+        <button type="submit">Set Cookie</button>
+    </form>
+}
