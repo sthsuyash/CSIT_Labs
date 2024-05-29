@@ -1,0 +1,41 @@
+﻿@model List<Entity_Framework_CRUD.Models.Officer>
+
+@{
+    ViewData["Title"] = "Officers List";
+}
+
+<h1>Officers List</h1>
+
+<p>
+    <a asp-action="CreateOfficer">Create New Officer</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Phone</th>
+            <th>Department</th>
+            <th>Position</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Gender</td>
+                <td>@item.Phone</td>
+                <td>@item.Department</td>
+                <td>@item.Position</td>
+                <td>
+                    <a href="Officer/GetOfficer/@item.Id">Details</a> |
+                    <a href="Officer/UpdateOfficer/@item.Id">Edit</a> |
+                    <a href="Officer/DeleteOfficer/@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

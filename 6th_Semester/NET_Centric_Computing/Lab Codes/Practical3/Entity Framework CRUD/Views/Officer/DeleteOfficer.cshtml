@@ -1,0 +1,52 @@
+﻿@model Entity_Framework_CRUD.Models.Officer
+
+@{
+    ViewData["Title"] = "Delete Officer";
+}
+
+<h1>Delete Officer</h1>
+
+<h4>Are you sure you want to delete this?</h4>
+<hr />
+<div>
+    <h4>Officer</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Department)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Department)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Position)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Position)
+        </dd>
+    </dl>
+
+    <form asp-action="DeleteOfficer">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

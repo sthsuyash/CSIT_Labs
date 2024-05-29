@@ -1,0 +1,41 @@
+﻿@model Entity_Framework_CRUD.Models.Officer
+
+@{
+    ViewData["Title"] = "Update Officer";
+}
+
+<h1>Update Officer</h1>
+
+<h4>Officer</h4>
+<hr />
+<div>
+    <form asp-action="UpdateOfficer">
+        <div>
+            <label asp-for="Name"></label>
+            <input asp-for="Name" />
+        </div>
+        <div>
+            <label asp-for="Gender"></label>
+            <input asp-for="Gender" />
+        </div>
+        <div>
+            <label asp-for="Phone"></label>
+            <input asp-for="Phone" />
+        </div>
+        <div>
+            <label asp-for="Department"></label>
+            <input asp-for="Department" />
+        </div>
+        <div>
+            <label asp-for="Position"></label>
+            <input asp-for="Position" />
+        </div>
+        <div>
+            <input type="submit" value="Save" />
+        </div>
+    </form>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

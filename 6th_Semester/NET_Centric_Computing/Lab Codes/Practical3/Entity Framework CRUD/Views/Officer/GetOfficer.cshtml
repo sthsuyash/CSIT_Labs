@@ -1,0 +1,34 @@
+﻿@model Entity_Framework_CRUD.Models.Officer;
+
+@{
+    ViewData["Title"] = "Officer Details";
+}
+<h1>Officer Details</h1>
+
+<div>
+    <h4>Officer</h4>
+    <hr />
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Phone</th>
+                <th>Department</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Name</td>
+                <td>@Model.Gender</td>
+                <td>@Model.Phone</td>
+                <td>@Model.Department</td>
+                <td>@Model.Position</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
