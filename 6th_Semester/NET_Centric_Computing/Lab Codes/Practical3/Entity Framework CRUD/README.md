@@ -55,13 +55,23 @@
    });
    ```
 
-6. Create a migration to generate the database schema.
+  6. In `appsettings.json` file, add the connection string for the database.
+
+  ```csharp
+  {
+    "ConnectionStrings":{
+    "connectionString": "Server=Servername; Database=DatabaseName; Trusted_Connection=True;"
+    }
+  }
+  ```
+
+7. Create a migration to generate the database schema.
 
    - Open the Package Manager Console.
    - Run the command `Add-Migration "Initial"` to create a migration.
    - Run the command `Update-Database` to apply the migration and create the database.
 
-7. Use the DbContext in a controller to query and save data.
+8. Use the DbContext in a controller to query and save data.
 
 ## CRUD Operations
 
