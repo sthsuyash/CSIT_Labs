@@ -1,10 +1,10 @@
-<h1 style="color:red; font-weight:700; font-size:4rem">CSIT Labs</h1>
+<h1 style="color:red; font-weight:700; font-size:4rem; text-align:center;">CSIT Labs</h1>
 
-![logo](static/logo.png)
+<img src="static/logo.png" alt="logo" style="display:block; margin:auto;">
 
 ## Description
 
-This is a code repository for all the major lab codes necessary for CSIT students according to semester in subject-wise format, currently in 6<sup>th</sup> semester and is being updated.
+This is a code repository for all the major lab codes necessary for CSIT students according to semester in subject-wise format for the course of Tribhuvan University.
 
 _Please feel free to update the codes as per needs and contribute to the repository._
 
@@ -50,18 +50,21 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 ## [6<sup>th</sup> Semester](/6th_Semester/README.md)
 
 - [Compiler Design and Construction](/6th_Semester/Compiler_Design_and_Construction/README.md)
-- [E-Governance](/6th_Semester/EGovernance/README.md)
-- [E-Commerce](/6th_Semester/Ecommerce/README.md)
 - [NET Centric Computing](/6th_Semester/NET_Centric_Computing/README.md)
-- [Software Engineering](/6th_Semester/Software_Engineering/README.md)
-- [Technical Writing](/6th_Semester/Technical_Writing/README.md)
+
+## [7<sup>th</sup> Semester](/7th_Semester/README.md)
+
+- [Data Mining](/7th_Semester/Data_Mining/README.md)
+- [Advanced Java Programming](/7th_Semester/Advanced%20Java%20Programming/README.md)
 
 ## Contributing
 
-1. Fork it.
+1. Fork the repository.
 2. Create your feature branch: `git checkout -b <branch-name>`
-3. Add changes
-4. Create Pull Request
+3. Add changes: `git add .`
+4. Commit changes: `git commit -m "Add feature"`
+5. Push to the branch: `git push origin <branch-name>`
+6. Create a Pull Request.
 
 ## License
 
