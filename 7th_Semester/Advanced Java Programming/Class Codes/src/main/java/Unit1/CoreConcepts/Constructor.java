@@ -1,4 +1,4 @@
-package com.suyash.Unit1.CoreConcepts;
+package Unit1.CoreConcepts;
 
 /**
  * Constructor is a special type of method that is used to initialize the object.

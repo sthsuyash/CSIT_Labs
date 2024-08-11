@@ -1,4 +1,4 @@
-package com.suyash.Unit1.Thread;
+package Unit1.Thread;
 
 /**
  * Multithreading is a mechanism by which program can do multiple work at the same time.

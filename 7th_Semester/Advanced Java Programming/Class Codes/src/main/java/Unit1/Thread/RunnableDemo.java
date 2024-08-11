@@ -1,4 +1,4 @@
-package com.suyash.Unit1.Thread;
+package Unit1.Thread;
 
 import java.lang.Runnable;
 

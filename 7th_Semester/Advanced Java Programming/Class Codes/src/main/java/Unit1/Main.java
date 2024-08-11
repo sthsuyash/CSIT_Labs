@@ -1,4 +1,4 @@
-package com.suyash.Unit1;
+package Unit1;
 
 class Main {
     public static void main(String[] args) {

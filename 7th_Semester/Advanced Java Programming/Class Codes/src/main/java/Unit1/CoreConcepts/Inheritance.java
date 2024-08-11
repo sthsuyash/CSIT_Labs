@@ -1,4 +1,4 @@
-package com.suyash.Unit1.CoreConcepts;
+package Unit1.CoreConcepts;
 
 /**
  * Inheritance is the process of acquiring the properties and behavior of a class into another class.

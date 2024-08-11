@@ -1,4 +1,4 @@
-package com.suyash.Unit1.CoreConcepts;
+package Unit1.CoreConcepts;
 
 class Box {
     /**

@@ -1,4 +1,4 @@
-package com.suyash.Unit1.Thread;
+package Unit1.Thread;
 
 /**
  * Creating a thread by extending Thread class
