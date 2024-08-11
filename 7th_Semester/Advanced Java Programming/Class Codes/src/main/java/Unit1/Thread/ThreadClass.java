@@ -1,4 +1,4 @@
-package com.suyash.Thread;
+package com.suyash.Unit1.Thread;
 
 /**
  * Creating a thread by extending Thread class
@@ -21,19 +21,18 @@ class Calculate extends Thread {
     }
 }
 
-class Calculate2 extends Thread{
+class Calculate2 extends Thread {
     @Override
-    public void run(){
-        try{
+    public void run() {
+        try {
             // display odd numbers from 1 to 10 in interval of 1.5 seconds
-            for (int i = 0; i < 10; i++){
-                if (i % 2 != 0){
+            for (int i = 0; i < 10; i++) {
+                if (i % 2 != 0) {
                     System.out.println("Odd number: " + i);
                     Thread.sleep(1500);
                 }
             }
-        }
-        catch (InterruptedException e){
+        } catch (InterruptedException e) {
             System.out.println(e);
         }
     }

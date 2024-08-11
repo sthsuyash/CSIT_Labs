@@ -1,4 +1,4 @@
-package com.suyash.Exception;
+package com.suyash.Unit1.Exception;
 
 import java.util.Scanner;
 
@@ -16,12 +16,6 @@ class AgeException extends Exception {
 }
 
 class Age {
-    private int age;
-
-    public int getAge() {
-        return age;
-    }
-
     public void setAge(int age) throws AgeException {
         if (age < 18) {
             throw new AgeException();

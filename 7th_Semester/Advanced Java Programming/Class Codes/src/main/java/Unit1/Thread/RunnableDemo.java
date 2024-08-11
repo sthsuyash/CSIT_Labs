@@ -1,4 +1,4 @@
-package com.suyash.Thread;
+package com.suyash.Unit1.Thread;
 
 import java.lang.Runnable;
 
@@ -52,8 +52,5 @@ public class RunnableDemo {
         // starting thread
         t1.start(); // calls run method
         t2.start();
-
-
-
     }
 }

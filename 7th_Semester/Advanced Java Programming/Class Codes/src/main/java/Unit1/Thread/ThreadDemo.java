@@ -1,4 +1,4 @@
-package com.suyash.Thread;
+package com.suyash.Unit1.Thread;
 
 /**
  * Multithreading is a mechanism by which program can do multiple work at the same time.
@@ -40,8 +40,7 @@ public class ThreadDemo {
                 System.out.println("This is main thread");
                 Thread.sleep(1000);
             }
-        }
-        catch(InterruptedException e){
+        } catch (InterruptedException e) {
             /**
              * InterruptedException occurs when a thread is waiting, sleeping, or doing some work, and another thread interrupts it using the interrupt() method in the Thread class.
              */

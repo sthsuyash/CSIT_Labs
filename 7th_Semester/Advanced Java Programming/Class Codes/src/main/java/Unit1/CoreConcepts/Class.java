@@ -1,6 +1,4 @@
-package com.suyash;
-
-import java.util.*;
+package com.suyash.Unit1.CoreConcepts;
 
 class Box {
     /**
@@ -46,16 +44,16 @@ class Box {
     }
 
     public void calc() {
-        System.out.println("This is calc method with no paramaters");
+        System.out.println("This is calc method with no parameters");
     }
 
     public void calc(int x, int y) {
-        System.out.println("This is calc method with 2 paramaters(int type)");
+        System.out.println("This is calc method with 2 parameters (int type)");
         System.out.println("The Sum is: " + x + y);
     }
 
     public void calc(double x, double y) {
-        System.out.println("This is calc method with 2 paramaters (double type)");
+        System.out.println("This is calc method with 2 parameters (double type)");
         System.out.println("The Multiplication is" + x * y);
     }
 

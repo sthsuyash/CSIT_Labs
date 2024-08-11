@@ -1,4 +1,4 @@
-package com.suyash.Exception;
+package com.suyash.Unit1.Exception;
 
 import java.util.Scanner;
 
