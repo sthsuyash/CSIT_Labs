@@ -11,7 +11,6 @@ import java.awt.*;
 class JTableImpl extends JFrame {
     JTable table1;
 
-
     public void setTable() {
         String[] col = {"id", "name", "faculty"};
         String[][] data = {{"1", "Ram", "BCA"},
@@ -23,7 +22,8 @@ class JTableImpl extends JFrame {
 
         // creating table
         table1 = new JTable(data, col);
-        table1.setPreferredScrollableViewportSize(new Dimension(500, 40));
+//        table1.setPreferredScrollableViewportSize(new Dimension(500, 40));
+//        table1.setBounds(30, 40, 200, 300);
 
         // adding scrollbar in table
         JScrollPane scrollPane = new JScrollPane(table1);
