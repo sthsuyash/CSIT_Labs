@@ -1,4 +1,4 @@
-package Unit2;
+package Unit2.Layouts;
 
 /**
  * GridLayout places the content in form of row nad column.

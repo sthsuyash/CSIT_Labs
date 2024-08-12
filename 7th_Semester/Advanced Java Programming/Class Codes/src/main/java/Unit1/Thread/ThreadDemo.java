@@ -41,10 +41,9 @@ public class ThreadDemo {
                 Thread.sleep(1000);
             }
         } catch (InterruptedException e) {
-            /**
-             * InterruptedException occurs when a thread is waiting, sleeping, or doing some work, and another thread interrupts it using the interrupt() method in the Thread class.
-             */
-            System.out.println(e);
+            // InterruptedException occurs when a thread is waiting, sleeping, or doing some work,
+            // and another thread interrupts it using the interrupt() method in the Thread class.
+            System.out.println(e.getMessage());
         }
 
     }

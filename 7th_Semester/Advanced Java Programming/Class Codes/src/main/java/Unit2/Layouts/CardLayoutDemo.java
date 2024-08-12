@@ -1,4 +1,4 @@
-package Unit2;
+package Unit2.Layouts;
 
 /**
  * CardLayout places the content like sequence of card, i.e. one card at a time. one after the other.
@@ -42,9 +42,9 @@ class Card extends JFrame {
             }
         });
 
-        button2.addActionListener(new ActionListener(){
+        button2.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e){
+            public void actionPerformed(ActionEvent e) {
                 card.next(panel1);
             }
         });

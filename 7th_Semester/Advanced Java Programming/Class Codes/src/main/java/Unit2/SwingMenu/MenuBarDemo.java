@@ -1,4 +1,4 @@
-package Unit2;
+package Unit2.SwingMenu;
 
 /**
  * Menubar is a tab that contains sequence of item known as menu

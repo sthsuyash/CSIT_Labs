@@ -1,4 +1,4 @@
-package Unit2;
+package Unit2.Layouts;
 
 /**
  * Layout determines how the content should be viewed in window. Following are the layout of swing

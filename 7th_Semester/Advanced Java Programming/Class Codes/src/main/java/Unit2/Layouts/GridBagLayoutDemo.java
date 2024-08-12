@@ -1,8 +1,14 @@
-package org.example;
+package Unit2.Layouts;
 
 /**
- * We can specify where a content can be placed and also merge two or more cell.
- * Two classes are involved: GridBag and GridBagConstraint (used for setting layout of content)
+ * GridBagLayout is one of the most flexible and complex layout managers the Java platform provides.
+ * A GridBagLayout places components in a grid of rows and columns, allowing specified components to span multiple rows or columns.
+ * Not all rows necessarily have the same height. Similarly, not all columns necessarily have the same width.
+ * Essentially, GridBagLayout places components in rectangles (cells) in a grid,
+ * and then uses the components' preferred sizes to determine how big the cells should be.
+ *
+ * We can specify where a content can be placed and also merge two or more cells.
+ * Two classes are involved: GridBag and GridBagConstraint(for setting layout of content).
  */
 
 import javax.swing.*;
@@ -17,7 +23,7 @@ class GridBagImpl extends JFrame {
         button3 = new JButton("Button 3");
 
         // creating object of GridBag and Constraint
-//        GridBagLayout gridBagLayout = new GridBagLayout();
+        GridBagLayout gridBagLayout = new GridBagLayout();
         GridBagConstraints gridBagConstraints = new GridBagConstraints(); // this is the main thing that is used to set components
 
         setVisible(true);

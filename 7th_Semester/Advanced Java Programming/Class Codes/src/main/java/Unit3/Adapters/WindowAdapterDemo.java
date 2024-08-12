@@ -9,7 +9,7 @@ package Unit3.Adapters;
 import javax.swing.*;
 import java.awt.event.*;
 
-class WindowAdapterImpl extends JFrame{
+class WindowAdapterImpl{
     public void setWindowAdapterImpl(){
         JFrame frame = new JFrame();
         frame.setVisible(true);
