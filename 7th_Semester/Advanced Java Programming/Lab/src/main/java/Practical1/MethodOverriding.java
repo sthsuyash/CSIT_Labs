@@ -1,4 +1,4 @@
-package com.suyash;
+package Practical1;
 
 /**
  * Program to demonstrate method overriding

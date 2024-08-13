@@ -1,4 +1,4 @@
-package com.suyash;
+package Practical1;
 
 /**
  * Single level and multi-level inheritance.

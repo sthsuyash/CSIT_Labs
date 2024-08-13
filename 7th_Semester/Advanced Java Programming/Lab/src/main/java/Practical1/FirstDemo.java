@@ -1,4 +1,4 @@
-package com.suyash;
+package Practical1;
 
 /**
  * Program to create a class, instance variable, constructor and method.

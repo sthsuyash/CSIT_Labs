@@ -1,4 +1,4 @@
-package com.suyash;
+package Practical1;
 
 /**
  * Interface Inheritance
