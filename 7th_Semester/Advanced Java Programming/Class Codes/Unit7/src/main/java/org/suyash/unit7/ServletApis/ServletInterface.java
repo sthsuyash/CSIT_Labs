@@ -19,10 +19,10 @@ package org.suyash.unit7;
  */
 
 import jakarta.servlet.*;
-import jakarta.servlet.http.*;
+
 import java.io.*;
 
-public class FirstServlet implements Servlet {
+public class ServletInterface implements Servlet {
     ServletConfig config;
 
     /**
