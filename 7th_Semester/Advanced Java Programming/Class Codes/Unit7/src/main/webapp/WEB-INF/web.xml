@@ -3,14 +3,46 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
-    <!--  Add these -->
+    <!-- Servlet using Servlet Interface -->
     <servlet>
-        <servlet-name>first</servlet-name>
-        <servlet-class>org.suyash.unit7.FirstServlet</servlet-class>
+        <servlet-name>servletInterface</servlet-name>
+        <servlet-class>org.suyash.unit7.ServletApis.ServletInterface</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>first</servlet-name>
-        <url-pattern>/first-servlet</url-pattern>
+        <servlet-name>servletInterface</servlet-name>
+        <url-pattern>/servlet-interface</url-pattern>
     </servlet-mapping>
-    <!--  Upto here  -->
+    <!-- End of Servlet Interface -->
+
+    <!--  Generic Servlet class  -->
+    <servlet>
+        <servlet-name>generic</servlet-name>
+        <servlet-class>org.suyash.unit7.ServletApis.GenericServletDemo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>generic</servlet-name>
+        <url-pattern>/generic-servlet</url-pattern>
+    </servlet-mapping>
+    <!--  End of Generic Servlet class -->
+
+    <!--  HttpServlet Class  -->
+    <servlet>
+        <servlet-name>httpServlet</servlet-name>
+        <servlet-class>org.suyash.unit7.ServletApis.HttpServletDemo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>httpServlet</servlet-name>
+        <url-pattern>/httpservlet</url-pattern>
+    </servlet-mapping>
+    <!--  End of Http Servlet class -->
+
+    <!-- Form Servlet -->
+    <servlet>
+        <servlet-name>FormServlet</servlet-name>
+        <servlet-class>org.suyash.unit7.Form.FormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FormServlet</servlet-name>
+        <url-pattern>/FormServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
