@@ -31,7 +31,7 @@ int main()
     {
         m1 = f(x, y);
         m2 = f(x + 0.5 * h, y + 0.5 * m1 * h);
-        m3 = f(x + h, y + m3 * h);
+        m3 = f(x + 0.5 * h, y + 0.5 * m2 * h);
         m4 = f(x + h, y + m3 * h);
         x += h;
         y = y + (m1 + 2.0 * m2 + 2.0 * m3 + m4) * h / 6.0;
