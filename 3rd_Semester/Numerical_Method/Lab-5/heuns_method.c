@@ -20,7 +20,7 @@ int main()
 	scanf("%f", &y);
 
 	printf("Input x at which y is required: ");
-	scanf("%f", &h);
+	scanf("%f", &xp);
 
 	printf("Input step-size h: ");
 	scanf("%f", &h);
