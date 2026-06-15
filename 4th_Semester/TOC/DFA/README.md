@@ -1,7 +1,7 @@
 # Lab 1 (DFA)
 
-- [DFA for the language of string over {0.1} in which each string end with 11](string_end_with_11.cpp)
-  ![ends with 11](images/ends_with_11.jpg)
+- [DFA for the language of string over {0.1} in which each string end with 11](DFA_string_end_with_11.cpp)
+  ![ends with 11](images/DFA_ending-With-11.jpg)
 - [DFA accepting the string over {a,b} such that each string does not end with ab](string_doesnot_end_with_ab.cpp)
   ![doesnot end with ab](images/doesnot_end_with_ab.jpg)
 - [DFA for the language of string over {a,b} such that each string contain aba as substring](string_contains_aba_substring.cpp)
